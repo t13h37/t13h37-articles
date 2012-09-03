@@ -227,7 +227,7 @@ Voici un exemple utilisant deux courbes de Bézier personnalisées :
 Liens utiles pour comprendre les courbes de Bézier en CSS :
 
 - [http://cubic-bezier.com](http://cubic-bezier.com ) ;
-- [http://matthewlein.com/ceaser/](http://matthewlein.com/ceaser/ )
+- [Ceaser](http://letrainde13h37.fr/breves/ceaser-generateur-animation-easing-css/)
 
 
 ### La fonction `steps()`
