@@ -10,7 +10,7 @@ Peint au cours de sa lune de miel à Bali, ce tableau empreint de fantaisie mont
 
 De gauche à droite : #879100, #b57100, #9c4d1f, #542e20, #f2f2f2
 
-La palette résultante est harmonieuse et majoritairement chaude, avec une pointe de vert pour amener de la fraîcheur.
+La palette résultante est harmonieuse et majoritairement chaude, avec une pointe de vert pour amener de la fraîcheur.  
 Elle conviendra parfaitement à un site ...
 
 
@@ -55,7 +55,7 @@ Cette toile, dont le titre veut dire "Quelques cercles" et qui a été peinte pe
 
 De gauche à droite : #97dca6, #151e27, #2c00c7, #5b9ff8, #bac0f6
 
-Seules l'auraas colorée autour du cercle principal et les teintes des cercles plus petits amènent la lumière. Le fond moiré presque noir (égal au silence selon Kandinsky) accentue l’effet de froideur des bleus majoritairement présents.
+Seules l'auraas colorée autour du cercle principal et les teintes des cercles plus petits amènent la lumière. Le fond moiré presque noir (égal au silence selon Kandinsky) accentue l’effet de froideur des bleus majoritairement présents.  
 Comme la toile dont elle est inspirée, cette palette est donc très puissante et conviendra mieux à ...
 
 
@@ -77,7 +77,7 @@ Cette palette est toute en délicatesse et clarté, pour un effet aérien, sobre
 
 # Conclusion
 
-Les palettes que nous vous proposons ici ne sont que des exemples de ce qu'il est possible de déduire de chacunes de ces toiles, et c'est aussi l'intérêt de la démarche. L'exercice aurait ainsi pu être (et sera ?) réalisé avec des supports très différents ou plus "modernes" : pochettes de CD, peintures digitales, affiches de films, oeuvres architecturales, etc.
+Les palettes que nous vous proposons ici ne sont que des exemples de ce qu'il est possible de déduire de chacunes de ces toiles, et c'est aussi l'intérêt de la démarche. L'exercice aurait ainsi pu être (et sera ?) réalisé avec des supports très différents ou plus "modernes" : pochettes de CD, peintures digitales, affiches de films, oeuvres architecturales, etc.  
 La conclusion principale à en tirer, c'est que l'inspiration est partout, et particulièrement dans l'œil de celui qui observe.
 
 Vous voilà donc parés, à vos outils graphiques (Photoshop, Gimp, Kuler...) !
