@@ -97,7 +97,7 @@ Cette animation peut ensuite être appliquée par le biais de neuf propriétés 
 - `animation` : c’est la propriété raccourcie des huit précédentes.
 
 Par défaut, la durée est de 0 seconde, le nombre de répétitions est 1 et la méthode d’interpolation est `ease`. Les autres propriétés sont optionnelles. 
-Cela signifie que le code minimal pour lancer une animation définie avec `@keyframe` est :
+Cela signifie que le code minimal pour lancer une animation définie avec `@keyframes` est :
 
     #elem {
         animation: nomAnim 1s;
@@ -173,7 +173,7 @@ Dans ce cas, la transition aura lieu lors des deux évènements : lorsque la sou
         transition: margin-right 0.5s;        
     }
 
-Dans ce cas, deux transitions ont lieu. Lorsque la souris arrive sur l’élément, une transition de 0,5 secondes est lancée. Lorsqu’elle le quitte, c’est une transition de 0.2 secondes mais avec un délai de 1 seconde.
+Dans ce cas, deux transitions ont lieu. Lorsque la souris arrive sur l’élément, une transition de 0.5 secondes est lancée. Lorsqu’elle le quitte, c’est une transition de 0.2 secondes mais avec un délai de 1 seconde.
 
 [Voir la démonstration 5](http://jsfiddle.net/iamvdo/S4nLy/)
 
@@ -209,7 +209,7 @@ La fonction `cubic-bezier()` permet un contrôle poussé de la courbe d’accél
 
 Sachant que les points p1 et p4 sont obligatoirement le point (0,0) et (1,1). 
 
-Les valeurs X doivent êtres comprises entre 0 et 1, car elles correspondent au temps qui passe. Les valeurs Y, elles, peuvent être inférieures à 0 ou supérieures à 1. Dans ce cas, des effets de rebonds peuvent êtres réalisés puisque les valeurs des propriétés seront hors bornes. Par exemple, lors d'une transition de `width: 50px` à `width: 100px`, il est possible que la valeur de `width`soit supérieure à 100px.
+Les valeurs X doivent êtres comprises entre 0 et 1, car elles correspondent au temps qui passe. Les valeurs Y, elles, peuvent être inférieures à 0 ou supérieures à 1. Dans ce cas, des effets de rebonds peuvent êtres réalisés puisque les valeurs des propriétés seront hors bornes. Par exemple, lors d'une transition de `width: 50px` à `width: 100px`, il est possible que la valeur de `width` soit supérieure à 100px.
 
 Voici un exemple utilisant deux courbes de Bézier personnalisées :
 
@@ -259,7 +259,6 @@ Cette propriété est très pratique pour revenir à l’état d’origine en jo
     }
     
     input:focus {
-        ...
         animation: pulse 1s infinite alternate;
     }
 
@@ -276,6 +275,7 @@ Par défaut, une animation modifie les valeurs des propriétés pendant son exé
 - `none` : par défaut.
 
 Voici un exemple ou les 4 cas sont mis en situation. Un élément centré subit une animation qui modifie sa position et simule un rebond :
+
 - Cas 1: `none` : l'élément est modifié lors de l'animation et revient à son état d'origine à la fin ;
 - Cas 2: `backwards` : avant l'animation, l'élément est en haut (état `from`). À la fin, l'élément revient en position d'origine (centrée) ;
 - Cas 3: `forwards` : avant l'animation, l'élément est centré. À la fin, l'élément reste en bas (état `to`) ;
