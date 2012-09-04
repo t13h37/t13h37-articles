@@ -55,7 +55,7 @@ Cette toile, dont le titre veut dire "Quelques cercles" et qui a été peinte pe
 
 De gauche à droite : #97dca6, #151e27, #2c00c7, #5b9ff8, #bac0f6
 
-Seules l'auraas colorée autour du cercle principal et les teintes des cercles plus petits amènent la lumière. Le fond moiré presque noir (égal au silence selon Kandinsky) accentue l’effet de froideur des bleus majoritairement présents.  
+Seules l'aura colorée autour du cercle principal et les teintes des cercles plus petits amènent la lumière. Le fond moiré presque noir (égal au silence selon Kandinsky) accentue l’effet de froideur des bleus majoritairement présents.  
 Comme la toile dont elle est inspirée, cette palette est donc très puissante et conviendra mieux à ...
 
 
