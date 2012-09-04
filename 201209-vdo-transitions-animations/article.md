@@ -291,7 +291,7 @@ Bien que tout paraisse rose, certaines limitations existent. En voici quelques u
 
 - Toutes les propriétés ne sont pas animables. Par exemple, une transition/animation de `display: none;` à `display: block;` n’est pas possible. Voici [la liste complète des propriétés animables](http://www.w3.org/TR/css3-transitions/#animatable-properties ) ;
 - Les étapes d’une animation se définissent en pourcentage de l’animation totale. Dans le cas d’une animation précise, il est souvent nécessaire de définir des nombres décimaux à rallonge (par exemple 33.333%). Il serait parfois plus évident de définir les étapes en secondes ;
-- Les transitions/animations sont censées fonctionner sur les pseudo-éléments (`::before` et `::after`), mais malheureusement seul Firefox les supportent ;
+- Les transitions/animations sont censées fonctionner sur les pseudo-éléments (`::before` et `::after`), mais malheureusement seul Firefox les supporte ;
 - Lorsqu’un délai est fixé, il n’est valable que pour la première itération d’une animation. Pour lancer une animation avec un délai à chaque itération, il faut bien souvent ruser et créer une animation qui n’effectue aucune tâche pendant les n premiers pourcentages (ce qui n’est pas toujours simple) ;
 - Il n’existe pas de synchronisation à proprement parler. Par exemple, il n'est pas possible de lancer une animation lorsqu'une autre se termine et dont la durée n'est pas connue. Cependant, de nouveaux évènements JavaScript sont propagés (voir plus bas) ;
 - Les animations ne peuvent pas suivre un chemin ou une forme (peut-être dans le futur en utilisant le principe des formes définies dans [le module des Exclusions CSS](http://dev.w3.org/csswg/css3-exclusions/ )) ;
