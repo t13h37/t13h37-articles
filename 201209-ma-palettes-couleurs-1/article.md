@@ -11,7 +11,7 @@ Peint au cours de sa lune de miel à Bali, ce tableau empreint de fantaisie mont
 De gauche à droite : #879100, #b57100, #9c4d1f, #542e20, #f2f2f2
 
 La palette résultante est harmonieuse et majoritairement chaude, avec une pointe de vert pour amener de la fraîcheur.  
-Elle conviendra parfaitement à un site ...
+Elle pourrait ainsi très bien convenir à un site orienté "vacances", "voyages"…
 
 
 # Paul Gauguin, "Femmes de Tahiti - Sur la plage" (huile sur toile, 1891)
@@ -26,7 +26,7 @@ En 1891, peu après son arrivée à Tahiti suite à l'abandon de sa famille et d
 
 De gauche à droite : #a03e38, #e3da95, #4e5549, #1f2c27, #a57f7a
 
-Mélant les couleurs désaturées du sable, de l'herbe et de la robe rose d'une des protagonistes et le rouge vif de la jupe de l'autre, cette palette, à la fois contemporaine et sophistiquée, conviendra par exemple à un site _corporate_.
+Mélant les couleurs désaturées du sable, de l'herbe et de la robe rose d'une des protagonistes et le rouge vif de la jupe de l'autre, cette palette, à la fois contemporaine et sophistiquée, conviendra par exemple à un site _corporate_ (banque, cabinet d'avocats, etc.).
 
 # Francisco José de Goya, "El Parasol" (huile sur toile, 1777)
 
@@ -41,7 +41,7 @@ Pour la Manufacture royale de tapisseries, il exécute alors de nombreux cartons
 
 De gauche à droite : #97b3a8, #6f8927, #edecaf, #b68b00, #a54a2a
 
-La palette inspirée par cette toile est d'une grande fraîcheur et très délicate, et pourrait ainsi convenir à un site ... .
+La palette inspirée par cette toile est d'une grande fraîcheur et très délicate, et pourrait ainsi convenir à un site présentant un service innovant ou une application (web ou autre).
 
 # Vassily Kandinsky, "Einige Kreise" (huile sur toile, 1928)
 
@@ -56,7 +56,7 @@ Cette toile, dont le titre veut dire "Quelques cercles" et qui a été peinte pe
 De gauche à droite : #97dca6, #151e27, #2c00c7, #5b9ff8, #bac0f6
 
 Seules l'aura colorée autour du cercle principal et les teintes des cercles plus petits amènent la lumière. Le fond moiré presque noir (égal au silence selon Kandinsky) accentue l’effet de froideur des bleus majoritairement présents.  
-Comme la toile dont elle est inspirée, cette palette est donc très puissante et conviendra mieux à ...
+Comme la toile dont elle est inspirée, cette palette est donc très puissante et conviendra mieux à un site à vocation artistique ou culturelle (présentation d'un artiste, d'une troupe, etc.).
 
 
 # Jan Vermeer, "Meisje met de Parel" (huile sur toile, 1666)
@@ -72,7 +72,7 @@ Cette toile, aussi appelée "Joconde du Nord" et dont l'origine reste encore auj
 De gauche à droite : #d1a67f, #ecd68c, #b6b6dc, #8781c4, #241519
 
 Cette palette est toute en délicatesse et clarté, pour un effet aérien, sobre et pourtant très "habillé". Le marron presque noir tiré du fond du tableau vient apporter un point de concentration et de contraste.
-
+Plus versatile, cette palette pourrait être appliquée à une assez grande variété de typologies de site, comme par exemple un site éditorial/rédactionnel.
 
 
 # Conclusion
