@@ -49,7 +49,7 @@ Ce qui équivaut à :
 
     #elem {
         transition-property: all;
-        transition-delay: 1s;
+        transition-duration: 1s;
         transition-timing-function: ease;
     }
 
