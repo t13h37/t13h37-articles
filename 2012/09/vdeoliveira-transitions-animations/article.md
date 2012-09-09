@@ -194,7 +194,7 @@ La méthode d’interpolation spécifie la façon dont l’animation évolue dan
 - `cubic-bezier(p2x,p2y,p3x,p3y)` : courbe d’accélération personnalisée ;
 - `steps(nb, sart|end)` : animation par palier (image par image). Les transitions/animations ne sont plus fluides.
 
-![Schéma des courbes de Bézier par défaut des transitions et animations CSS](img/trTimingFn.png )
+![Schéma des courbes de Bézier par défaut des transitions et animations CSS](trTimingFn.png )
 
 [Voir la démonstration 6](http://jsfiddle.net/iamvdo/3JSsM/)
 
@@ -220,7 +220,7 @@ Voici un exemple utilisant deux courbes de Bézier personnalisées :
         transition: 1s cubic-bezier( 0.5, 2, 0.5, 0.8);
     }
 
-![Deux exemples de courbes de Bézier personnalisées pour les transitions et animations CSS](img/trCubic.png )
+![Deux exemples de courbes de Bézier personnalisées pour les transitions et animations CSS](trCubic.png )
 
 [Voir la démonstration 7](http://jsfiddle.net/iamvdo/ybMTn/)
 
