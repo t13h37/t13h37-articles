@@ -1,0 +1,7 @@
+{
+"title" : "Performance Web : les pièges de l'optimisation a posteriori",
+"author": {"name" : "Cédric Morin", "email": "cedric.morin@yterium.com"},
+"edition" : {"number": "18", "date": "2012-09-11"},
+"tags" : ["performance"],
+"type" : "tutorial"
+}
