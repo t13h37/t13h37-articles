@@ -7,7 +7,7 @@ Aussi, bien souvent, la question se pose d'optimiser un site existant pour qu'il
 Parmi les techniques généralement préconisées pour améliorer la performance d'un site web, certaines peuvent avoir des effets pervers ou indésirables si on les utilise mal ou à l'extrême.  
 Voyons ensemble un certain nombre d'exemples.
 
-## Domainsharding
+## Domain-sharding
 
 Cette technique consiste à distribuer les fichiers (images, scripts, feuilles de styles) chargés dans la page entre plusieurs domaines (ou sous-domaines) différents.
 
