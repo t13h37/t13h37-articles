@@ -16,7 +16,7 @@ L'origine de cette pratique remonte aux anciens navigateurs (Internet Explorer 6
 En distribuant les fichiers sur plusieurs domaines, on peut contourner le défaut de ces navigateurs et permettre d'avoir 4 files d'attentes avec 2 domaines, 6 files avec 3 domaines, etc.  
 L'optimisation du temps de chargement pour ces navigateurs peut donc conduire à multiplier le nombre de domaines.
 
-Mais les navigateurs récents et modernes ont considérablement amélioré ce comportement, et gèrent d'eux-même de 6 à 8 files de téléchargements parallèles par domaines.
+Mais les navigateurs récents et modernes ont considérablement amélioré ce comportement, et gèrent d'eux-même de 6 à 8 files de téléchargements parallèles par domaine.
 
 Avec un domain-sharding agressif (3 domaines ou plus) les navigateurs modernes doivent alors gérer le téléchargement parallèle de plus de 18 fichiers. Outre que ce nombre de téléchargement parallèle n'améliore plus l'utilisation de la bande passante par rapport au fonctionnement par défaut de ces navigateurs, cela les oblige à lancer plus de requêtes DNS qui ralentissent la récupération des fichiers. Il s'en suit généralement [un ralentissement](http://www.ravelrumba.com/blog/domain-sharding-tests-in-ie7-ie8-firefox-and-safari/).
 
