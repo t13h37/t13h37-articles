@@ -11,7 +11,7 @@ Voyons ensemble un certain nombre d'exemples.
 
 Cette technique consiste à distribuer les fichiers (images, scripts, feuilles de styles) chargés dans la page entre plusieurs domaines (ou sous-domaines) différents.
 
-L'origine de cette pratique remonte aux anciens navigateurs (Internet Explorer 6 en tête, mais aussi IE7) qui se limitaient à deux téléchargements paralèlles par domaine (c'était justifiable à l'époque de la conception de IE6 et des connexions internet par RTC, mais ça n'a pas été amélioré dans IE7). Il s'en suivait une file d'attente de téléchargements qui ralentissait beaucoup l'affichage complet de la page sans exploiter la bande passante disponible sur le réseau.
+L'origine de cette pratique remonte aux anciens navigateurs (Internet Explorer 6 en tête, mais aussi IE7) qui se limitaient à deux téléchargements paralèlle par domaine (c'était justifiable à l'époque de la conception de IE6 et des connexions internet par RTC, mais ça n'a pas été amélioré dans IE7). Il s'en suivait une file d'attente de téléchargements qui ralentissait beaucoup l'affichage complet de la page sans exploiter la bande passante disponible sur le réseau.
 
 En distribuant les fichiers sur plusieurs domaines, on peut contourner le défaut de ces navigateurs et permettre d'avoir 4 files d'attentes avec 2 domaines, 6 files avec 3 domaines, etc.  
 L'optimisation du temps de chargement pour ces navigateurs peut donc conduire à multiplier le nombre de domaines.
