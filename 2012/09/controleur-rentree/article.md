@@ -1,5 +1,3 @@
-C'est la rentrée ! Et pour l'occasion nous en profitons pour faire un premier bilan de ces 4 premiers mois d'existence du magazine.
-
 Quand nous avons publié la première édition, le 15 mai, nous mettions fin à une période de réflexion de plusieurs mois durant laquelle nous avions essayé de définir au mieux ce que pourrait être un magazine en ligne francophone dédié à la conception web, et s'imposant un rythme de publication hebdomadaire.
 
 Alors nous sommes partis de la gare avec des idées, certaines intéressantes, d'autres un peu moins. En quatre mois nous avons appris et nous vous avons écouté. Nous avons notamment réalisé un sondage auprès des abonnés et nous en avons tirés des enseignements.
