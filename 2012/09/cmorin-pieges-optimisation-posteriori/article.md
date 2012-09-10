@@ -48,7 +48,7 @@ Les sprites sont initialement recommandés pour regrouper des images CSS. Mais d
 
 Cependant, dans ce cas, la technique entraîne directement une perte d'accessibilité : une image de décoration en CSS est purement visuelle, alors qu'une image référencée dans le HTML de la page porte un sens via son attribut `alt`. Même si certains artifices peuvent êtres utilisés (image transparente avec un attribut `alt` et sur laquelle est appliquée la directive CSS), le visiteur peut se retrouver dans certains cas avec un élément d'interface incompréhensible (affichage de la page sans style par exemple, ou avec des styles personnalisés).
 
-Pour cette raison, il ne faudrait pas utiliser les sprites pour remplacer une balise `<img>`.
+Pour cette raison, il ne faudrait pas utiliser les sprites pour remplacer une balise `img`.
 
 C'est malheureusement une pratique que l'on rencontre très souvent dans l'intégration des menus de navigation de type onglets. On y utilise des images à la place du texte pour éviter le débordement lors du grossissement de la police par l'utilisateur (ce qui est en soi une pratique discutable). Pour éviter le chargement d'un grand nombre d'images pour ce menu, on en vient alors à utiliser un sprite au prix d'une dégradation de l'accessibilité.
 
