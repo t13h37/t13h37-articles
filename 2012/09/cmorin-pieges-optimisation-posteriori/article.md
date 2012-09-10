@@ -11,7 +11,7 @@ Voyons ensemble un certain nombre d'exemples.
 
 Cette technique consiste à distribuer les fichiers (images, scripts, feuilles de styles) chargés dans la page entre plusieurs domaines (ou sous-domaines) différents. (NDLR : Voir également à ce sujet l'article de Jean-Pierre Vincent sur [Les performances web mobiles](http://letrainde13h37.fr/14/performance-web-mobile-chargement-de-page-1-sur-2/))
 
-L'origine de cette pratique remonte aux anciens navigateurs (Internet Explorer 6 en tête, mais aussi IE7) qui se limitaient à deux téléchargements paralèlles par domaine (c'était justifiable à l'époque de la conception de IE6 et des connexions internet par RTC, mais ça n'a pas été amélioré dans IE7). Il s'en suivait une file d'attente de téléchargements qui ralentissait beaucoup l'affichage complet de la page sans exploiter la bande passante disponible sur le réseau.
+L'origine de cette pratique remonte aux anciens navigateurs (Internet Explorer 6 en tête, mais aussi IE7) qui se limitaient à deux téléchargements parallèles par domaine (c'était justifiable à l'époque de la conception de IE6 et des connexions internet par RTC, mais ça n'a pas été amélioré dans IE7). Il s'en suivait une file d'attente de téléchargements qui ralentissait beaucoup l'affichage complet de la page sans exploiter la bande passante disponible sur le réseau.
 
 En distribuant les fichiers sur plusieurs domaines, on peut contourner le défaut de ces navigateurs et permettre d'avoir 4 files d'attentes avec 2 domaines, 6 files avec 3 domaines, etc.  
 L'optimisation du temps de chargement pour ces navigateurs peut donc conduire à multiplier le nombre de domaines.
@@ -32,13 +32,13 @@ Cependant, utilisée sans discernement, elle peut avoir des inconvénients :
 
 ### Dégradation avec le temps
 
-Maintenir un sprite est lourd : si le sprite est modifié et que les images se trouvent déplacées dans le sprite, il faut rééécrire toutes les règles CSS associées, ce qui peut être assez pénible pour un gros sprite. En conséquence on évite en général ce scenario là, au prix d'une dégradation progressive de l'efficacité du sprite si on n'y prête pas attention.
+Maintenir un sprite est lourd : si le sprite est modifié et que les images se trouvent déplacées dans le sprite, il faut réécrire toutes les règles CSS associées, ce qui peut être assez pénible pour un gros sprite. En conséquence on évite en général ce scénario là, au prix d'une dégradation progressive de l'efficacité du sprite si on n'y prête pas attention.
 
 Lors de la suppression d'une image dans le sprite (en fait une image dont on n'a plus besoin), on se contente en général d'ignorer la zone du sprite sans la reconstruire, pour éviter de modifier toutes les règles CSS de positionnement qui l'utilisent. Avec le temps le sprite peut grossir excessivement, chargé d'images qui ne servent plus.
 
 De même, si une image change de taille et doit être plus grande dans une des dimensions, il faut alors la réaffecter dans une nouvelle zone du sprite, sauf à recomposer l'ensemble du sprite et réécrire toutes les règles CSS associées, et on se retrouve avec une place perdue.
 
-L'ajout  ou la modification d'une image dans le sprite oblige à l'invalider (modification de l'url) et à recharger tout le sprite, beaucoup  plus gros que la simple image modifiée. Dans ce cas, le chargement de la  page sera plus lent pour un visiteur régulier de la page web par rapport à une situation où les sprites n'auraient pas été utilisés.
+L'ajout ou la modification d'une image dans le sprite oblige à l'invalider (modification de l'url) et à recharger tout le sprite, beaucoup  plus gros que la simple image modifiée. Dans ce cas, le chargement de la  page sera plus lent pour un visiteur régulier de la page web par rapport à une situation où les sprites n'auraient pas été utilisés.
 
 Pour limiter l'impact de ces cas courants au cours de la vie du site, il est souvent judicieux de n'associer dans un même sprite que des images qui forment un ensemble logique ou qui correspondent à un élément d'interface précis. Il est ainsi plus facile d'évacuer toute l'image quand l'ensemble n'est plus utilisé, ou de recomposer le sprite et les règles associées, en nombre plus limité, si nécessaire.
 
@@ -73,13 +73,13 @@ La situation se complique lorsque par exemple une page A contient un lecteur vid
 
 Dans ce cas, il convient d'arbitrer en fonction des volumétries : la proportion des pages dans chaque cas, pondérée par le trafic (on privilégiera a priori la configuration la plus fréquente).
 
-On se rend compte que ce type d'abitrage pose aussi des problèmes potentiels de maintenabilité.
+On se rend compte que ce type d'arbitrage pose aussi des problèmes potentiels de maintenabilité.
 
 ## Javascript en pied/bas de page
 
 Une autre pratique recommandée est l'insertion des appels javascript à la fin du HTML, juste avant la balise de fermeture `</body>`. Cette pratique permet :
 
-* D'éviter des blocages de chargement d'autre composants provoqués par les scripts (lorsque le navigateur rencontre un script, il stoppe le chargement des composants qui suivent et la construction de la page tant que le script n'a pas été chargé ni executé) ;
+* D'éviter des blocages de chargement d'autre composants provoqués par les scripts (lorsque le navigateur rencontre un script, il stoppe le chargement des composants qui suivent et la construction de la page tant que le script n'a pas été chargé ni exécuté) ;
 * De libérer le processeur pour le travail de rendu de la page, en évitant de le charger avec l'interprétation du javascript.
 
 Cependant, cette technique peut être assez problématique. Dans le cadre d'une page unique, il est assez simple de déplacer tout le javascript en bas de page.
@@ -104,12 +104,12 @@ Ce dernier point est à mon sens un des plus gros pièges de l'optimisation de l
 
 Ce à quoi est confronté le visiteur du site, ce n'est pas au manque d'optimisation du site, c'est à sa lenteur.
 
-Ainsi, la première et plus importante optimisation consiste à se poser la question de ce qui pèse dans la page, ce qui provoque plein de chargements de fichiers, ou le chargement de fichiers lourds, et de la nécessité de ces élements, ou encore de la façon dont il serait possible de les aménager pour réduire à la source le temps de chargement de la page.
+Ainsi, la première et plus importante optimisation consiste à se poser la question de ce qui pèse dans la page, ce qui provoque plein de chargements de fichiers, ou le chargement de fichiers lourds, et de la nécessité de ces éléments, ou encore de la façon dont il serait possible de les aménager pour réduire à la source le temps de chargement de la page.
 
 
 # La performance Web : une démarche continue, sur toute la durée de vie du site
 
-La tendance générale est à [l’inflation de la taille des page web](http://gigaom.com/2012/05/23/the-growing-epidemic-of-page-bloat/), et il en sera sûrement ainsi tant que la rapidité d'un site sera considéré comme une prestation secondaire, loin derrière l'aspect visuel ou la disponibilité de moults gadgets fonctionnels à la mode.
+La tendance générale est à [l’inflation de la taille des page web](http://gigaom.com/2012/05/23/the-growing-epidemic-of-page-bloat/), et il en sera sûrement ainsi tant que la rapidité d'un site sera considéré comme une prestation secondaire, loin derrière l'aspect visuel ou la disponibilité de moult gadgets fonctionnels à la mode.
 
 ## À la conception
 
