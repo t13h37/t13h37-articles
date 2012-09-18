@@ -10,8 +10,10 @@ On peut ainsi être créatif en utilisant une méthodologie ou une architecture 
 
 ## Être créatif, ça ne veut pas dire avoir bon goût
 
-> Le goût est l’ennemi de la créativité
-> *Pablo Picasso*
+<<blockquote class="speaker1">
+Le goût est l’ennemi de la créativité  
+— *Pablo Picasso*
+</blockquote>
 
 Ce qui est communément appelé « bon goût » n’a effectivement rien de commun avec la créativité. Le « bon goût » est quelque chose parfois inné, parfois acquis, reposant dans tous les cas sur des règles établies par une communauté, pour une cible, par l’histoire, etc. Ce qui appartient au domaine du goût est donc une variable propre à la société dans laquelle nous vivons. Ce qui est de bon goût aujourd’hui sera peut être de mauvais goût demain. Les années 80 en sont la meilleure démonstration.
 
