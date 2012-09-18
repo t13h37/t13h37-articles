@@ -2,7 +2,7 @@ Pendant que vous batifoliez dans l'eau cet été, un [journaliste a perdu toutes
 
 Il est pourtant simple d'éviter ce genre de problèmes ou au moins de limiter la casse !
 
-# Éduquer votre entourage
+# Éduquer son entourage
 
 Trop de gens choisissent des mots de passe mal sécurisés, [même parmi les geeks](http://blogs.wsj.com/digits/2010/12/13/the-top-50-gawker-media-passwords/). Sachant que rien n'est plus simple que de trouver le login de quelqu'un sur Internet, le mot de passe est votre seule véritable défense.
 
