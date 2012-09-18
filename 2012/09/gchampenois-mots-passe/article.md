@@ -1,5 +1,3 @@
-# Introduction
-
 Pendant que vous batifoliez dans l'eau cet été, un [journaliste a perdu toutes ses données et l'accès à tous ses moyens de communication](http://www.zdnet.fr/actualites/apple-et-amazon-fautifs-dans-le-piratage-d-un-compte-icloud-39774976.htm), des [entreprises renommées se sont fait piquer des millions de mots de passe](http://www.lukew.com/ff/entry.asp?1590), et le [marché des cartes de crédit volées](http://www.lemondeinformatique.fr/actualites/lire-une-cotation-du-prix-des-cartes-bancaires-volees-disponible-sur-cloudeyez-49960.html) se porte bien, merci pour lui…
 
 Il est pourtant simple d'éviter ce genre de problèmes ou au moins de limiter la casse !
