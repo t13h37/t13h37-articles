@@ -10,26 +10,29 @@ On peut ainsi être créatif en utilisant une méthodologie ou une architecture 
 
 ## Être créatif, ça ne veut pas dire avoir bon goût
 
-<<blockquote class="speaker1">
+<blockquote class="speaker1">
 Le goût est l’ennemi de la créativité  
-— *Pablo Picasso*
+*— Pablo Picasso*
 </blockquote>
 
 Ce qui est communément appelé « bon goût » n’a effectivement rien de commun avec la créativité. Le « bon goût » est quelque chose parfois inné, parfois acquis, reposant dans tous les cas sur des règles établies par une communauté, pour une cible, par l’histoire, etc. Ce qui appartient au domaine du goût est donc une variable propre à la société dans laquelle nous vivons. Ce qui est de bon goût aujourd’hui sera peut être de mauvais goût demain. Les années 80 en sont la meilleure démonstration.
 
 ## Être créatif, ça veut dire être à contre-courant
 
-> If I had asked people what they wanted, they would have said faster horses.
-> Si j'avais demandé aux gens ce qu'ils voulaient, ils m'auraient demandé des chevaux plus rapides.
-> *Henry Ford*
+<blockquote class="speaker1">
+Si j'avais demandé aux gens ce qu'ils voulaient, ils m'auraient demandé des chevaux plus rapides.  
+*— Henry Ford*
+</blockquote>
 
 Sous bien des aspects, la pensée créative est surprenante, déstabilisante, et dans tous les cas inattendue. Bien qu’elle apporte des solutions à des problèmes, elle n’est pas toujours bien perçue. Pourtant, c’est un mal par lequel doit passer tout travailleur créatif : être à contre-courant. Malgré la satisfaction apportée par la résolution d’une situation, le fait d’être à contre-courant est rarement agréable. C’est d’ailleurs une des raisons pour laquelle bon nombre de travailleurs créatifs taisent leurs idées. Il ne s’agit pas là de lâcheté ou de faiblesse mais d’un réflexe typiquement humain. On a naturellement besoin de se sentir accepté au sein d’un groupe, surtout quand il s’agit de son cercle professionnel, et il faut avoir une solide estime de soi et de ses idées pour être prêt à faire front à un groupe entier dans toutes les situations.  
 Être à contre-courant présente certes des inconvénients mais  cela présente aussi des avantages, à commencer par celui de se sentir unique et différent dans un monde où chacun lutte pour se distinguer du reste de la meute. Souvenez-vous, l’être humain aime le confort... Alors, lorsque vous êtes à contre-courant de votre équipe, il y a de fortes chances que vous soyez sur la bonne voie pour trouver une solution inédite. En refusant de fuir une situation d’inconfort provoqué uniquement par la pensée à contre-courant et en persévérant dans la pensée créative, il est possible de créer une nouvelle zone de confort où personne n’avait encore mis les pieds. Rendez-vous en terre inconnue !
 
 ## Être créatif, c’est répondre à des questions par d’autres questions
 
-> Je ne cherche pas à connaître les réponses, je cherche à comprendre les questions.
-> *Confucius*
+<blockquote class="speaker1">
+Je ne cherche pas à connaître les réponses, je cherche à comprendre les questions.  
+*— Confucius*
+</blockquote>
 
 Nous l’avons vu plus avant, répondre de manière créative à un problème demande de collecter de façon organisée des données (mots, idées, valeurs, sensations, etc.) liées à la situation. Cela conduit donc, consciemment ou inconsciemment à répondre à des questions par d’autres questions, et ainsi de suite.
 
