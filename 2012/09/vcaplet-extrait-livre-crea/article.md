@@ -36,7 +36,8 @@ Je ne cherche pas à connaître les réponses, je cherche à comprendre les ques
 
 Nous l’avons vu plus avant, répondre de manière créative à un problème demande de collecter de façon organisée des données (mots, idées, valeurs, sensations, etc.) liées à la situation. Cela conduit donc, consciemment ou inconsciemment à répondre à des questions par d’autres questions, et ainsi de suite.
 
-S’interroger sur un problème permet deux choses fondamentales : 
+S’interroger sur un problème permet deux choses fondamentales :
+
 - d’une part, l'amélioration de la compréhension d’un problème ; en effet, les différentes réponses ou indices trouvés lors de ce processus permettent de cerner les multiples paramètres visibles comme invisibles qui composent le problème.
 - d’autre part, la possibilité de changer d’angle sur l’approche d’un problème ; on se retrouve donc ici avec une perception en trois dimensions alors que bien souvent un brief ou une demande quelconque n’est lu que de façon linéaire.
 
