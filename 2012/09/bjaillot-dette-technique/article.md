@@ -139,7 +139,7 @@ Autant le dire tout de suite, parfois, la solution est de tout reprendre à zér
 
 <blockquote class="speaker1">
 I do think any complex enough project should at some time & for it's own sake be redone from scratch  
-*– Nicolas Perriault [Voir le tweet](https://twitter.com/n1k0/status/237975635392360448)*
+*– Nicolas Perriault* ([voir le tweet](https://twitter.com/n1k0/status/237975635392360448))
 </blockquote>
 
 Mais avant d’en arriver là (car ce n’est pas toujours nécessaire, ni envisageable), il faut adopter [des procédures](http://bitsquid.blogspot.fr/2012/08/cleaning-bad-code.html) qui permettent simultanément de corriger les bugs, de préparer de nouvelles fonctionnalités et de réduire la dette en nettoyant le code. 
