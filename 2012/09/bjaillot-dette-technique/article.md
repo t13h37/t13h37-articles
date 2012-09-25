@@ -29,7 +29,7 @@ Résulte de tous les choix techniques n’appartenant pas aux deux premiers type
 
 # Exemples anecdotiques
 
-## Exemple 1 – la cuisine de Mme Michu ?
+## Exemple 1 – la cuisine de Mme Michu
 
 Il m'est arrivé de me retrouver dans une situation où l’illustration de la dette technique était parfaite : une cuisine aménagée, en place depuis quelques années, semblait en parfait état ; un jour, la cuisine s’est écroulée tout d’un coup, brisant tout ce qu’elle contenait et le carrelage qui l’entourait. Après analyse, il est apparu clairement que le poseur avait remarquablement bien travaillé : bonne préparation des murs et des meubles... Mais la jonction entre les deux était assurée par les fameuses vis et chevilles [Molly®](http://en.wikipedia.org/wiki/Molly_%28fastener%29) mal enclenchées. Un contrôle croisé de la pose et/ou une mini-formation sur l'utilisation de telles fixations aurait évité ce désastre.
 
@@ -137,8 +137,10 @@ De nombreuses bonnes pratiques sont à recommander et elles vont toutes dans le 
 
 Autant le dire tout de suite, parfois, la solution est de tout reprendre à zéro : 
 
-> I do think any complex enough project should at some time & for it's own sake be redone from scratch 
-> – Nicolas Perriault (https://twitter.com/n1k0/status/237975635392360448)
+<blockquote class="speaker1">
+I do think any complex enough project should at some time & for it's own sake be redone from scratch 
+*– Nicolas Perriault [Tweet]https://twitter.com/n1k0/status/237975635392360448)*
+</blockquote>
 
 Mais avant d’en arriver là (car ce n’est pas toujours nécessaire, ni envisageable), il faut adopter [des procédures](http://bitsquid.blogspot.fr/2012/08/cleaning-bad-code.html) qui permettent simultanément de corriger les bugs, de préparer de nouvelles fonctionnalités et de réduire la dette en nettoyant le code. 
 
