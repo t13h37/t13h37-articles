@@ -63,7 +63,7 @@ Quels sont les remèdes ? Attention, il n’y a, ici, rien de magique. Les premi
 
 Le premier élément, le plus vital, est la **prise de conscience** que tout ce qui est fait a des conséquences, et qu’une fois en production les retours en arrière sont très difficiles, les deux seules possibilités étant de maintenir ou de réécrire. La prise de conscience et le partage de celle-ci dans des réunions quotidiennes permettent souvent d’améliorer la vision d’ensemble des participants, et donc d’arriver à des choix techniques plus adaptés.
 
-Les méthodes agiles essayent de prendre en compte cette problématique autour de quatre valeurs fondamentales mettant en avant les individus et les interactions pour répondre de la meilleure manière possible aux besoins du client et du projet dans une logique itérative. Traiter de ce sujet nécessiterait un livre à part entière donc je vous propose [ce point de vue de Claude Aubry sur l'agilité comme réponse à la dette technique](http://www.aubryconseil.com/post/Dette-technique,-nique-nique).
+Les méthodes agiles essayent de prendre en compte cette problématique autour de quatre valeurs fondamentales mettant en avant les _individus_ et les _interactions_ pour répondre de la meilleure manière possible aux _besoins du client_ et du projet dans une _logique itérative_. Traiter de ce sujet nécessiterait un livre à part entière donc je vous propose [ce point de vue de Claude Aubry sur l'agilité comme réponse à la dette technique](http://www.aubryconseil.com/post/Dette-technique,-nique-nique).
 
 ### La documentation
 
@@ -94,7 +94,7 @@ Mais voici quelques pistes d'aide à la prise de décision :
 Et enfin, tout au long du projet, il y a un certain nombre de bonnes pratiques à suivre pour éviter de crouler sous les intérêts : 
 
 - _Release early, release often_ : Itérer, tester, publier, itérer, tester, publier, itérer, tester, publier. Pour cela, utiliser les méthodes agiles, comme nous avons pu le voir dans la section sur la prise de conscience.
-- Impliquer un technicien dans toutes les phases du projet car il sera à même de prévenir et d'anticiper un certain nombre de risques en amont du projet, tout en augmentant sa compréhension du projet et des réels besoins fonctionnels. On constate aussi régulièrement des choix plus appropriés car la vision d’ensemble permet de ne se pas se focaliser sur les problèmes de l’instant présent, mais d’anticiper ceux à venir plus tard.
+- Impliquer un technicien dans toutes les phases du projet car il sera à même de prévenir et d'anticiper un certain nombre de risques en amont du projet, tout en augmentant sa compréhension du projet et des réels besoins fonctionnels. On constate aussi régulièrement des choix plus appropriés car la vision d’ensemble permet de ne pas se focaliser sur les problèmes de l’instant présent, mais d’anticiper ceux à venir plus tard.
 - Utiliser un gestionnaire de version et mettre en place un processus de _commits_ et de _merge_, qui permettent de séparer intelligemment les développements (on ne doit pas être empêché de corriger un bug quand on est en cours de développement d’une nouvelle fonctionnalité). Cette séparation des branches permet également de mettre en place des revues de code, avant tout _merge_, et donc d’augmenter sa qualité et la compréhension globale de celui qui valide le code. Il existe de nombreux outils, tels que git, mercurial, bazaar ; il y a aussi subversion mais la gestion des branches y est moins aisée.
 - Mettre en place des tests, de plusieurs natures : unitaire, d'intégration, fonctionnels, en automatisant leurs exécutions afin qu'ils soient lancés à chaque changement de code à fusionner, notamment à travers des outils d'intégration continue. Comme la documentation, les tests peuvent se révéler comme une dette à part entière s'ils ne sont pas pris en compte avec rigueur.
 - Automatiser les processus dans une optique d’industrialisation permet, avec une plus grande confiance, d’effectuer des opérations sensibles comme les déploiements en pré-production et production. L’utilisation d’outils de déploiement permet également de prévoir des retours en arrière sur une simple commande. 
@@ -109,7 +109,7 @@ Le but étant de construire un projet, évaluer les briques fonctionnelles, déf
 ### Intégration côté client
 
 Le code CSS est considéré – à raison – comme beaucoup plus difficile à appréhender dans un contexte de dette technique car il n'est pas testable, le principe de cascade (son principal atout) pouvant rapidement mener à des surcharges atroces quand le code est mal pensé. 
-La question de sa professionnalisation a longtemps fait débat et, pour avoir échangé avec des intégrateurs de tous niveaux, la différence est monumentale. Je vais me répéter, mais ce qui fait la différence, c'est de comprendre le site dans sa globalité, de se tenir à jour de toutes les techniques, de mettre en place [des règles globales](http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/), puis d'établir les [spécialisation par composants](http://www.stubbornella.org/content/2010/06/21/css-granularity-architecture/). 
+La question de sa professionnalisation a longtemps fait débat et, pour avoir échangé avec des intégrateurs de tous niveaux, la différence est monumentale. Je vais me répéter, mais ce qui fait la différence, c'est de comprendre le site dans sa globalité, de se tenir à jour de toutes les techniques, de mettre en place [des règles globales](http://www.stubbornella.org/content/2011/04/28/our-best-practices-are-killing-us/), puis d'établir les [spécialisations par composants](http://www.stubbornella.org/content/2010/06/21/css-granularity-architecture/). 
 
 Des outils comme des pré-processeurs aident beaucoup dans la lisibilité, la maintenance et l'organisation du code, mais ils ont leurs propres inconvénients : se baser sur un compilateur rend votre code dépendant de celui-ci, ce qui est un ajout supplémentaire à votre dette technique.
 
@@ -123,7 +123,7 @@ Les [checklists](http://checklists.opquast.com/) d'[Opquast](https://www.opquast
 
 ### Code serveur
 
-Le code serveur pose des problèmes de sécurité et de performance, en plus de devoir s'intégrer avec des gestionnaires de base de données, des outils de cache, etc. Le choix du framework / CMS / composants compte beaucoup, et surtout la valeur de son écosystème (extensions, intégration avec les éditeur de code, documentation).
+Le code serveur pose des problèmes de sécurité et de performance, en plus de devoir s'intégrer avec des gestionnaires de base de données, des outils de cache, etc. Le choix du framework / CMS / composants compte beaucoup, et surtout la valeur de son écosystème (extensions, intégration avec les éditeurs de code, documentation).
 
 Au-delà du code et du choix des outils, l'aspect intégration continue reliée aux tests me paraît primordial ; je vous propose donc ces ressources sur [le principe de l'intégration continue](http://www.geek-directeur-technique.com/2009/03/18/tests-unitaires-et-integration-continue/) et une [intégration élégante d'excellents outils](http://tech.m6web.fr/integration-continue-avec-jenkins-et-atoum).
 
