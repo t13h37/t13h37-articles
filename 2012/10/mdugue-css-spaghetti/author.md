@@ -1,0 +1,2 @@
+Spécimen curieux, mélange d'univers multiples, Matthias Dugué travaille aujourd'hui comme consultant développeur chez Clever Age. Après s'être usé les doigts sur les claviers pendant plusieurs années à contourner les bugs d'IE6, PHP, JavaScript et consorts, il tente de promouvoir un Web de qualité qu'il respecte en admire, en faisant profiter ceux qui le souhaitent de ses expériences passées (et à venir).
+
