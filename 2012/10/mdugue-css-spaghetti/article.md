@@ -58,3 +58,4 @@ C'est également un très bon moyen d'appliquer une philosophie DRY (_Don't Repe
 
 Car dans le cas d'une équipe d'intégrateurs, on peut pousser le fonctionnement de la méthode suffisamment loin pour que les différents collaborateurs puissent dédier leur efforts à un composant à un instant donné sans avoir nécessairement besoin de connaître le fonctionnement des autres composants de la page. Une vue d'ensemble peut suffire.
 
+
