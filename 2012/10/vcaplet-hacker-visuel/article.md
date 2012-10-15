@@ -90,10 +90,3 @@ Et puisque je vous tiens encore un petit moment, je vais en profiter pour préci
 Inutile de dire à quel point cette approche est peu courante (tout du moins en France). En tant que _hacker_ du visuel, j’estime qu’il est de mon devoir (et de mon ressort) de créer de nouvelles méthodes de travail si je ne suis pas satisfaite de celles actuellement pratiquées. La pensée à contre-courant n’émane pas d’une volonté contestataire mais d’un instinct visant à l’amélioration des conditions de travail et de vie de nous, professionnels au métier-passion. Je n’ai pas construit ma méthode en un jour et je sais qu’elle évoluera encore au fil de mes expériences, mais j’invite tous les professionnels qui veulent tirer leur métier vers le haut à non seulement repenser leur approche, mais aussi à en expérimenter de nouvelles. 
 
 Développer sa propre démarche, c’est décider _hic et nunc_ de la professionalisation de son activité. C’est marquer d’une pierre blanche le jour où votre métier-passion ne sera plus considéré comme un métier-loisir. C’est graver une bonne fois pour toutes que ce sont les idées, et non les impératifs technologiques ou les tendances, qui sont à l’origine de ces projets qui finissent non seulement par réussir mais surtout par toucher leur cible, par ces liens invisibles parce que subtils mais pourtant bien réels, ces liens que vous avez progressivement révélés grâce à votre démarche et savamment distillés, non seulement au sein de votre travail mais aussi au sein de celui de vos collaborateurs.
-
-
-Notes :
-- [1] logiciel de mind-mapping : peut être inséré dans une breve ?
-- [2] control-freak : définition (maniaque du contrôle ?)
-- [3] hic et nunc : ici et maintenant
-
