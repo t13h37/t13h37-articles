@@ -134,7 +134,7 @@ Mais non seulement il n'existe pas d'étude sur les trous réseau (en supposant 
 
 ### En résumé
 
-<table><caption>Les connexions moyennes françaises en 2012</caption>
+<table class="artTable"><caption>Les connexions moyennes françaises en 2012</caption>
 <tbody>
 <tr>
 <th></th>
@@ -181,7 +181,7 @@ Vous devez maintenant être cruel et déterminer quelle proportion d'utilisateur
 
 Voici un petit tableau qui devrait vous aider à prendre vos décisions :
 
-<table><caption>Calibrage des tests pour ligne fixe</caption>
+<table class="artTable"><caption>Calibrage des tests pour ligne fixe</caption>
 <tbody>
 <tr>
 <th scope="col">Un débit de <strong>X</strong> Mb/s</th>
