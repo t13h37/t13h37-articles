@@ -26,7 +26,7 @@ Les plus vigilants auront déjà repéré que les lacunes que je souligne ici so
 
 ### Pré-processeurs à la rescousse ?
 
-Ils sont de plus en utilisés au quotidiens par nombre d'intégrateurs. Ils nous offrent ce que nous attendions de CSS depuis plusieurs années. Ils repoussent les limites du langage vers de nouveaux horizons…
+Ils sont de plus en plus utilisés au quotidiens par nombre d'intégrateurs. Ils nous offrent ce que nous attendions de CSS depuis plusieurs années. Ils repoussent les limites du langage vers de nouveaux horizons…
 
 Ils sont **les pré-processeurs CSS** !
 
