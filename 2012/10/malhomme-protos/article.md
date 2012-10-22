@@ -105,7 +105,7 @@ Selon vos préférences, la typologie de projet, le niveau de maîtrise de votre
 
 #### Qui peut le plus peut le moins
 
-Inspirons-nous de la vague « back to basics » : les éléments d’interface en [post-its]() ou, mieux ?, en [magnets](http://www.guimagnets.com/), les grilles [avec *breakpoints* intégrés](http://sneakpeekit.com) ou [sans](), voire un simple cahier à petit carreaux et un crayon.
+Inspirons-nous de la vague « back to basics » : les éléments d’interface en [post-its](http://uxpin.com/products.html) ou, mieux ?, en [magnets](http://www.guimagnets.com/), les grilles [avec *breakpoints* intégrés](http://sneakpeekit.com) ou [sans](http://www.raincreativelab.com/paperbrowser/), voire un simple cahier à petit carreaux et un crayon.
 
 Ces outils sont idéaux en début de projet pour itérer rapidement sans devoir sortir l’artillerie lourde ou même un ordinateur portable, ainsi que pour impliquer le client qui pourra alors lui-même s’essayer à l’exercice et ainsi mieux en appréhender à la fois la difficulté et l’importance.
 
@@ -115,23 +115,26 @@ Pour des prototypes plus précis, il faut se tourner vers des applications, en l
 Parmi les plus connus et les plus largement disponibles :
 - [Axure](http://www.axure.com), 225€, PC/Mac ;
 - [Balsamiq](http://www.balsamiq.com), 60€ sur PC/Mac/Linux, ou à partir de 9€/mois en <abbr title=Software as a Service lang=en>SaaS</a> ;
-- [MockFlow](http://mockflow.com), gratuit pour PC/Mac sans compte en ligne associé, gratuit en basique ou 61€/an en premium pour la version <abbr title=Software as a Service lang=en>SaaS</a> avec synchro vers le logiciel ;
+- [MockFlow](http://mockflow.com), gratuit pour PC/Mac sans compte en ligne associé, gratuit en basique ou 61€/an en premium pour la version <abbr title="Software as a Service" lang="en">SaaS</a> avec synchro vers le logiciel ;
+- [UXPin](http://uxpin.com), à partir de 5,3€/mois, <abbr title="Software as a Service" lang="en">SaaS</a> ;
 - [Pencil](http://pencil.evolus.vn), Open Source et gratuit, PC/Mac/Linux et extension Firefox;
 
 #### Soyez créatifs
 
-Une simple solution bureautique comme Powerpoint ou Impress peut aussi très bien faire l’affaire si c’est ce qui vous est le plus facile d’accès.
+Une simple solution bureautique comme Powerpoint ou Impress peut aussi très bien faire l’affaire si c’est ce qui vous est le plus facile d’accès, surtout si vous l’agrémentez d’éléments d’interface en png comme le [kit Dragnet](http://www.dragnet.se/webbdesign/wireframes.png).
 
 Et quel que soit l’application ou le service que vous choisissez, vous pouvez décider d’y créer vos prototypes statiques et de gérer leur interactivité et les retours clients avec des applications dédiées, comme par exemple :
-- [invision](http://www.invisionapp.com), gratuit pour un projet, à partir de 7,6€ au delà, <abbr title=Software as a Service lang=en>SaaS</a> ;
-- [cageapp](https://cageapp.com), à partir de 11€, <abbr title=Software as a Service lang=en>SaaS</a>.
+- [invision](http://www.invisionapp.com), gratuit pour un projet, à partir de 7,6€ au delà, <abbr title="Software as a Service" lang="en">SaaS</a> ;
+- [cageapp](https://cageapp.com), à partir de 11€, <abbr title="Software as a Service" lang="en">SaaS</a>.
 
 ## Exemples concrets
 
 Il est difficile de vous montrer beaucoup d’exemples concrets tirés de mes archives, beaucoup de clients y étant réfractaires, et pour ceux qui ne le seraient pas je n’ai pas grand chose de récent.
 Bref, voici donc un aperçu d’un prototype (sans interactivité) pour un site très simple, réalisé avec [SoftSword Layout](http://www.swordsoft.idv.tw) (environ 5€ pour PC/Mac), et dont vous pouvez télécharger la version complète sous forme de PDF ici.
 
-Sinon, les différents sites d’applications de prototypage et de téléchargement/impression de grilles sont assez peu avares d’exemples, et une recherche google devrait elle aussi amener son lot d’images :)
+![Titre/alt de l’image](image.jpg)
+
+Sinon, les différents sites d’applications de prototypage et de téléchargement/impression de grilles sont assez peu avares d’exemples, et une recherche google devrait elle aussi amener son lot d’articles-compilation et d’images :)
 
 Enfin, si vous voulez contribuer en partageant vos propres documents, n’hésitez pas !
 
