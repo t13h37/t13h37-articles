@@ -2,8 +2,8 @@
 
 ## C’est quoi un prototype ?
 
-La semaine dernière, les 18-19-20 octobre, avait lieu l’édition 2012 de Paris Web, pendant laquelle j’ai eu la chance de pouvoir co-présenter un atelier sur le processus créatif avec une de nos auteurs, Virginie Caplet.
-J’y parlais principalement de *prototypage*, cette étape de la conception d’un projet web qui vient après le brief créa et le brainstorming, et qui consiste à réaliser un « exemplaire incomplet et non-définitif de ce que pourra être le produit ou l'objet final. », généralement un site ou une application Web (source [Wikipedia](http://fr.wikipedia.org/wiki/Prototypage)).
+La semaine dernière, les 18-19-20 octobre, avait lieu l’édition 2012 de Paris Web, pendant laquelle j’ai eu l’opportunité de pouvoir co-présenter un atelier sur le processus créatif avec une de nos auteurs, Virginie Caplet.
+J’y parlais principalement de *prototypage*, cette étape de la conception d’un projet web qui vient après le brief créatif et le brainstorming, et qui consiste à réaliser un « exemplaire incomplet et non-définitif de ce que pourra être le produit ou l'objet final. », généralement un site ou une application Web (source [Wikipedia](http://fr.wikipedia.org/wiki/Prototypage)).
 
 En gros, il s’agit de représenter aussi simplement que possible la structure des pages ou écrans principaux de votre site ou application web, sous la forme la plus sobre visuellement possible (généralement en « fil de fer ») et avec un minimum d’interaction (liens entre pages par exemple, mais j’y reviendrai plus loin).
 
@@ -111,19 +111,24 @@ Ces outils sont idéaux en début de projet pour itérer rapidement sans devoir 
 
 #### 
 
-Pour des prototypes plus précis, il faut ensuite se tourner vers des logiciels, en ligne ou non, les premiers ayant l’avantage de permettre la collaboration à plusieurs.
+Pour des prototypes plus précis, il faut se tourner vers des applications, en ligne ou non, les premiers ayant l’avantage de permettre la collaboration à plusieurs.
 Parmi les plus connus et les plus largement disponibles :
 - [Axure](http://www.axure.com), 225€, PC/Mac ;
 - [Balsamiq](http://www.balsamiq.com), 60€ sur PC/Mac/Linux, ou à partir de 9€/mois en <abbr title=Software as a Service lang=en>SaaS</a> ;
+- [MockFlow](http://mockflow.com), gratuit pour PC/Mac sans compte en ligne associé, gratuit en basique ou 61€/an en premium pour la version <abbr title=Software as a Service lang=en>SaaS</a> avec synchro vers le logiciel ;
+- [Pencil](http://pencil.evolus.vn), Open Source et gratuit, PC/Mac/Linux et extension Firefox.
 
-#### 
+#### Soyez créatifs
 
-Il est aussi possible d’utiliser le logiciel de votre choix pour créer vos prototypes statiques, et de gérer leur interactivité et les retours clients avec des applications dédiées, comme par exemple :
+Il est aussi possible d’utiliser le logiciel ou service de votre choix pour créer vos prototypes statiques, et de gérer leur interactivité et les retours clients avec des applications dédiées, comme par exemple :
 - [invision](http://www.invisionapp.com), gratuit pour un projet, à partir de 7,6€ au delà, <abbr title=Software as a Service lang=en>SaaS</a> ;
-- [cageapp]()
-
-
+- [cageapp](https://cageapp.com), à partir de 11€, <abbr title=Software as a Service lang=en>SaaS</a>.
 
 ## Exemples concrets
 
+
+
 ## Conclusion
+
+Le prototype est à la fois un outil et une étape indispensable et pourtant parfois négligé, qui permet d’avoir une vision à la fois globale et précise d’un projet et d’impliquer les différentes parties dans un processus de conception collaboratif.
+Le travail de prototypeur est lui aussi souvent négligé quand il n’y a pas déjà de personne dédiée en interne, et pourtant beaucoup serait à gagner à systématiser sa présence : pont entre différents domaines, un pied « dans chaque pré », il a un rôle de médiateur et de facilitateur, tout en étant garant de la cohérence d’un projet.
