@@ -1,4 +1,4 @@
-# S’il-te-plait, dessine-moi un prototype
+# S’il-te-plaît, dessine-moi un prototype
 
 ## C’est quoi un prototype ?
 
