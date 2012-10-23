@@ -117,8 +117,8 @@ Pour des prototypes plus précis, il faut se tourner vers des applications, en l
 Parmi les plus connues et les plus largement disponibles :
 
 - [Axure](http://www.axure.com), 225 €, PC/Mac ;
-- [Balsamiq](http://www.balsamiq.com), 60 € sur PC/Mac/Linux, ou à partir de 9 € par mois en <abbr title="Software as a Service" lang="en">SaaS</a> ;
-- [MockFlow](http://mockflow.com), gratuit pour PC/Mac sans compte en ligne associé, gratuit en basique ou 61 € par an en premium pour la version <abbr>SaaS</a> avec synchro vers le logiciel ;
+- [Balsamiq](http://www.balsamiq.com), 60 € sur PC/Mac/Linux, ou à partir de 9 € par mois en <abbr title="Software as a Service" lang="en">SaaS</abbr> ;
+- [MockFlow](http://mockflow.com), gratuit pour PC/Mac sans compte en ligne associé, gratuit en basique ou 61 € par an en premium pour la version <abbr>SaaS</abbr> avec synchro vers le logiciel ;
 - [UXPin](http://uxpin.com), à partir de 5,3 € par mois, <abbr>SaaS</abbr> ;
 - [Pencil](http://pencil.evolus.vn), Open Source et gratuit, PC/Mac/Linux et extension Firefox;
 
@@ -128,8 +128,8 @@ Une simple solution bureautique comme Powerpoint ou Impress peut aussi très bie
 
 Et quelle que soit l’application (ou le service) que vous choisissez, vous pouvez décider d’y créer vos prototypes statiques et de gérer leur interactivité et les retours clients avec des applications dédiées, comme par exemple :
 
-- [invision](http://www.invisionapp.com), gratuit pour un projet, à partir de 7,6 € au delà, <abbr>SaaS</a> ;
-- [cageapp](https://cageapp.com), à partir de 11 €, <abbr>SaaS</a>.
+- [invision](http://www.invisionapp.com), gratuit pour un projet, à partir de 7,6 € au delà, <abbr>SaaS</abbr> ;
+- [cageapp](https://cageapp.com), à partir de 11 €, <abbr>SaaS</abbr>.
 
 ## Conclusion
 
