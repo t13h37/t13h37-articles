@@ -1,4 +1,4 @@
-# S’il-te-plait, dessine-moi un prototype
+# S’il-te-plaît, dessine-moi un prototype
 
 ## C’est quoi un prototype ?
 
@@ -59,17 +59,17 @@ L’incapacité à faire preuve de l’abstraction nécessaire, parfois ressenti
 ## À quoi ça ne doit pas servir ?
 
 Il ne faut cependant pas se tromper, le prototype n’est pas un outil de travail sans faille.
-Ainsi, le plus grand danger est de le pousser « trop loin » et d’en faire un "presque-site" ou une "presque-application".
+Ainsi, le plus grand danger est de le pousser « trop loin » et d’en faire un "presque-site" ou une "presque-application".  
 Il est donc important d’en éliminer autant que possible les notions de couleur, de graphisme, de police… et de limiter les interactions au minimum : liens entre les pages, éventuellement quelques accordéons. Mais il faudrait éviter les carrousels, popups, etc.
 
 ### « J’aimais bien le Comic Sans » (*true story*)
 
-Une première raison est qu’en ayant un prototype trop abouti on créée des attentes, et donc on augmente les chances // plutôt " les risques " ? // de déceptions.
+Une première raison est qu’en ayant un prototype trop abouti on créée des attentes, et donc on augmente les risques de déceptions.  
 Il faut aussi éviter de trop contraindre le travail du graphiste qui n’a même pas encore eu vraiment l’occasion de s’impliquer concrètement dans la conception.
 
 ### Un coup de peinture et c’est bon, non ?
 
-Il est aussi possible qu’un prototype trop avancé donne l’impression que le reste du travail à faire pour aboutir au produit fini est trivial.
+Il est aussi possible qu’un prototype trop avancé donne l’impression que le reste du travail à faire pour aboutir au produit fini est trivial.  
 Non seulement vous allez créer de la frustration chez votre client, mais vous risquez aussi de dévaloriser l’importance des étapes suivantes et le travail nécessaire pour y arriver.
 
 ### Trois heures après, le canard… 
@@ -117,9 +117,9 @@ Pour des prototypes plus précis, il faut se tourner vers des applications, en l
 Parmi les plus connues et les plus largement disponibles :
 
 - [Axure](http://www.axure.com), 225 €, PC/Mac ;
-- [Balsamiq](http://www.balsamiq.com), 60 € sur PC/Mac/Linux, ou à partir de 9 € par mois en <abbr title="Software as a Service" lang="en">SaaS</a> ;
-- [MockFlow](http://mockflow.com), gratuit pour PC/Mac sans compte en ligne associé, gratuit en basique ou 61 € par an en premium pour la version <abbr>SaaS</a> avec synchro vers le logiciel ;
-- [UXPin](http://uxpin.com), à partir de 5,3 € par mois, <abbr>SaaS</a> ;
+- [Balsamiq](http://www.balsamiq.com), 60 € sur PC/Mac/Linux, ou à partir de 9 € par mois en <abbr title="Software as a Service" lang="en">SaaS</abbr> ;
+- [MockFlow](http://mockflow.com), gratuit pour PC/Mac sans compte en ligne associé, gratuit en basique ou 61 € par an en premium pour la version <abbr>SaaS</abbr> avec synchro vers le logiciel ;
+- [UXPin](http://uxpin.com), à partir de 5,3 € par mois, <abbr>SaaS</abbr> ;
 - [Pencil](http://pencil.evolus.vn), Open Source et gratuit, PC/Mac/Linux et extension Firefox;
 
 #### Soyez créatifs
@@ -128,8 +128,8 @@ Une simple solution bureautique comme Powerpoint ou Impress peut aussi très bie
 
 Et quelle que soit l’application (ou le service) que vous choisissez, vous pouvez décider d’y créer vos prototypes statiques et de gérer leur interactivité et les retours clients avec des applications dédiées, comme par exemple :
 
-- [invision](http://www.invisionapp.com), gratuit pour un projet, à partir de 7,6 € au delà, <abbr>SaaS</a> ;
-- [cageapp](https://cageapp.com), à partir de 11 €, <abbr>SaaS</a>.
+- [invision](http://www.invisionapp.com), gratuit pour un projet, à partir de 7,6 € au delà, <abbr>SaaS</abbr> ;
+- [cageapp](https://cageapp.com), à partir de 11 €, <abbr>SaaS</abbr>.
 
 ## Conclusion
 
