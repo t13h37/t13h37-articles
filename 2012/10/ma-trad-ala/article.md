@@ -85,14 +85,85 @@ div {
 
 Vous n’êtes pas obligé de vous limiter à l’utiliser sur les largeurs uniquement ; vous pouvez aussi l’utiliser partout où des unités de longueur sont permises — et si vous souhaitez vraiment xxx vous pouvez utiliser `calc()` dans `calc()`.
 
-IE9+ supporte cette fonction sans préfixe (!), Firefox utilise le préfixe -moz- (a priori jusqu’à la version 16 ou 17), et Chrome et Safari l’implémentent avec le préfixe -webkit-. Il n’est apparemment toujours pas dans la version mobile de Webkit par contre.
+IE9+ supporte cette fonction sans préfixe (!), Firefox utilise le préfixe `-moz-` (a priori jusqu’à la version 16 ou 17), et Chrome et Safari l’implémentent avec le préfixe `-webkit-`. Il n’est apparemment toujours pas dans la version mobile de Webkit par contre.
 
 ## Charger un sous-ensemble de caractères
 
 La réactivité a toujours été important, mais la grande étendue de mobiles sur le marché — chacun apportant son lot de variabilité et d’incertitude dans les vitesses de connexion — appuie le trait. Une façon d’accélérer le chargement des pages est de limiter la taille des fichiers externes, ce qui rends une propriété additionnelle de `@font-face` très appréciable.
 
+La propriété en question est `unicode-range` qui prend comme valeur une gamme de références de caractères Unicode. Lors de l’appel d’éléments externes, seuls les caractères spécifiés seront chargés depuis le fichier de police au lieu de l’ensemble complet. Voici le code qui démontre comment ne charger que 3 caractères depuis le fichier foo.ttf :
 
+```
+@font-face {
+  font-family: foo;
+  src: url('foo.ttf');
+  unicode-range: U+31-33;
+}
+```
 
+Ceci est particulièrement utile si vous utilisez des polices d’icônes et souhaitez seulement montrer un sous-ensemble dans une page donnée. Lors d’un test que j’ai effectué, l’utilisation de `unicode-range` a permis d’économiser .85 secondes sur le  chargement d’un fichier de police, ce qui n’est pas sans conséquences. Bien entendu, ce résultat peut varier.
 
+Cette propriété est actuellement implémentée dans IE9+ et les navigateurs Webkit tels que Chrome et Safari.
 
+## Nouvelles pseudo-classes
 
+Les unités et valeurs sont bien sympathiques, mais c’est les sélecteurs et les pseudo-classes qui m’excitent particulièrement. Trouver une combinaison de sélecteurs astucieuse, même si ça reste caché xxx, me fait sentir comme un artiste. Comme le disait le père de Steve Jobs : vous devriez vous assurer que l’arrière de la barrière est aussi bien peint que l’avant même si personne ne le verra, parce que vous vous le saurez.
+
+La première fois que j’ai utilisé `:nth-of-type()`, j’ai eu une révélation, comme si j’avais abattu le mur de la perception. Ok, j’exagère un peu. Mais certaines nouvelles pseudo-classes méritent qu’on s’extasie.
+
+### La pseudo-classe de négation
+
+Vous ne réaliserez probablement pas à quel point la pseudo-class `:not()` est utile jusqu’à ce que vous l’utilisiez. L’argument passé à `:not()` est un sélecteur simple, pas une combinaison. Quand une liste d’éléments est construite par un sélecteur qui inclue `:not()`, tous les éléments correspondant à l’argument seront exclus de cette liste. Je sais, ça m’a paru compliqué aussi, mais c’est en fait assez simple.
+
+Imaginez ceci : vous avez une liste d’éléments et vous souhaitez appliquer une règle à tous ses éléments impairs (?) mais jamais au dernier élément. Pour l’instant, vous devriez faire quelque chose comme ça :
+
+```
+li { color: #00F; }
+li:nth-child(odd) { color: #F00; }
+li:last-child { color: #00F; }
+```
+
+Grâce à la pseudo-classe de négation, vous pouvez exclure le dernier élément de la liste en utilisant `:last-child` comme argument, réduisant ainsi le nombre de règles nécessaires, simplifiant l’entretien du code :
+
+```
+li { color: #00F; }
+li:nth-child(odd):not(:last-child) { color: #F00; }
+```
+
+Rien de très novateur, et comme je l’ai montré on peut travailler sans, mais ça reste assez utile. J’ai eu l’opportunité d’utiliser cette pseudo-classe dans un projet construit sur un Webkit intégré (???), et elle a démontré son utilité de manière constante. C’est honnêtement l’une de mes pseudo-classes favorites.
+
+Oui, j’ai des pseudo-classes favorites.
+
+C’est la fonctionnalité la plus largement implémentée de cet article : elle est présente dans IE9+ et tous les navigateurs modernes, sans préfixe. Et si vous êtes familier avec jQuery, vous avez probablement l’habitude de l’utiliser : elle y est présente depuis la version 1.0, ainsi que la méthode `not()` similaire.
+
+### La pseudo-class « correspond à » (?)
+
+La pseudo-class `:matches()` accepte comme argument un sélecteur simple, un sélecteur composé, une liste séparée par des virgules, ou une combinaison de ces éléments. Super ! Mais elle fait quoi ?
+
+Elle est surtout utile pour éliminer le surplus dans des sélecteurs multiples. En guise d’exemple concret, imaginez que vous avez des éléments p dans différents containers mais que vous souhaitez n’en sélectionner que certains ; vous écririez peut-être une règle de style ressemblant à ça :
+
+```
+.home header p,
+.home footer p,
+.home aside p {
+  color: #F00;
+}
+```
+
+Avec `:matches()` vous pouvez raccourcir cette règle considérablement en trouvant les éléments communs à ces sélecteurs ; dans notre exemple tous débutent par `.home`et finissent par `p`, nous pouvons donc utiliser `:matches()` pour agréger tous les éléments entre. Déroutant ? Voici à quoi cela ressemblerai :
+
+```
+.home :matches(header,footer,aside) p { color: #F00; }
+```
+
+Cette pseudo-classe fait actuellement partie de CSS4 (Sélecteurs CSS Niveau 4, pour être précis), et dans la même spécification il est mentionné que l’on pourra utiliser la même syntaxe (sélecteurs composés séparés par des virgules) dans les futures versions de `:not()`. Excitant !
+
+Aujourd’hui, `:matches()` est disponible dans Chrome et Safari avec le préfixe `-webkit-` et dans Firefox sous son ancien nom, `:any()`, avec le préfixe `-moz-`.
+
+## Aimez-vous enfin les figurants ?
+
+Le meilleur à propos de toutes les nouvelles fonctionnalités de cet article est qu’elles règlent des problématiques réelles, depuis la simple répétition de sélecteurs jusqu’aux nouveaux défis de construction de sites `responsive` à haute-performance. En fait, je peux tout à fait m’imaginer utiliser toutes ces fonctionnalités de manière récurrente.
+
+Les nouvelles fonctionnalités comme les filtres sont peut-être plus visibles, mais il y a de fortes chances que celles présentées ici vous soient utiles dans toutes vos constructions.
+
+Chacune vous facilitera votre vie professionnelle tout en élargissant le champs des possibles, et il n’y a rien d’ennuyeux à ça.
