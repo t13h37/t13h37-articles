@@ -50,12 +50,12 @@ Enfin, dernier point important, vérifiez toujours que votre bug est reproductib
 
 Une fois que vous avez bien isolé et qualifié votre bug, vous pouvez le signaler à l'éditeur du navigateur concerné. Pour cela, ils ont tous des systèmes permettant de faire un rapport de bug :
 
-* Pour Firefox : <https://bugzilla.mozilla.org/> ;
+* Pour Firefox : [https://bugzilla.mozilla.org/](https://bugzilla.mozilla.org/) ;
 * Pour Chrome : 
-  * <http://code.google.com/p/chromium/issues/entry> (pour les bugs liés à l'interface) ;
-  * <https://bugs.webkit.org/> (pour les bugs liés à l'affichage des pages, valable aussi pour Safari) ;
-* Pour Opera : <https://bugs.opera.com/wizard/> ;
-* Pour Internet Explorer : <http://connect.microsoft.com/IE>.
+  * [http://code.google.com/p/chromium/issues/entry](http://code.google.com/p/chromium/issues/entry) (pour les bugs liés à l'interface) ;
+  * [https://bugs.webkit.org/](https://bugs.webkit.org/) (pour les bugs liés à l'affichage des pages, valable aussi pour Safari) ;
+* Pour Opera : [https://bugs.opera.com/wizard/](https://bugs.opera.com/wizard/) ;
+* Pour Internet Explorer : [http://connect.microsoft.com/IE](http://connect.microsoft.com/IE).
 
 Le seul problème, c'est qu'il s'agit d'outils où le signalement des bugs se fait en anglais. Si vous n'êtes pas à l'aise avec l'anglais, pas de panique, il y a quelques personnes francophones que vous pouvez contacter et qui pourront vous aider : 
 
