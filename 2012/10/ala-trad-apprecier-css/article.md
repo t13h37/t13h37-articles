@@ -165,7 +165,7 @@ Aujourd’hui, `:matches()` est disponible dans Chrome et Safari avec le préfix
 
 ## Aimez-vous enfin les figurants ?
 
-La meilleure chose à propos de toutes les nouvelles fonctionnalités de cet article, c'est qu’elles règlent des problémes réels, depuis la simple répétition de sélecteurs jusqu’aux nouveaux défis de la construction de sites `responsive` à haute-performance. En fait, je peux tout à fait imaginer utiliser toutes ces fonctionnalités de manière parfaitement récurrente.
+La meilleure chose à propos de toutes les nouvelles fonctionnalités de cet article, c'est qu’elles règlent des problémes réels, depuis la simple répétition de sélecteurs jusqu’aux nouveaux défis de la construction de sites *responsive* à haute-performance. En fait, je peux tout à fait imaginer utiliser toutes ces fonctionnalités de manière parfaitement récurrente.
 
 Les nouvelles fonctionnalités comme les filtres sont peut-être plus visibles, mais il est bien plus probable que celles présentées ici vous soient utiles dans tous vos projets.
 
