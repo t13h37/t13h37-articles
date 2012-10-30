@@ -11,22 +11,22 @@ Pour découvrir pourquoi, faisons rapidement le tour de ces parties pas très se
 En tant que développeur intelligent et consciencieux, il est fort probable que vous ayez déjà travaillé avec les dimensions relatives - unités `em` ou pourcentages. Du coup, vous avez certainement déjà été confronté aux problèmes d'héritage qui vous ont forcé à sortir votre calculette.  
 De nos jours, il est relativement commun de définir une taille de police de base pour le document, puis d’utiliser des unités relatives pour régler la taille des polices dans le reste de la page. En CSS, cela donne quelque chose comme ça :
 
-```
+~~~ {lang="css" line="1"}
 html { font-size: 10px; }
 p { font-size: 1.4em; }
-```
+~~~
 
 C’est très bien, et ça ne pose aucun problème... jusqu’à ce que vous vouliez donner une taille différente à un élément enfant. Par exemple, dans un code tel que celui-ci :
 
-```
+~~~ {lang="html" line="1"}
 Le chat s'est assis sur le <span>tapis</span>.
-```
+~~~
 
 Si vous voulez que ce `span` soit d’une taille de police plus petite, par exemple 1.2em, que devez-vous faire ? Sortir votre calculette et diviser 1,2 par 1,4 pour obtenir le résultat suivant :
 
-```
+~~~ {lang="css" line="1"}
 p span { font-size: 0.85714em; }
-```
+~~~
 
 Bien sûr, le problème ne se limite pas à l’utilisation des `em`.  
 Lorsque vous construisez un site fluide en utilisant des pourcentages, vous savez que le pourcentage est relatif à son conteneur. Donc si vous souhaitez fixer la largeur d’un élément à 40 % de celle de son parent (qui est de 75 %), alors la largeur de l’élément enfant doit être réglée à `53.33333%.
@@ -37,10 +37,10 @@ Pas top.
 
 Pour combattre ce problème de dimensionnement des polices, nous avons dorénavant accès à l’unité `rem` (*root em*). Il s’agit toujours d’une unité relative, mais qui dépend d'une valeur de base fixe : la taille de la police de l’élément racine du document (l’élément `html`). En supposant que la taille de la police de l’élément racine soit de 10px comme dans l’exemple précédent, les règles CSS nécessaires dans notre cas sont :
 
-```
+~~~ {lang="css" line="1"}
 p { font-size: 1.4rem; }
 p span { font-size: 1.2rem; }
-```
+~~~
 
 Ces deux règles sont relatives à la taille de police de l'élément racine, ce qui est beaucoup plus élégant et simple à manipuler, surtout si vous avez des valeurs de base qui sont 10px ou 12px. C’est un peu comme si on utilisait à nouveau les valeurs en pixels, mais de manière extensible cette fois.
 
@@ -52,9 +52,9 @@ Si vous trouvez que l’unité `rem` est cool (c’est mon cas), vous allez ador
 
 Les deux unités principales sont `vh` et `vw`, qui sont relatives (respectivement) à la hauteur et à la largeur du *viewport*. Chacune prend comme valeur un nombre qui est équivalent au pourcentage de la longueur spécifiée. Comme je me souviens de mes leçons d’écriture de scénario, je vais plutôt vous montrer un exemple :
 
-```
+~~~ {lang="css" line="1"}
 div { height: 50vh; }
-```
+~~~
 
 Dans cet exemple, la hauteur du `div` serait exactement la moitié de la hauteur du *viewport* ; `1vh` = 1 % de la hauteur du *viewport*, donc il est logique que `50vh` soit l’équivalent de 50 % de la hauteur du *viewport*.
 
@@ -69,21 +69,21 @@ Il existe aussi une unité `vmin`, équivalent à la valeur minimale de `vh` ou 
 Quand vous travaillez avec des mises en pages fluides ou *responsive*, vous rencontrerez certainement un problème de mélange d’unités - comme une grille aux dimensions en pourcentage avec des marges fixes.  
 Par exemple :
 
-```
+~~~ {lang="css" line="1"}
 div {
   margin: 0 20px;
   width: 33%; 
 }
-```
+~~~
 
 Si votre mise en page utilise uniquement des `padding` et des `border`, vous pouvez utiliser `box-sizing` pour vous aider à contourner ce problème de mélange, mais ça ne vous aidera pas avec les `margin`. Une meilleure approche, plus flexible, consiste à utiliser la fonction de valeur `calc()`, qui vous permet de réaliser des opérations mathématiques comportant différentes unités, comme par exemple :
 
-```
+~~~ {lang="css" line="1"}
 div {
   margin: 0 20px;
   width: calc(33% - 40px);
 }
-```
+~~~
 
 Vous n’êtes pas tenu de l’utiliser seulement sur les largeurs ; vous pouvez l’utiliser partout où des unités de longueur sont permises - et si vous souhaitez vraiment passer de l'autre côté du miroir vous pouvez utiliser `calc()` dans `calc()`.
 
@@ -95,13 +95,13 @@ La réactivité a toujours été un paramètre important, mais le grand nombre d
 
 La propriété en question est `unicode-range` qui prend comme valeur un ensemble de références de caractères Unicode. Lors de l’appel d’éléments externes, seuls les caractères spécifiés sont chargés depuis le fichier de police au lieu de l’ensemble complet. Voici le code qui explique comment ne charger que trois caractères depuis le fichier foo.ttf :
 
-```
+~~~ {lang="css" line="1"}
 @font-face {
   font-family: foo;
   src: url('foo.ttf');
   unicode-range: U+31-33;
 }
-```
+~~~
 
 Ceci est particulièrement utile si vous utilisez [des polices d’icônes](http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-ever-thought-about-using-font-face-for-icons/) et souhaitez seulement en montrer un sous-ensemble dans une page donnée. Lors d’un test que j’ai effectué, l’utilisation de `unicode-range` a permis d’économiser 0,85 seconde sur le  chargement d’un fichier de police, ce qui n’est pas sans conséquences. Bien entendu, ce résultat peut varier suivant le contexte.
 
@@ -119,18 +119,18 @@ Vous ne réaliserez probablement pas à quel point la pseudo-classe `:not()` est
 
 Imaginez ceci : vous avez une liste d’éléments et vous souhaitez appliquer une règle à tous ses éléments impairs mais jamais au dernier élément. Pour l’instant, vous devriez faire quelque chose comme ça :
 
-```
+~~~ {lang="css" line="1"}
 li { color: #00F; }
 li:nth-child(odd) { color: #F00; }
 li:last-child { color: #00F; }
-```
+~~~
 
 Grâce à la pseudo-classe de négation, vous pouvez exclure le dernier élément de la liste en utilisant `:last-child` comme argument, ce qui réduira le nombre de règles nécessaires et simplifiera un peu l’entretien du code :
 
-```
+~~~ {lang="css" line="1"}
 li { color: #00F; }
 li:nth-child(odd):not(:last-child) { color: #F00; }
-```
+~~~
 
 Rien de très novateur, et comme je l’ai montré on peut travailler sans, mais ça reste assez utile. J’ai eu l’opportunité d’utiliser cette pseudo-classe dans un projet reposant sur un Webkit embarqué, et elle a démontré son utilité de manière constante. C’est honnêtement l’une de mes pseudo-classes favorites.
 
@@ -145,19 +145,19 @@ Super ! Mais elle fait quoi ?
 
 Elle est surtout utile pour éliminer les redondances dans les sélecteurs multiples. En guise d’exemple concret, imaginez que vous ayez des éléments p dans différents containers mais que vous souhaitiez n’en sélectionner que certains ; vous écrirez peut-être une règle de style ressemblant à ça :
 
-```
+~~~ {lang="css" line="1"}
 .home header p,
 .home footer p,
 .home aside p {
   color: #F00;
 }
-```
+~~~
 
 Avec `:matches()` vous pouvez considérablement raccourcir cette règle en trouvant les éléments communs à ces sélecteurs ; dans notre exemple tous débutent par `.home`et finissent par `p`, nous pouvons donc utiliser `:matches()` pour agréger tous les éléments intermédiaires. Déroutant ? Voici à quoi cela ressemblerait :
 
-```
+~~~ {lang="css" line="1"}
 .home :matches(header,footer,aside) p { color: #F00; }
-```
+~~~
 
 Cette pseudo-classe fait actuellement partie de CSS4 (Sélecteurs CSS Niveau 4, pour être précis), et dans la même spécification il est mentionné que l’on pourra utiliser la même syntaxe (sélecteurs composés séparés par des virgules) dans les futures versions de `:not()`. Passionnant !
 
@@ -173,7 +173,7 @@ Chacune d'entre elles  facilitera votre vie professionnelle tout en élargissant
 
 
 
-## Notes :
+## Notes
 
 [^1]: L'article original mentionne l'appareil (*device*) mais c'est une erreur : ces tailles ne sont pas relatives au *viewport* de l'appareil mais au *viewport* du navigateur.
 [^2]: NDT: C'est le cas au moment de cette traduction.
