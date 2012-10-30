@@ -29,7 +29,7 @@ p span { font-size: 0.85714em; }
 ~~~
 
 Bien sûr, le problème ne se limite pas à l’utilisation des `em`.  
-Lorsque vous construisez un site fluide en utilisant des pourcentages, vous savez que le pourcentage est relatif à son conteneur. Donc si vous souhaitez fixer la largeur d’un élément à 40 % de celle de son parent (qui est de 75 %), alors la largeur de l’élément enfant doit être réglée à `53.33333%.
+Lorsque vous construisez un site fluide en utilisant des pourcentages, vous savez que le pourcentage est relatif à son conteneur. Donc si vous souhaitez fixer la largeur d’un élément à 40 % de celle de son parent (qui est de 75 %), alors la largeur de l’élément enfant doit être réglée à `53.33333%`.
 
 Pas top.
 
