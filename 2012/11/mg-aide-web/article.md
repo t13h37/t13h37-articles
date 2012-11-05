@@ -77,4 +77,5 @@ Et, lorsque nous avons appris quelque chose, partageons-le à notre tour. Docume
 
 Ainsi, quel que soit le problème technique auquel on se retrouve confronté, l’essentiel est de ne pas rester paralysé. Il est nécessaire d’activer plusieurs canaux d’information pour s’informer et trouver une solution. Nos aïeux avaient à leur disposition des bibliothèques pour puiser leur savoir ; nous, en plus des livres, nous avons le web à notre portée, cet océan infini de connaissances, dans lequel les bouteilles à la mer arrivent toujours à bon port, et où nous pouvons à tout instant poser nos questions avec la quasi-certitude qu’une bonne âme nous répondra.
 
-Dans l’adversité, cette citation de Lao Tseu m’aide toujours à prendre du recul et à garder le sourire : « Si tes résultats ne sont pas à la hauteur de tes espérances, dis-toi que le Grand Chêne aussi, un jour, a été un gland. » CQFD.
+Dans l’adversité, cette citation de Lao Tseu m’aide toujours à prendre du recul et à garder le sourire : « Si tes résultats ne sont pas à la hauteur de tes espérances, dis-toi que le Grand Chêne aussi, un jour, a été un gland. »  
+CQFD.
