@@ -11,7 +11,7 @@ Une fois les différentes données à marquer identifiées, il suffit juste de s
 ##Créer un objet sémantique
 Si vous regardez le code source de la page, vous remarquerez que l'ensemble de l'article est contenu dans la balise article portant l'identifiant `postSingle`. Elle est donc tout indiquée pour accueillir l'attribut booléen `itemscope`. Ce dernier n'accepte aucune valeur et sert juste à créer un nouvel objet sémantique. Pour cela, il suffit simplement de l'ajouter à notre balise sans autre forme de procès :
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="1"}
 <article id="postSingle" itemscope>
 …
 </article>
@@ -22,7 +22,7 @@ Une fois que notre objet est créé, il faut maintenant l'identifier grâce à l
 ##Identifier l'objet
 Pour spécifier qu'il s'agit d'un article, on fait alors référence à l'URL [http://schema.org/Article](http://schema.org/Article). Cette page liste les différentes propriétés pouvant être attachées à ce type d'objet. Elle sert de « mode d'emploi » aux programmes pour qu'ils puissent comprendre et interpréter correctement la nature du contenu.
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="1"}
 <article id="postSingle" itemscope itemtype="http://schema.org/Article">
 …
 </article>
@@ -34,7 +34,7 @@ Dès lors, il ne reste alors plus qu'à marquer les données en ajoutant des pro
 Pour cela on ajoute l'attribut `itemprop` à la balise contenant le texte à identifier. La valeur de l'attribut permet d'indiquer la nature du contenu marqué. Par exemple, `name` permet de définir le nom de l'article, `author` le nom de l'auteur, `description` le résumé et `aggregateRating` la note moyenne qui lui a été donnée.   
 Si aucune balise n'encadre la portion de texte visée, il faut alors ajouter une balise vide de sens, comme `span` par exemple.
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="2,4,8,15"}
 <article id="postSingle" itemscope itemtype="http://schema.org/Article">
   <h1 class="pageTitle" itemprop="name">Débit et latence en France : bien calibrer ses tests de performance</h1>
   <div class="summary">
@@ -59,7 +59,7 @@ Si aucune balise n'encadre la portion de texte visée, il faut alors ajouter une
 
 Pour indiquer le nombre de commentaires, les choses sont légèrement différentes. Il faut en effet utiliser l'attribut `itemprop="interactionCount"` conjointement à l'attribut `content` pour définir précisément la nature de la donnée (on parle du nombre de commentaires et pas du nombre de *retweets* par exemple) :  
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="12"}
 <article id="postSingle" itemscope itemtype="http://schema.org/Article">
   <h1 class="pageTitle" itemprop="name">Débit et latence en France : bien calibrer ses tests de performance</h1>
   <div class="summary">
@@ -90,7 +90,7 @@ Pour qu'ils puissent interpréter correctement la note, il va falloir créer un 
 
 On va procéder exactement de la même façon que précédemment en prenant comme base de référence la balise sur laquelle se trouve l'attribut `itemprop="aggregateRating"` et en y créant un nouvel objet de type évaluation :
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="1"}
 <a href="#" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
   <img alt="4/5" src="...">
 </a>
@@ -99,7 +99,7 @@ On va procéder exactement de la même façon que précédemment en prenant comm
 À partir de là, il ne reste plus qu'à ajouter les attributs `itemprop="ratingValue"` et `itemprop="bestRating"` pour que les programmes puissent distinguer la note donnée à l'article de la note maximale. Malheureusement, au vu du code ci-dessus, il est rigoureusement impossible de les placer autour du contenu visé puisqu'il se trouve à l'intérieur de l'attribut alt.   
 Afin de contourner ce problème, nous allons donc créer deux nouveaux éléments (il faut en effet un élément HTML par attribut à renseigner). Et pour éviter que ces derniers n'interfèrent avec le contenu, on va utiliser la balise `meta` comme support d'informations.
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="3,4"}
 <a href="#" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
   <img alt="4/5" src="...">
   <meta itemprop="ratingValue" />
@@ -109,7 +109,7 @@ Afin de contourner ce problème, nous allons donc créer deux nouveaux élément
 
 Une fois les balises `meta` en place, il ne reste alors plus qu'à indiquer la valeur de deux notes au moyen de l'attribut `content` :
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="3,4"}
 <a href="#" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
   <img alt="4/5" src="...">
   <meta itemprop="ratingValue" content="4" />
@@ -142,7 +142,7 @@ Fort heureusement, c'est possible grâce à l'attribut `itemref`.
 `itemref` permet de créer facilement un lien entre des données qui ne se trouvent pas dans un élément commun. Il suffit de placer l'attribut à la racine de l'objet sémantique (la balise qui accueille l'attribut `itemscope`) en lui donnant comme valeur l'identifiant de l'élément muni de la propriété que l'on souhaite ajouter à l'objet.   
 Si jamais plusieurs propriétés étaient concernées, il suffirait alors de mettre tous les identifiants en valeur d'attribut.
 
-~~~ {lang="html" line="1"}
+~~~ {lang="html" line="1" highlight="1,7"}
 <article id="postSingle" itemscope itemtype="http://schema.org/Article" itemref="photo">
 …
 </article>
