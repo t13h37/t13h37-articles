@@ -1,0 +1,7 @@
+{
+"title" : "Le stockage des mots de passe",
+"author": {"name" : "Mathieu Pillard", "email": "m@virgule.net"},
+"edition" : {"number": "22", "date": "2012-10-09"},
+"tags" : ["méthodologie", "sécurité"],
+"type" : "tutorial"
+}
