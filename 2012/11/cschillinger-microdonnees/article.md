@@ -117,7 +117,7 @@ Une fois les balises `meta` en place, il ne reste alors plus qu'à indiquer la v
 </a>
 ~~~
 
-Et voilà, les programmes sont maintenant en mesure d'interpréter correctement le titre de l'article, le nom de son auteur, sa description, le nombre de commentaires qui on été faits, mais aussi la note moyenne qui lui a été donnée.
+Et voilà, les programmes sont maintenant en mesure d'interpréter correctement le titre de l'article, le nom de son auteur, sa description, le nombre de commentaires qui ont été faits, mais aussi la note moyenne qui lui a été donnée.
 
 Cela dit, il est relativement fréquent que les données relatives à un même objet soient disséminées dans la page, comme c'est le cas de notre page d'exemple : les  informations liées à l'article et celles liées à l'auteur ne se trouvent pas dans le même élément. Il serait pourtant intéressant d'établir une relation entre ces différentes informations.
 
