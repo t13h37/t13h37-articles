@@ -9,7 +9,7 @@ Pour cela, je vous propose de prendre comme cas d'étude cette [page-ci](http://
 Une fois les différentes données à marquer identifiées, il suffit juste de se lancer !
 
 ##Créer un objet sémantique
-Si vous regardez le code source de la page, vous remarquerez que l'ensemble de l'article est contenu dans la balise article portant l'identifiant `postSingle`. Elle est donc tout indiquée pour accueillir l'attribut booléen `itemscope`. Ce dernier n'accepte aucune valeur et sert juste à créer un nouvel objet sémantique. Pour cela, il suffit simplement de l'ajouter à notre balise sans autre forme de procès :
+Si vous regardez le code source de la page, vous remarquerez que l'ensemble de l'article est contenu dans la balise `	article` portant l'identifiant `postSingle`. Elle est donc tout indiquée pour accueillir l'attribut booléen `itemscope`. Ce dernier n'accepte aucune valeur et sert juste à créer un nouvel objet sémantique. Pour cela, il suffit simplement de l'ajouter à notre balise sans autre forme de procès :
 
 ~~~ {lang="html" line="1" highlight="1"}
 <article id="postSingle" itemscope>
@@ -96,7 +96,7 @@ On va procéder exactement de la même façon que précédemment en prenant comm
 </a>
 ~~~
 
-À partir de là, il ne reste plus qu'à ajouter les attributs `itemprop="ratingValue"` et `itemprop="bestRating"` pour que les programmes puissent distinguer la note donnée à l'article de la note maximale. Malheureusement, au vu du code ci-dessus, il est rigoureusement impossible de les placer autour du contenu visé puisqu'il se trouve à l'intérieur de l'attribut alt.   
+À partir de là, il ne reste plus qu'à ajouter les attributs `itemprop="ratingValue"` et `itemprop="bestRating"` pour que les programmes puissent distinguer la note donnée à l'article de la note maximale. Malheureusement, au vu du code ci-dessus, il est rigoureusement impossible de les placer autour du contenu visé puisqu'il se trouve à l'intérieur de l'attribut `alt`.   
 Afin de contourner ce problème, nous allons donc créer deux nouveaux éléments (il faut en effet un élément HTML par attribut à renseigner). Et pour éviter que ces derniers n'interfèrent avec le contenu, on va utiliser la balise `meta` comme support d'informations.
 
 ~~~ {lang="html" line="1" highlight="3,4"}
