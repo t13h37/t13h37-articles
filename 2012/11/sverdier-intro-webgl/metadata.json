@@ -1,0 +1,7 @@
+{
+"title" : "Introduction à WebGL",
+"author": {"name" : "Stéphane Verdier", "email": "stephane.verdier@ymail.com"},
+"edition" : {"number": "27", "date": "2012-11-13"},
+"tags" : ["js", "webgl", "technologies-web"],
+"type" : "tutoriel"
+}
