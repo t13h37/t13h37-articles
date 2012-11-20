@@ -79,7 +79,7 @@ Voici une petite liste de sites et de comptes Twitter qu'il est bon d'avoir sous
 #### Opera
 * [Le blog de l'équipe DevRel d'Opera](http://my.opera.com/ODIN/blog/) ;
 * [@ODevRel](https://twitter.com/ODevRel) ;
-* Karl Dubost : [@kralpro](https://twitter.com/karlpro) ;
+* Karl Dubost : [@karlpro](https://twitter.com/karlpro) ;
 * Andreas Boven : [@andreasbovens](https://twitter.com/andreasbovens).
 
 #### Chrome
