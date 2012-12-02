@@ -45,7 +45,7 @@ Notez que le _salt_ reste présent. Par sécurité, la plupart des implémentati
 
 Il existe trois algorithmes qui répondent aux critères que nous venons de voir :
 
-- [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2PBKDF2) est l'un des plus utilisés. Il a fait l'objet d'une RFC ([RFC 2898](http://tools.ietf.org/html/rfc2898)) et est recommandé aux États-Unis par le _National Institute of Standards and Technology_ (NIST) depuis 2010. Relativement simple à implémenter, il réutilise une fonction cryptographique au choix de l'implémenteur et l'appelle en boucle. 
+- [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) est l'un des plus utilisés. Il a fait l'objet d'une RFC ([RFC 2898](http://tools.ietf.org/html/rfc2898)) et est recommandé aux États-Unis par le _National Institute of Standards and Technology_ (NIST) depuis 2010. Relativement simple à implémenter, il réutilise une fonction cryptographique au choix de l'implémenteur et l'appelle en boucle. 
 - [bcrypt](http://en.wikipedia.org/wiki/Bcrypt) a été inventé spécifiquement pour le stockage de mots de passe. Plus complexe à implémenter, il est aussi un peu plus difficile à craquer, notamment par les _GPU_. Également disponible dans de nombreux langages, c'est l'alternative de choix face à PBKDF2.
 - [scrypt](http://en.wikipedia.org/wiki/Scrypt) est une troisième alternative encore plus vicieuse. Conçue pour consommer beaucoup plus de mémoire que les autres et ainsi gêner davantage un attaquant, elle ne dispose pas encore de beaucoup d'implémentations. Cela dit, la situation pourrait vite évoluer car il est prévu d'en faire [un standard IETF](https://datatracker.ietf.org/doc/draft-josefsson-scrypt-kdf/).
 
