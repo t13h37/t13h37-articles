@@ -117,7 +117,7 @@ Google n’aura plus aucun doute sur la requête à positionner dans ses résult
 D’une manière plus pratique, à l’heure où j’écris cet article, je suis en vingtième position sur cette expression.  
 Le lien ayant pour ancre « référencement naturel » intégré ci-dessus devrait permettre une progression de une ou deux positions dans les SERp's. ;)
 
-Là, vous vous dites, "Le référencement naturel, ce n’est que ça ! Bon je vais donc allez poser du lien (comme on dit en SEO) un peu partout sur le Web avec des ancres « création de site » pour squatter le top 3 de Google.fr sur cette requête"…  
+Là, vous vous dites, "Le référencement naturel, ce n’est que ça ! Bon je vais donc aller poser du lien (comme on dit en SEO) un peu partout sur le Web avec des ancres « création de site » pour squatter le top 3 de Google.fr sur cette requête"…  
 Sauf que (et nous finirons là-dessus) Google prend très fortement en compte la thématique de la page qui renvoie vers votre site.
 
 Si, par exemple, vous décidez de poser un lien « création de site » sur un site qui évoque l’intérêt du dernier régime à la mode, vous pouvez être persuadé que cela n’aura pas beaucoup d’impact sur votre classement.  
@@ -133,7 +133,7 @@ Pour résumer, **tout doit concorder** !
 
 Une page qui parle de « création de site », qui reçoit des liens avec des ancres « création de site », depuis des pages qui parlent de « création de site », de sites Web eux-même populaires aux yeux de Google... ne laisse plus aucun doute sur la requête pour laquelle afficher le site.
 
- ## SEO : Aller plus loin
+## SEO : Aller plus loin
 
 Vous devriez donc avoir compris les bases du référencement naturel. Au final, elles correspondent à :
 
@@ -190,7 +190,7 @@ Cependant, pour ceux qui souhaitent aller plus loin, vous pouvez commencer avec 
 
 ## Conclusion
 
-Le travail de SEO a toujours révulsé de nombreuses personnes à cause de son image trop technique, mouvante et quelquefois de ses affirmations ... invérifiables.  
+Le travail de SEO a toujours révulsé de nombreuses personnes à cause de son image trop technique, mouvante et quelquefois de ses affirmations... invérifiables.  
 Aujourd'hui, le SEO est un levier quasiment incontournable pour la visibilité d'un site sur le Web.
  
 Toutes les personnes ayant un projet Web devraient s’y intéresser et intégrer dès le départ le référencement naturel dans leur projet.
