@@ -1,4 +1,4 @@
-# Internet pourra-t-il sauver le monde ?
+# Persuasive Design : pourquoi et comment ?
 
 Le *Persuasive Design* est la façon dont les technologies de communication et le design peuvent influencer les comportements des utilisateurs durablement.  
 "Durablement" est le qualificatif qui importe, car si les méthodes classiques pour influencer les comportements comme l'autorité, l'information ou la récompense peuvent elles aussi donner des résultats, ceux-ci s'estompent avec le temps. Quand la récompense n'est plus donnée ou que l'autorité est partie, le comportement voulu disparaît : "Quand le chat n'est pas là, les souris dansent".  
@@ -96,7 +96,7 @@ Tout cela devrait donc contribuer à vous faire faire du sport. Il paraît que c
 
 ## Des pistes pour mettre en œuvre le *Persuasive Design*
 
-[B.J. Fogg](www.bjfogg.com), à l'origine de nombreux travaux sur le *Persuasive Design* [^6], propose une suite de comportements à obtenir de l'utilisateur pour favoriser son engagement basé sur l'analyse de cinquante sites. Il organise ces comportements en trois phases : découverte, engagement superficiel et engagement réel.
+[B.J. Fogg](http://www.bjfogg.com), à l'origine de nombreux travaux sur le *Persuasive Design* [^6], propose une suite de comportements à obtenir de l'utilisateur pour favoriser son engagement basé sur l'analyse de cinquante sites. Il organise ces comportements en trois phases : découverte, engagement superficiel et engagement réel.
 
 ![Les 3 étapes pour favoriser l'engagement](5_Persuasive.jpg)
 
@@ -146,14 +146,14 @@ Le débat reste ouvert.
 
 ## Bibliographie
 
-[^1]: Valérie FOINTIAT, Stéphanie CURCIO, Roxane SAINT-BAUZEL, Robin VIVIAN, Christian BASTIEN (Univ. De Lorraine, Metz) (2012), *La pique et le pop-up : augmenter la persuasion du site Web visité par l'injection d'une technique de soumission dans le pop-up*. Conférence Ergol'IHM 2012.]// octobre 2012 : pas (encore ?) en ligne, Non, trop récent, voir la page de publication de l'auteur  // http://www.univ-metz.fr/ufr/sha/2lp-etic/publifoint.html
-[^2]: [Kiesler, C. A. (1971), _The psychology of commitment. Experiments linking behavior to belief_, New York, Academic Press](http://www.amazon.fr/Psychology-Commitment-Experiments-Linking-Behaviour/dp/0124064507/)
-[^3]: [Peterson, A.V., Kealey, K.A., Mann, S.L., Marek, P.M., Sarason, I.G. (2000). *Hutchinson smoking prevention project : Long-term randomized trial in school-based tobacco use prevention – Results on smoking.* Journal of the National Cancer Institute, 92, 24, 1979-1991.](http://jnci.oxfordjournals.org/content/92/24/1979.full.pdf+html)
+[^1]: Valérie FOINTIAT, Stéphanie CURCIO, Roxane SAINT-BAUZEL, Robin VIVIAN, Christian BASTIEN (Univ. De Lorraine, Metz) (2012), *La pique et le pop-up : augmenter la persuasion du site Web visité par l'injection d'une technique de soumission dans le pop-up*. Conférence Ergo l'IHM 2012.
+[^2]: Kiesler, C. A. (1971), [_The psychology of commitment. Experiments linking behavior to belief_](http://www.amazon.fr/Psychology-Commitment-Experiments-Linking-Behaviour/dp/0124064507/), New York, Academic Press
+[^3]: Peterson, A.V., Kealey, K.A., Mann, S.L., Marek, P.M., Sarason, I.G. (2000). [*Hutchinson smoking prevention project : Long-term randomized trial in school-based tobacco use prevention – Results on smoking.*](http://jnci.oxfordjournals.org/content/92/24/1979.full.pdf+html) Journal of the National Cancer Institute, 92, 24, 1979-1991.
 [^4]: Moriarty T. (1975). Crime, commitment, and the responsive bystander: two field experiments. Journal of Personality and Social Psychology. 31, 370-376
-[^5]: [Magnus Bang, Carin Torstensson, Cecilia Katzeff, (2006). *The PowerHouse: a persuasive computer game designed to raise awareness of domestic energy consumption*, Persuasive'06](http://w3.tii.se/files/ThePowerHouseFinal22Names.pdf)
-[^6]: [B.J. Fogg and Dean Eckles, Stanford University. *The Behavior Chain for Online Participation: How Successful Web Services Structure Persuasion.* Persuasive Technology Lab Center for the Study of Language and Information](http://www.bjfogg.com/behavior.pdf )
-[^7]: [Nemery Alexandra, Brangier Eric. *Grille de critères ergonomiques pour l'appréciation de la persuasion technologique*](http://www.univ-metz.fr/ufr/sha/2lp-etic/Criteres_Persuasion_Interactive-2.pdf) et un article présentant [cette grille](http://www.univ-metz.fr/ufr/sha/2lp-etic/ANEBSK_SELF_Toulouse2009_V3x.pdf)
-[^8]: [Joule Vincent, Beauvois Jean-Léon (1998), *La soumission librement consentie*, Paris, PUF](http://www.amazon.fr/soumission-librement-consentie-Robert-Vincent-Joule/dp/2130578829/)
+[^5]: Magnus Bang, Carin Torstensson, Cecilia Katzeff, (2006). [*The PowerHouse: a persuasive computer game designed to raise awareness of domestic energy consumption*](http://w3.tii.se/files/ThePowerHouseFinal22Names.pdf), Persuasive'06
+[^6]: B.J. Fogg and Dean Eckles, Stanford University. [*The Behavior Chain for Online Participation: How Successful Web Services Structure Persuasion.*](http://www.bjfogg.com/behavior.pdf) Persuasive Technology Lab Center for the Study of Language and Information
+[^7]: Nemery Alexandra, Brangier Eric. [*Grille de critères ergonomiques pour l'appréciation de la persuasion technologique*](http://www.univ-metz.fr/ufr/sha/2lp-etic/Criteres_Persuasion_Interactive-2.pdf) et un article présentant [cette grille](http://www.univ-metz.fr/ufr/sha/2lp-etic/ANEBSK_SELF_Toulouse2009_V3x.pdf)
+[^8]: Joule Vincent, Beauvois Jean-Léon (1998), [*La soumission librement consentie*](http://www.amazon.fr/soumission-librement-consentie-Robert-Vincent-Joule/dp/2130578829/), Paris, PUF
 
 Ressource supplémentaire : Votre [kit "*Influence, Persuasion et Persuasive Design*"](http://www.gargarismes-ergonomiques.com/post/kit-persuasive )
 
