@@ -57,7 +57,7 @@ L'importance de ce rôle de navigation sera proportionnel à l'importance de la 
 
 De plus, si le paradigme de navigation des _slippy maps_ est depuis longtemps bien connu par la plupart des utilisateurs, il peut vite devenir lent, voire pénible, surtout si l'information est fortement éclatée dans l'espace (nombreux _drag & drop_ et zooms à effectuer). On gagnera donc à simplifier au maximum la manipulation de la carte :
 
-* __Permettre la recherche par adresse__, via un champ texte. Les principales API cartographiques propriétaires fournissent des moteurs de [géocodage](http://fr.wikipedia.org/wiki/G%C3%A9ocodage "Article de Wikipédia sur le géocodage") performants, prenant en compte les inévitables inexactitudes de saisie. Dans le cas de l'API Google Maps, il est même possible d'activer l'autocomplétion pour une saisie très simplifiée ressemblant à celle du portail Google Maps[^fn:gmaps-autocomplete].
+* __Permettre la recherche par adresse__, via un champ texte. Les principales API cartographiques propriétaires fournissent des moteurs de [géocodage](http://fr.wikipedia.org/wiki/G%C3%A9ocodage) performants, prenant en compte les inévitables inexactitudes de saisie. Dans le cas de l'API Google Maps, il est même possible d'activer l'autocomplétion pour une saisie très simplifiée ressemblant à celle du portail Google Maps[^fn:gmaps-autocomplete].
 
 * __Fournir des raccourcis directs__. Si les données géolocalisées que vous présentez sont limitées dans l'espace à certaines zones bien définies, ou si vous savez que la majorité de vos utilisateurs seront intéressés par certaines régions seulement, n'hésitez pas à afficher en dehors de la carte des liens directs vers ces zones d'intérêts, qui modifieront dynamiquement le _viewport_ de la carte. Ils peuvent prendre la forme de liens textuels, d'une carte miniature avec des zones réactives, d'une liste déroulante, etc.
 
@@ -65,7 +65,7 @@ De plus, si le paradigme de navigation des _slippy maps_ est depuis longtemps bi
 
 Bien sûr, ces pratiques ne sont à utiliser que si réellement pertinentes dans votre contexte. Dans le doute, mieux vaut éviter les risques de la "sur-personnalisation", et présenter la même vue correctement choisie à tous les utilisateurs.
 
-![Raccourcis directs sur le site V-Traffic.com](vtraffic_shortcuts.png "Raccourcis graphiques et textuels sur le site http://v-traffic.com/")
+![Raccourcis directs sur le site V-Traffic.com](vtraffic_shortcuts.png "Raccourcis graphiques et textuels sur <a href="http://v-traffic.com/">V-Traffic.com</a>")
 
 
 ## Sur mobile
@@ -110,5 +110,5 @@ Il était à mon sens plus intéressant de réfléchir aux implications de l'emp
 [^fn:gmaps-autocomplete]: Cette fonction requiert l'activation explicite de l'extension `places` au chargement de l'API Maps.
 [^fn:view-storage]: par exemple en cookies ou en DOM storage.
 [^fn:api-mobile-refactoring]: l'adaptation aux plateformes mobiles était l'une des priorités de la refonte de l'API Google Maps lors du passage à la version 3, en 2009. Du côté des API libres, c'est la principale raison d'être de Leaflet, et de la grande modernisation entreprise dernièrement par OpenLayers.
-[^fn:mobile-maps-uri-scheme]: Schémas d'URLs cartographiques, pour [iOS](http://developer.apple.com/library/ios/#featuredarticles/iPhoneURLScheme_Reference/Articles/MapLinks.html) et [Android](http://developer.android.com/guide/appendix/g-app-intents.html). Apparemment, une fonction semblable mais non documentée (?) existe aussi sous [Windows Phone](http://stackoverflow.com/questions/4598189/url-conventions-for-maps-on-windows-phone-7).
+[^fn:mobile-maps-uri-scheme]: Schémas d'URLs cartographiques, pour [iOS](http://developer.apple.com/library/ios/#featuredarticles/iPhoneURLScheme_Reference/Articles/MapLinks.html) et [Android](http://developer.android.com/guide/appendix/g-app-intents.html). Apparemment, une fonction semblable mais non documentée existe aussi sous [Windows Phone](http://stackoverflow.com/questions/4598189/url-conventions-for-maps-on-windows-phone-7).
 
