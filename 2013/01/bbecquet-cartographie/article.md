@@ -95,7 +95,7 @@ On s'en doute, de par leur mode d'interaction particulier, les cartes interactiv
 1. __La manipulation de la carte__, par exemple en fournissant des contrôles personnalisés (plus grands, avec un meilleur _feedback_ visuel, et facilement activables au clavier) et en activant le déplacement de la carte avec les touches directionnelles.
 2. __La lisibilité du contenu__. Graphique d'une part, en simplifiant la cartographie et en utilisant au mieux les couleurs et l'iconographie. Textuel d'autre part, en fournissant systématiquement à chaque contenu significatif (adresse et description d'un point d'intérêt, itinéraire, etc.) une alternative lisible par les lecteurs d'écrans, non "captive" de la carte, donc extérieure à celle-ci. 
 
-Les ressources sur ce sujet sont assez rares, mais si vous souhaitez aller plus loin, vous pouvez commencer par cette [étude de John Ramon](http://www.johanramon.fr/google-maps-accessibilite).
+Les ressources sur ce sujet sont assez rares, mais si vous souhaitez aller plus loin, vous pouvez commencer par cette [étude de Johan Ramon](http://www.johanramon.fr/google-maps-accessibilite).
 
 
 ## En résumé 
