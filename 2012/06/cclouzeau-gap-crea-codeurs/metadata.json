@@ -1,0 +1,7 @@
+{
+"title" : "Graphiste et Développeur : les aimants opposés qui s’attirent",
+"author": {"name" : "Christophe Clouzeau", "email": "cclouzeau@neoma-interactive.com"},
+"edition" : {"number": "04", "date": "2012-06-05"},
+"tags" : ["métier", "profils"],
+"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+}
