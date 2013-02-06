@@ -12,5 +12,8 @@ Paragraphe *italique* et **gras** et [un lien](http://un.lien.tld) et du `code`.
 1. ordered list item ;
 2. ordered list item.
 
-	<p>Bloc de code</p>
+~~~ {lang="html" line="1"}
+<p>Bloc de code</p>
+~~~
 
+![ALT de l'image](nom-image.xxx "Légende (html accepté)")
