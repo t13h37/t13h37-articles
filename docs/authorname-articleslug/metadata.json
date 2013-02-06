@@ -1,0 +1,7 @@
+{
+"title" : "Titre de l'article",
+"author": {"name" : "Nom Auteur", "email": "email@auteur.tld"},
+"edition" : {"number": "20", "date": "2012-09-25"},
+"tags" : ["métier", "méthodologie", "dette"],
+"type" : "tutorial" // ou "essai" ou "interview" ou "pour-ou-contre"
+}
