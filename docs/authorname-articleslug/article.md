@@ -1,6 +1,7 @@
 # Titre LVL1
 
 Paragraphe *italique* et **gras** et [un lien](http://un.lien.tld) et du `code`.
+Une note de bas de page [^1].
 
 ## Titre LVL2
 
@@ -17,3 +18,6 @@ Paragraphe *italique* et **gras** et [un lien](http://un.lien.tld) et du `code`.
 ~~~
 
 ![ALT de l'image](nom-image.xxx "Légende (html accepté)")
+
+
+[^1]: La note de bas de page
