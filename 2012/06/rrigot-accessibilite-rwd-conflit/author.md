@@ -1,0 +1,5 @@
+Pour le moment, je trouve mon intérêt dans l'aventure de la qualité Web en m'attaquant de préférence aux sites et clients les plus visibles du Web français, qui sont la spécialité du cabinet d'expertise Web [Clever Age](http://www.clever-age.com/). J'avais initialement démarré dans le métier via la technique et autres domaines geek (j'ai gagné mes premiers galons au coeur du JEE) ; mais depuis, je suis devenu à l'aise avec les notions d'UX/ergonomie, de webmarketing, et même d'administration système, faisant de moi un chef de projet sur tous ces fronts Web à la fois. En ce moment, je travaille conjointement sur deux sujets : d'une part je fais avancer sur presque tous les fronts notre produit de gestion de la qualité de présence Web pour grandes marques (aventure à suivre !), et d'autre part je cherche à emmener ce produit et la vision Clever Age outre-atlantique, pour une ouverture d'activité à New York prévue dans le courant de 2013, dans l'intention d'y reproduire la réputation et les bonnes actions que Clever Age travaille depuis 10 ans à apporter au paysage Web français.
+
+- [@rudyrigot](https://twitter.com/rudyrigot)
+- <http://rudyonweb.net/>
+
