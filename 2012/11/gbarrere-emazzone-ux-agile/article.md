@@ -199,7 +199,7 @@ De toute façon, si l’équipe part sur des mauvais besoins utilisateurs, l’a
 ## En savoir plus
 
 * [Votre kit "Agile UX"](http://www.gargarismes-ergonomiques.com/post/kit-agile-ux)
-* [Article “Scrum crash course #1”](http://www.gargarismes-ergonomiques.com/post/2010/09/15/Scrum-crash-course-1)
+* [Article “Scrum crash course #1”](http://www.gargarismes-ergonomiques.com/post/scrum-crash-course)
 * [Entretien - J.C. Grosjean : “Mettez toutes les chances de votre côté en alliant Ergonomie et Méthodes Agiles”](http://www.gargarismes-ergonomiques.com/post/entretien-grosjean-agile)
 * [Entretien - C. Aubry - “Agile, Scrum… et ergonomie”](http://www.gargarismes-ergonomiques.com/post/entretien-aubry-agile)
 * [Article "Réussissez vos évaluations utilisateurs"](http://www.gargarismes-ergonomiques.com/post/evaluation-utilisateur)
