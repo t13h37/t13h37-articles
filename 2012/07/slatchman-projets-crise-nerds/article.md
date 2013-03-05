@@ -1,97 +1,55 @@
-# Justifier le prix de la qualité
+# Projets au bord de la crise de *nerds*
 
-Vous êtes vraiment meilleur que les autres ? Vous avez des années d'expérience, une ceinture noire de design Web, un cinquième Dan en Photoshop, une maîtrise en bonnes pratiques, un BEP de Directeur Artistique Stagiaire Senior ?
+C’est l’histoire d’un concours en ligne dont les gagnants seront les acteurs d’une publicité. Pour tenter sa chance, il suffit de remplir un simple questionnaire de qualification et de soumettre une photo. Dès la mise en ligne, l’opération est un franc-succès : plusieurs centaines d’inscriptions par heure.  
+Mais soudain, c’est la crise ! L’administrateur système prévient le chef de projet que l’espace disque réservé au site se remplit très vite. Toutes ces grosses photos que soumettent les internautes prennent de la place, trop de place ! Il faut vite trouver une solution avant que le disque ne soit rempli et que le formulaire ne s’étrangle. Que faire ? Demander de l’aide au développeur ? Il est parti en vacances juste après la mise en ligne ! Que faire ? L’administrateur réseaux propose de déplacer le site vers un autre dossier plus grand sur le même serveur. Une histoire de config’ ou de permissions, mais bref, vite ! Il est déjà 19 heures, et on ne peut pas se permettre de perdre des inscriptions, c’est mauvais pour la réputation du client !  
+9h30 le lendemain : c’est la crise ! Le site a arrêté d’enregistrer des inscriptions depuis hier soir ! Mais où est l’admin’ réseaux ? Pas encore arrivé, ce mollusque ? Vite, trouver une solution avant que le client ne s’en rende compte ! Demandons de l’aide à un autre développeur, n’importe lequel ! Et $#!/ ils sont tous en formation à l'extérieur sur un nouveau CMS ! Et re $#!/, le client se manifeste ! Des internautes mécontents ont appelé le service consommateur, qui l’a prévenu ! Vite, allons chercher le Directeur Technique ! Tant pis s’il doit interrompre sa réunion pour faire du débug express ! Ah, c’était simplement un chemin d’accès au répertoire d’*upload* qui n’avait pas été modifié lors du changement de dossier ? Et les inscriptions depuis hier soir ? Perdues ? Mais que dire au client ?
+**C’est la crise !**
 
-Plus sérieusement, vous êtes certainement un professionnel méticuleux et, n'ayons pas peur des mots, meilleur que beaucoup d'autres. Oui, mais comment le prouver à vos clients potentiels ? Comment vendre cette qualité à sa juste valeur ? Et surtout, comment éviter de vous faire prendre des marchés par des concurrents moins chers, moins bons, moins sérieux ? Accessoirement, comment éviter de mal vous positionner sur des marchés où vous risquez de vous sur-investir en en supportant le coût au final ?
+C’est l’histoire d’une commerciale qui se retrouve à recetter un site de e-commerce parce que son chef de projet est en vacances (oui, le chef de projet a pu poser des vacances pile au moment de la recette ; non, je ne sais pas pourquoi). Le client, regardant le site de son côté, trouve que les photos sont trop petites, bien trop petites. Après enquête, la commerciale découvre que les marges ont été mal spécifiées dans le brief d’infographie. Le client est furieux : le site doit être en ligne dans une semaine ! Il faut corriger tout ça, et vite ! Mais de combien d’images parle-t-on ? Dans le dossier concerné, plus de 1 500 fichiers ! Toutes les références du catalogue en trois tailles et sept langues !  
+La commerciale a un bon réflexe : s’adresser à un studio d’exécution ayant l’habitude de ce genre d’infographie de masse. Mais l’estimation qu’elle obtient la fait tomber de sa chaise : trois semaines et 30 000 € ! N’en croyant pas ses oreilles, elle part en quête d’un autre avis. Une graphiste *freelance* se propose de faire le travail pour seulement 6 000 €, en deux semaines. Mais dans les deux cas, on dépasse la date de mise en ligne et la boîte en sera de sa poche pour une belle somme.  
+**C’est la crise !**
 
-Nous allons vous montrer qu'il est possible de valoriser et de vendre la qualité de vos prestations Web.
+C’est l’histoire d’un chef de projet qui reprend au pied levé le projet d’un collègue tombé malade. En faisant le point, il s’aperçoit que le développement aurait dû commencer il y a deux semaines ; que le travail est censé prendre quatre semaines sans compter la recette ; que la mise en ligne est dans trois semaines ; que la *deadline* ne peut pas être décalée, car elle est liée à un évènement commercial ; que les spécifications fonctionnelles sont inutilisables en l’état et doivent être complètement réécrites ; que les maquettes ne sont de toute façon pas terminées !
+**C’est la crise !**
 
-Vous devrez tout d'abord montrer que vous êtes en mesure de gérer et prévenir les risques, en fournissant des évaluations détaillées avec le minimum d'incertitude possible.
-Vous allez ensuite montrer à vos clients que vous êtes capables de viser le niveau de qualité juste et attendu.
-Vous pourrez peut-être enfin fournir des garanties, des engagements, des certifications, des indicateurs.
+Ces anecdotes ont peut-être un étrange goût de déjà vu. Si c'est le cas, voici quelques pistes pour apprendre à sortir la tête de l'eau voire du sable, et à affronter la crise de pied ferme et de main de maître.
 
-## Des livrables top niveau
+## Étape 1 : Inspirer, expirer
 
-Première étape pour vendre la qualité de vos prestations : produire des livrables de qualité. Cela semble être une évidence mais pour de nombreuses prestations (notamment artistiques) les éléments à prendre en compte pour juger la qualité d'un livrable sont souvent très subjectifs. Alors ce site web, il est joli, pas joli? Frais, pas frais ? Jeune, vieillot ? Difficile à dire, n'est-ce pas ?
-La qualité réelle de ce que vous produisez est en effet la chose la plus difficile à appréhender objectivement. Elle varie considérablement en fonction de l'interlocuteur, du moment, du contexte dans lequel les livrables ont été produits.  
-Il va donc falloir chercher des paramètres objectifs. Pour cela, vous allez devoir vous appuyer sur des référentiels de bonnes pratiques universelles, vérifiables et mesurables. Vous aurez en tête un double enjeu. D'une part, conforter votre propre démarche en guidant vos choix. D'autre part, justifier ceux-ci et étayer la qualité finale de votre produit aux yeux de votre client, à l'aide notamment d'indicateurs de réussite vis-à-vis d'objectifs mesurables.  
-Vous aurez alors fait preuve de votre maturité : vos livrables peuvent être confrontés à des engagements précisément formulés et dont le résultat est mesurable. Mais êtes-vous certain à ce stade que votre client veut acheter la qualité avérée que vous voulez lui vendre ?
+La première étape pour gérer une crise est de garder son sang-froid. Enfin, de le retrouver. Même si vous n’êtes pas celui par qui la crise est arrivée, vous êtes celui devra aider toute l’équipe à la traverser. Quoique, là tout de suite, vous êtes apparemment le sauveur du monde. Le Neo du projet. Si les regards légèrement affolés qu’on vous lance ne vous en avaient pas déjà convaincu, des phrases-clé comme « merci de ton aide », « j’ai besoin d’une solution », ou « qu’est-ce que tu proposes ? » sont des indices assez explicites. Du coup, la pression est sur vous. Mais si vous paniquez, vous n’arriverez même pas à la deuxième étape. 
 
-## Qualité ou excellence ?
+Sang-froid, donc. Respirez un grand coup. Retrouvez vos moyens. Allez vous isoler quelque part. Faites un tour dehors. Allez fumer si c'est votre truc. Quand une crise se produit dans un projet web, le problème du planning en retard n’est jamais loin. On croit qu’il faut réagir le plus vite possible. Dans la seconde, de préférence. Et pourtant, c’est la plus grosse erreur que vous puissiez faire. Le problème est apparent maintenant mais il n’a pas mis que quelques minutes à se créer. Il faudra plus de quelques minutes pour le résoudre.
 
-Êtes-vous sûr que vous ne confondez pas qualité et excellence? Cette qualité à laquelle vous tenez tant, êtes-vous certain que votre client en veut ? Êtes-vous sûr que vous n'essayez pas de vendre de l'excellence à des gens qui n'en n'ont pas besoin ? Ou encore, êtes-vous sûr de ne pas être en face d'un client qui exige l'excellence sans être prêt à la payer ?  
-Si un client veut du top niveau, que cela concerne les livrables ou ce qu'il y a autour du projet, vendez du top niveau. Dans le cas contraire, vous serez probablement amené à faire de la sur-qualité. Et les coûts occasionnés par la sur-qualité sont à ranger dans les coûts de non-qualité.  
-Pour éviter cela, sachez vous adapter. La qualité, ce n'est pas forcément l'excellence. La qualité, c’est votre capacité à produire un produit qui réponde aux besoins de vos clients, et pas uniquement aux exigences que vous avez définies vous-même.  
-Si vous trouvez qu'un site doit forcément être au top du top de ce qui se fait aujourd'hui, vous risquez de faire quelque chose qui n'est ni attendu, ni souhaitable, ni rentable.
+## Étape 2 : Impossible est français
 
-## Avec vous, moins de risques
+Cette étape est plus un état d’esprit qu’une action spécifique à mener, mais tout de même : certaines solutions sont et resteront impossibles, et vous n’y pouvez rien. Typiquement, il s’agit des « solutions » permettant de rattraper deux semaines de retard sans toucher au périmètre fonctionnel, d’accommoder trois nouvelles demandes du client sans grossir le budget, ou de récupérer des enregistrements en base qui n’ont justement jamais été enregistrés…  
+Oh, vous ne manquerez pas de personnes doutant de ces impossibilités. Souvent des commerciaux. Ou des clients. Ou des créatifs. Ou des développeurs. En réalité, n’importe qui concerné par la crise mais dont la solution n'appartient pas à son domaine de compétences. C’est donc quelqu’un qui n’est pas plus capable de différencier ce qui est faisable de ce qui ne l’est pas. Cela ne l’empêchera pas de vous appliquer sa pression. Investissez un peu de temps à lui expliquer le champ des possibilités, et la raison de leurs limites. Plus que l’explication elle-même, c'est la perception de votre assurance qui pourra le calmer. Si cela ne fonctionne pas, ignorez-le.
 
-Avant de signer un devis, votre client se pose beaucoup de questions. Il va s'engager, et il s'efforce certainement d'imaginer les risques que peut comporter le fait de conduire ce projet avec vous plutôt qu'avec un autre.  
-Chacun de ces risques correspond à une question pas toujours formulée qui commence par « Et si...;? ». Par exemple : « Et si aucune des pistes graphiques ne me convient ? », « Et si vous ne me livrez pas à l'heure dite ? », « Et si vous aviez un problème pendant la mission ? »...; Etc.  
-Chaque réponse satisfaisante peut renforcer votre capital confiance et la valeur de votre offre. C'est à vous de démontrer que vous avez anticipé ces risques. Votre client doit comprendre que vous êtes capable de réagir de prendre de la hauteur, de répondre aux impondérables, de fournir beaucoup plus que de la technique ou des livrables.
+## Étape 3 : CSI Projet
 
-Avec vous, j'achète une assurance contre les échecs, les difficultés et les impondérables. Avec vous, d'une certaine manière, l'imprévu est prévu. En vous choisissant, j'achète une dimension essentielle du *management* de la qualité : la prévention des risques.
+Pour prendre une décision, pour pouvoir pointer du doigt les solutions efficaces, il faut avoir identifié les vraies raisons du problème. Attention, piège : les vraies raisons sont rarement celles qu’on vous remonte dès le départ. Car de deux choses l’une : soit la personne qui vous amène la crise ne maitrise pas totalement le sujet et l’utilité de son rapport sera limitée par le filtre de sa compréhension, soit sa responsabilité personnelle est plus ou moins engagée et son rapport sera mystérieusement expurgé de quelques informations pourtant essentielles à votre compréhension.  
+Il faut donc mener l’enquête. Littéralement. Interroger toutes les personnes concernées, ouvrir des .PSD, lire du code, faire des tests, éplucher les documents projet, remonter l’historique des mails. Ce n’est pas le moment de vous dire « c’est pas à moi de faire ça ». À ce stade, tout est bon pour éclairer votre lanterne. Pour chaque domaine de compétence que vous ne maîtrisez pas, interrogez les experts. Croisez les opinions. Recoupez les informations. À l’origine de la crise, on trouve souvent des actions de bonne foi entreprises par des acteurs dont le point de vue trop étroit n’a pas mesuré les effets de bord. Retrouver une vision globale du sujet est la condition sine qua non pour identifier l’origine réelle du problème mais aussi pour être sûr que la solution n’en créera pas d’autres.  
+En pratique, et si vous en avez la capacité, la technique la plus efficace est le conseil de guerre : toutes les personnes concernées ou susceptibles d’aider enfermées dans une pièce, un tableau blanc et des post-it à portée de main. Cette méthode a deux avantages : un, perdre le moins de temps possible en discussions et aller-retours entre chaque interlocuteur ; deux, sortir les gens de la routine et marquer la gravité de la situation.
 
-Si vous voulez vendre la qualité de vos prestations, ne niez pas l'existence de ces risques. Expliquez au contraire qu'une partie de votre valeur repose sur votre capacité à les prévenir et s'il le faut, à les gérer. Des risques, de la prévention, de la confiance ? Mais oui, vous vendez également de l'assurance qualité.
+## Étape 4 : Colmater les fuites
 
-## Choisir ses clients ?
+Une solution commence à se dessiner dans votre esprit. Le plan d’action est là, les conséquences maitrisées… Vraiment ? Toutes les conséquences ? Vous courez en fait un risque dont les développeurs sont familiers : la solution qui résout effectivement le bug pour en créer d’autres, parfois plus graves. C’est un principe qui s’applique malheureusement à l’échelle du projet. Une solution dont toutes les implications ne sont pas maitrisées n’est pas une solution.  
+Alors, sûr à 100 % de votre plan ? Sûr au point de parier votre prochain salaire ? Non ? Il mérite peut-être une autre passe, alors. Mieux, parlez-en à d’autres. De préférence à des gens aussi qualifiés que vous mais pas directement impliqués dans la crise. Leur position externe moins stressée et leur propre expérience vous apporteront un point de vue plus frais et plus honnête sur la fiabilité de votre plan.
 
-Certains clients seront peut-être inquiétés par ce discours qu'ils n'ont pas l'habitude d'entendre. De fait, vous raterez sans doute certaines ventes. Mais vous ne raterez guère que celles avec lesquelles vous auriez eu le plus de problèmes. N'oubliez jamais que les clients qui souhaitent vous acheter une prestation de conte de fées sont ceux qui seront les plus surpris, les moins tolérants et les moins réactifs quand il faudra gérer un imprévu. 
+## Étape 5 : L’étoffe des héros
 
-Un client averti en vaut deux : si votre client est prêt et mature, ce discours sur les risques lui parlera. Un professionnel compétent est une personne qui connait les risques et sait les gérer. De manière générale, sachez qu'une relation de qualité se construit sur la transparence, et ce, dès la phase avant-vente. 
+C’est le moment de distribuer les rôles. Votre plan implique probablement l’intervention d’un certain nombre de spécialistes qui agiront chacun dans leur domaine. Les ayant impliqués dans votre conseil de guerre, vous n’aurez normalement pas de problème à leur communiquer l’importance de leur rôles respectifs. Commencez par répéter l’étape 4 avec eux pour passer une dernière fois votre solution au filtre de leur expertise. C’est aussi le moyen de leur transmettre confiance et responsabilité. Ensuite, laissez-les travailler.  
+Parfois, le problème est lié à une personne spécifique. Comment différencier celle qui peut ou veut la réparer elle-même, de celle qui en est incapable ? C’est très simple : vous devez très bien la connaître. En d’autres termes, vous devez avoir une très bonne idée de ses compétences, de ses motivations, de sa forme physique et mentale. Si vous ne savez pas à qui vous avez affaire, vous n’êtes pas la bonne personne pour gérer cette crise.
 
-Commencez par écouter vos clients. Si leur niveau d'exigence n'est pas assez élevé pour vous et que vous pouvez vous le permettre, passez simplement votre chemin en vous disant qu'ils ne vous méritent pas. Ce n'est certes pas à la portée de tout le monde, notamment sur le plan économique. En revanche, si vous avez faim et besoin de missions, sachez qu'une fois signé ce type de contrat de confiance fondé sur des engagements explicites, vous n'aurez pas à faire supporter le prix de l'excellence (que vous vous imposez) à votre client.
+## Étape 6 : *Post-mortem* animal triste
 
-## Valorisez vos compétences
-
-Lorsque vous achetez un produit ou un service, vous êtes en permanence amené à vous poser la question du rapport qualité/prix. Dans un domaine préindustriel comme le Web, les clients n'ont pas forcément conscience de ce qui fait la valeur d'une prestation. Outre la qualité des réalisations et l'aptitude à gérer les risques, il existe de nombreux arguments pour mettre en valeur le prix de vos prestations.
-
-Dans tous les cas, au delà de la qualité de votre cursus ou de votre bagage, vous devrez vous appuyer sur plusieurs éléments : 
-
-- la qualité de vos références qui doivent être expliquées, justifiées et étayées par des informations de contexte ;
-- la qualité de votre mode de fonctionnement ;
-- vos méthodes et vos compétences doivent être valorisées à travers votre capacité à répondre aux seuls besoins du client ;
-- les référentiels ou critères vérifiables et mesurables que vous utilisez en vous appuyant sur votre capacité à les respecter, lorsqu'ils existent.
-
-## Des estimations fiables
-
-Vous devez montrer que vous êtes capables de produire les livrables attendus et répondre aux besoins réels de vos clients. Jusqu'ici rien de neuf, et sachez qu'en face de vous, il y a des gens qui vont tout faire pour le faire mieux que vous. La différence va peut-être se faire sur le volume de prestations. Pour ceci, vous avez besoin d'estimations fiables et détaillées. Il est souvent intéressant de décomposer au maximum une prestation en tâches et à mettre en évidence cette décomposition auprès de votre client. Vos évaluations seront plus justes et la réalité du travail nécessaire sera mieux comprise par votre client. S'il le faut et il le faut probablement, comptez de la gestion de projet. C'est une réalité, il ne faut pas la masquer.
-
-### Le coût d'obtention de qualité
-
-Votre tarif journalier ne vient pas de nulle part. Pour le calculer rapidement, prenez votre salaire mensuel, ajoutez les charges en marche normale, ajoutez également les frais associés directement à votre activité. Divisez ensuite le montant mensuel obtenu par le nombre de jours que vous pouvez consacrer chaque mois à la production.
-Voici un exemple : imaginons que vous voulez gagner 2000 € net mensuels. Nous allons partir du principe que lorsque l'on ajoute les cotisations sociales, les impôts et frais complémentaires, votre salaire de 2000 € mensuel net représente un coût total mensuel de 4000 €.
-Poursuivons : il y a 20 jours ouvrés en moyenne par mois. Chaque matin, lorsque vous vous levez, votre production doit vous rapporter 4000 € / 20 = 200 € hors taxes. Chaque journée de veille, de conférences, d'activité commerciale, chaque journée non facturée fait que vous allez devoir diviser non pas par 20, mais par 10, 12, 15 jours réels de production. Dans ce cas, sur une hypothèse de 12 jours de production réelle facturée par mois, ce qui est déjà correct, votre coût journalier est d'environ 330 €.
-Un nombre réaliste (ni trop, ni trop peu) de jours réels de production va vous permettre de calculer votre tarif journalier. 
-
-Ce tarif calculé, c'est le vôtre. Si vous savez calculer votre tarif, c'est celui auquel vous avez décidé de vous vendre. Si vous voulez vraiment faire une mission, pour quelque raison que ce soit, ne baissez jamais ce tarif journalier. Accordez des remises en volume, faites des gestes commerciaux, mais ne bradez pas ce tarif. Il est l'assurance que vous savez ce que vous valez. Il est aussi l'assurance que vous savez ce que vous faites.
-Une méthode de travail, des outils, de l'empathie, de l'écoute, du conseil...; Ce n'est absolument pas à la portée de tout le monde, c'est votre valeur ajoutée et ça se paie.
-
-### Limiter les coûts de non-qualité
-
-Si cela est possible, montrez que votre mode de travail va limiter les coûts de non-qualité. Dans les projets Web, ces coûts de non-qualité sont essentiellement dus à des détections tardives de défauts, à des incompréhensions entre interlocuteurs, à des incompatibilités de planning. Montrez votre capacité à détecter rapidement les dérives, insistez sur la clarté du vocabulaire et formez vos prospects, montrez également que vous êtes capable de vous adapter.
-
-Montrez surtout qu'en cours de mission, grâce à toutes ces mesures, vous allez finalement coûter beaucoup moins cher. Cela s'appelle la diminution des coûts de non-qualité. Si votre client a déjà travaillé de près ou de loin sur son site Web, il saura probablement de quoi vous voulez parler.
-Des coûts d'obtention de la qualité, la diminution des coûts de non-qualité, oui, vous vendez du *management* de la qualité.
+Une fois la crise passée, le réflexe universel est un soupir de soulagement collectif, suivi d'un fort désir d’oublier cet épisode douloureux le plus vite possible. Pour vous, c'est l’inverse : une fois calmée la poussée d’adrénaline et d’endorphines qui vous a alimenté puis récompensé d’avoir sauvé le monde, vous aurez peut-être envie de sauter sur la prochaine crise à résoudre. Il y en a toujours une.  
+Pourtant, vous n’avez fait que la moitié du travail. Le reste, le plus dur mais le plus efficace à long terme, est d’éviter que la crise ne se reproduise.  
+Le fameux « *post-mortem* », qu’il soit de crise ou de projet, est un exercice difficile. Personne n’a envie de revenir sur les sujets qui fâchent au moment de déboucher le champagne. D’accord, laissez passer un peu de temps. Mais pas trop. Juste assez pour avoir la tête reposée mais la mémoire encore vivace. Cela dit, cette réunion n’a pas pour but, comme c’est souvent le cas, d’essayer de déterminer ce qui s’est mal passé. Ça c’était l’étape 3, et si vous l’avez ratée, il est simplement trop tard. Encore une fois, la crise est finie et plus personne n’a plus ni l’énergie ni la motivation de remuer la m... euh, boue.  
+Non, le *post-mortem* n’est efficace que si les raisons sont déjà connues. Il permet alors de pointer les responsabilités plus calmement et surtout de poser les bases de nouvelles pratiques qui éviteront les même erreurs à l’avenir. 
 
 ## Conclusion
 
-Quelle que soit la qualité des prestations et des missions que vous effectuez, vous ne pouvez pas vous contenter de l'affirmer. Vous allez donc devoir prouver, étayer, justifier le coût et la qualité à travers des actions et des éléments tangibles. En pratique, vous allez formaliser vos processus de travail, définir vos modes de contrôles, établir vos indicateurs et bien sûr mettre tous ces éléments en valeur dans votre communication et dans vos propositions commerciales. Et, sans vous en rendre compte, vous allez rentrer dans l'assurance et le *management* de la qualité.
+Savoir prévenir plutôt que guérir est plus vite dit que fait, et mériterait un autre article au moins aussi long. C’est en réalité le vrai travail du chef de projet, du manager, en fait de tout senior avec suffisamment de projets à son actif. Si vous avez assez d’expérience pour être capable de gérer une crise avec succès, vous en avez assez pour savoir comment l’éviter. Vous savez que les technologies évoluent, que les modes créatives passent, mais que les problèmes apparaissent généralement pour les mêmes raisons humaines : ignorance, paresse, égoïsme, cupidité... C’est un planning bâclé pour partir plus vite en week-end et dont certaines omissions créeront des retards importants d’ici trois mois. C’est une mesure de sécurité « oubliée » pour gagner quelques centaines d’euros dans un devis. Ce sont quelques milliers de visuels aux mauvaises dimensions parce qu’on a confié le travail à un stagiaire non supervisé… 
 
-Alors, n'oubliez pas, dans vos propositions commerciales, vos méthodes et vos livrables, le client doit retrouver :
-
-- des garanties (références clients adaptées au contexte, respect de standards et/ou référentiels, indicateurs, estimations fiables...;) ;
-- de la souplesse et de l'adaptation (mise en valeur des processus de travail, agilité, prévention des risques...;) ;
-- des livrables qui répondent aux seuls besoins du client (pas de sur-qualité) ;
-- la mise en valeur des coûts de la qualité comparés aux coûts de non-qualité ;
-- des estimations détaillées et un tarif juste (ne baissez pas votre tarif jour/homme, faites des remises).
-
-Vous verrez, en combinant un juste formalisme et une certaine agilité dans le mode de fonctionnement, vos clients auront rapidement des éléments tangibles pour valoriser votre compétence et pour comprendre votre tarif.
-
-## Pour aller plus loin
-
-
-- [Le blog de Temesis](http://blog.temesis.com/) (dont il est Président) ;
-- [Les Checklists Opquast](https://checklists.opquast.com/fr/) ;
-- [Article sur la sur-qualité chez OpenWeb](http://openweb.eu.org/articles/conformite_validation_surquali) ;
-- [Conseils pour le recrutement d'un freelance par Christophe Andrieu](http://www.stpo.fr/blog/recruter-un-freelance-comment-ne-pas-faire/).
+Résoudre une crise vous transforme en sauveur pendant quelques minutes, mais garantit qu’on vous en amènera d’autres. Savoir prévenir une crise vous procurera bientôt l’opportunité de responsabilités plus gratifiantes. Car on peut éteindre une fois mille incendies, mais on ne peut pas éteindre mille fois… Vous avez compris.
