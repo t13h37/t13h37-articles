@@ -1,0 +1,7 @@
+{
+"title" : "Projets au bord de la crise de nerds",
+"author": {"name" : "Samuel Latchman", "email": "samuel@latchman.org"},
+"edition" : {"number": "10", "date": "2012-07-17"},
+"tags" : ["Clients", "méthodologie"],
+"type" : "essai" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+}

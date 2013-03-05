@@ -12,7 +12,7 @@ Vous pourrez peut-être enfin fournir des garanties, des engagements, des certif
 
 ## Des livrables top niveau
 
-Première étape pour vendre la qualité de vos prestations : produire des livrables de qualité. Cela semble être une évidence mais pour de nombreuses prestations (notamment artistiques) les éléments à prendre en compte pour juger la qualité d'un livrable sont souvent très subjectifs. Alors ce site web, il est joli, pas joli? Frais, pas frais ? Jeune, vieillot ? Difficile à dire, n'est-ce pas ?  
+Première étape pour vendre la qualité de vos prestations : produire des livrables de qualité. Cela semble être une évidence mais pour de nombreuses prestations (notamment artistiques) les éléments à prendre en compte pour juger la qualité d'un livrable sont souvent très subjectifs. Alors ce site web, il est joli, pas joli? Frais, pas frais ? Jeune, vieillot ? Difficile à dire, n'est-ce pas ?
 La qualité réelle de ce que vous produisez est en effet la chose la plus difficile à appréhender objectivement. Elle varie considérablement en fonction de l'interlocuteur, du moment, du contexte dans lequel les livrables ont été produits.  
 Il va donc falloir chercher des paramètres objectifs. Pour cela, vous allez devoir vous appuyer sur des référentiels de bonnes pratiques universelles, vérifiables et mesurables. Vous aurez en tête un double enjeu. D'une part, conforter votre propre démarche en guidant vos choix. D'autre part, justifier ceux-ci et étayer la qualité finale de votre produit aux yeux de votre client, à l'aide notamment d'indicateurs de réussite vis-à-vis d'objectifs mesurables.  
 Vous aurez alors fait preuve de votre maturité : vos livrables peuvent être confrontés à des engagements précisément formulés et dont le résultat est mesurable. Mais êtes-vous certain à ce stade que votre client veut acheter la qualité avérée que vous voulez lui vendre ?
@@ -60,18 +60,18 @@ Vous devez montrer que vous êtes capables de produire les livrables attendus et
 ### Le coût d'obtention de qualité
 
 Votre tarif journalier ne vient pas de nulle part. Pour le calculer rapidement, prenez votre salaire mensuel, ajoutez les charges en marche normale, ajoutez également les frais associés directement à votre activité. Divisez ensuite le montant mensuel obtenu par le nombre de jours que vous pouvez consacrer chaque mois à la production.
-Voici un exemple : imaginons que vous voulez gagner 2000 € net mensuels. Nous allons partir du principe que lorsque l'on ajoute les cotisations sociales, les impôts et frais complémentaires, votre salaire de 2000 € mensuel net représente un coût total mensuel de 4000 €.  
+Voici un exemple : imaginons que vous voulez gagner 2000 € net mensuels. Nous allons partir du principe que lorsque l'on ajoute les cotisations sociales, les impôts et frais complémentaires, votre salaire de 2000 € mensuel net représente un coût total mensuel de 4000 €.
 Poursuivons : il y a 20 jours ouvrés en moyenne par mois. Chaque matin, lorsque vous vous levez, votre production doit vous rapporter 4000 € / 20 = 200 € hors taxes. Chaque journée de veille, de conférences, d'activité commerciale, chaque journée non facturée fait que vous allez devoir diviser non pas par 20, mais par 10, 12, 15 jours réels de production. Dans ce cas, sur une hypothèse de 12 jours de production réelle facturée par mois, ce qui est déjà correct, votre coût journalier est d'environ 330 €.
 Un nombre réaliste (ni trop, ni trop peu) de jours réels de production va vous permettre de calculer votre tarif journalier. 
 
-Ce tarif calculé, c'est le vôtre. Si vous savez calculer votre tarif, c'est celui auquel vous avez décidé de vous vendre. Si vous voulez vraiment faire une mission, pour quelque raison que ce soit, ne baissez jamais ce tarif journalier. Accordez des remises en volume, faites des gestes commerciaux, mais ne bradez pas ce tarif. Il est l'assurance que vous savez ce que vous valez. Il est aussi l'assurance que vous savez ce que vous faites.  
+Ce tarif calculé, c'est le vôtre. Si vous savez calculer votre tarif, c'est celui auquel vous avez décidé de vous vendre. Si vous voulez vraiment faire une mission, pour quelque raison que ce soit, ne baissez jamais ce tarif journalier. Accordez des remises en volume, faites des gestes commerciaux, mais ne bradez pas ce tarif. Il est l'assurance que vous savez ce que vous valez. Il est aussi l'assurance que vous savez ce que vous faites.
 Une méthode de travail, des outils, de l'empathie, de l'écoute, du conseil...; Ce n'est absolument pas à la portée de tout le monde, c'est votre valeur ajoutée et ça se paie.
 
 ### Limiter les coûts de non-qualité
 
 Si cela est possible, montrez que votre mode de travail va limiter les coûts de non-qualité. Dans les projets Web, ces coûts de non-qualité sont essentiellement dus à des détections tardives de défauts, à des incompréhensions entre interlocuteurs, à des incompatibilités de planning. Montrez votre capacité à détecter rapidement les dérives, insistez sur la clarté du vocabulaire et formez vos prospects, montrez également que vous êtes capable de vous adapter.
 
-Montrez surtout qu'en cours de mission, grâce à toutes ces mesures, vous allez finalement coûter beaucoup moins cher. Cela s'appelle la diminution des coûts de non-qualité. Si votre client a déjà travaillé de près ou de loin sur son site Web, il saura probablement de quoi vous voulez parler.  
+Montrez surtout qu'en cours de mission, grâce à toutes ces mesures, vous allez finalement coûter beaucoup moins cher. Cela s'appelle la diminution des coûts de non-qualité. Si votre client a déjà travaillé de près ou de loin sur son site Web, il saura probablement de quoi vous voulez parler.
 Des coûts d'obtention de la qualité, la diminution des coûts de non-qualité, oui, vous vendez du *management* de la qualité.
 
 ## Conclusion
