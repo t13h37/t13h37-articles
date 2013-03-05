@@ -1,0 +1,5 @@
+Après une formation initiale de graphiste, Aurélien a complété ses connaissances par une formation de concepteur réalisateur multimédia à l’Institut Supérieur des Arts. En janvier 2004, il devient l’un des premiers "experts Accessiweb en évaluation". Il a depuis rejoint Temesis en 2008 en tant qu'expert accessibilité puis directeur général. Il a notamment co-rédigé le nouveau Référentiel Général d’Accessibilité pour les Administrations de la DGME dans le cadre du décret de la loi Handicap (février 2005) et animé plusieurs conférences dans le domaine de l’accessibilité (INOP, RMLL, réunions des experts du Groupe de Travail Accessiweb, Paris-web, TechDays). Il a contribué à la prise en compte de l’accessibilité dans des groupes comme la DILA, La Poste, LCL, Sciences Po. A titre personnel, il est également un des correspondants en France du WaSP-ILG ce qui l’amène à organiser régulièrement des [W3Cafés](http://france.w3cafe.org/).
+
+- [@goetsu](https://twitter.com/goetsu)
+- <http://www.fairytells.net/>
+
