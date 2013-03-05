@@ -1,0 +1,7 @@
+{
+"title" : "L’internet des objets",
+"author": {"name" : "Christophe Clouzeau", "email": "cclouzeau@neoma-interactive.com"},
+"edition" : {"number": "12", "date": "2012-07-31"},
+"tags" : ["objets", "technologies Web"],
+"type" : "essai" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+}
