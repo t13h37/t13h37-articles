@@ -54,11 +54,11 @@ Si votre ami vous conseille les bons plans de *United Pixelworkers* au détour d
 ![Aperçu du site United Pixelworkers, version desktop](pixelworkers-desktop1.png "La colonne de gauche du site <a href="http://www.unitedpixelworkers.com/" hreflang="en">United Pixelworkers] en version <em>desktop</em>. Regardez avec intérêt cette boîte d’inscription <em>newsletter</em>, parce que si vous êtes sur un <em>smartphone</em>, vous ne la trouverez pas sur le site !")
 
 De manière similaire, le site [Remodelista](http://remodelista.com/) propose une quantité de services dans son *footer*… qui est totalement zappée en version mobile !
-Vous remarquerez volontiers que l’inscription <emlang="en">newsletter*, décidément considérée superflue par les sites e-commerce, fait à nouveau partie des heureux gagnants.
+Vous remarquerez volontiers que l’inscription *newsletter*, décidément considérée superflue par les sites e-commerce, fait à nouveau partie des heureux gagnants.
 
 ![Aperçu du site Remodelista, version desktop](modelista-desktop.png "Abracadabra, ce <em>footer</em> va disparaître ! Et hop !")
 
-Enfin, puisque je me sens d’humeur taquine, le site <a href="http://www.google.com/news">Google News] propose lui aussi son inaccessibilité de services (oui, j’ose !) :
+Enfin, puisque je me sens d’humeur taquine, le site [Google News](http://www.google.com/news) propose lui aussi son inaccessibilité de services (oui, j’ose !) :
 
 ![Aperçu du site Google News, version desktop](google-news-desktop.png "De bien belles fonctionnalités encadrées en rouge : “Recent”, “Nouvelles géolocalisées”, et “Editors’ Picks”…")
 
@@ -72,7 +72,7 @@ Heureusement, rien n’est perdu : si une fonctionnalité prend beaucoup trop de
 
 ### La solution la plus simplissime : une autre page !
 
-Le site “<a href="http://loveandluxesf.com/">Love & Luxe]”, par exemple, part d’un problème similaire : sa zone de contact (contenant horaires d’ouverture, adresse postale, téléphone, …) disparaît mystérieusement lorsqu’un bloc à sa droite en version *desktop* vient se positionner au-dessous en version tablette :
+Le site “[Love & Luxe](http://loveandluxesf.com/)”, par exemple, part d’un problème similaire : sa zone de contact (contenant horaires d’ouverture, adresse postale, téléphone, …) disparaît mystérieusement lorsqu’un bloc à sa droite en version *desktop* vient se positionner au-dessous en version tablette :
 
 ![Aperçu du site Love &amp; Luxe, version destkop](love-luxe-destkop.png "Deux colonnes de gauche en version <em>desktop</em>, et…")
 
@@ -106,11 +106,11 @@ Pour accomplir ce tour de force technique, il existe des outils ayant pour vocat
 ![Aperçu de l'entête du site Personnel de Santé, version mobile](hospi-menu-mobile.png "… réduite au minimum en version mobile ! Tout est là : le bouton “Menu” affiche le premier niveau, et le bouton au titre de la rubrique de niveau 1 affiche le deuxième niveau.")
 
 Ici, l’intégrateur a fait le choix de ne pas utiliser d’astuce, et de simplement dupliquer le code HTML, remarquant que la perte liée à cette duplication était très légère (343 octets avant GZip, pour le cas de la page ci-dessus). Une seule des deux versions sera affichée simultanément grâce au CSS, et la perte de performance est excusable.
-(si vous n’êtes pas d’accord, vous pouvez <a href="http://twitter.com/htmlzg">aller le taquiner], puisque l’intégrateur en question n’est autre que Vincent Valentin, qui avait d’ailleurs co-signé [l’article à la Une de la première édition du train de 13h37](http://letrainde13h37.fr/1/pour-ou-contre-html-5-en-production/) !)
+(si vous n’êtes pas d’accord, vous pouvez [aller le taquiner](http://twitter.com/htmlzg), puisque l’intégrateur en question n’est autre que Vincent Valentin, qui avait d’ailleurs co-signé [l’article à la Une de la première édition du train de 13h37](http://letrainde13h37.fr/1/pour-ou-contre-html-5-en-production/) !)
 
 ### Un combo pour la route : autre page + Javascript
 
-Sur le même site <a href="http://personneldesante.fr">Personnel de santé], on trouve un autre cas intéressant puisque, de la même manière que pour certains de nos contre-exemples, le footer perd du contenu en passant en version mobile.
+Sur le même site [Personnel de santé](http://personneldesante.fr), on trouve un autre cas intéressant puisque, de la même manière que pour certains de nos contre-exemples, le footer perd du contenu en passant en version mobile.
 
 ![Aperçu du footer du site Personnel de Santé, version tablette](hospi-footer-tablet.png "Tout le plan de site est disponible en version desktop + tablette…")
 
@@ -126,7 +126,7 @@ Vous reconnaîtrez que le parcours de l’utilisateur mobile est plus fastidieux
 
 ### Et quand rien ne va plus ?
 
-Dans le cas malheureux où j’arrive trop tard et où votre design responsive pas fabuleusement accessible est déjà en ligne, il y a toujours le bon vieil échappatoire que j'aime appeler le "***coward switch***" : un petit lien "Version desktop" peut s'ajouter en pied de page pour désactiver le code CSS contenu dans les *media-queries*. Une méthode technique sûre et simple consiste à recharger la page, mais avec seulement le lien d’un fichier CSS ne contenant que les règles pertinentes pour le desktop (opération également surchargeable en Javascript pour plus de fluidité).
+Dans le cas malheureux où j’arrive trop tard et où votre design responsive pas fabuleusement accessible est déjà en ligne, il y a toujours le bon vieil échappatoire que j'aime appeler le "**_coward switch_**" : un petit lien "Version desktop" peut s'ajouter en pied de page pour désactiver le code CSS contenu dans les *media-queries*. Une méthode technique sûre et simple consiste à recharger la page, mais avec seulement le lien d’un fichier CSS ne contenant que les règles pertinentes pour le desktop (opération également surchargeable en Javascript pour plus de fluidité).
 Ça prend très peu de temps à réaliser, et même si ce n’est pas l’idéal (rien ne vaut une vraie conception bien faite !), ça a pour avantage de fonctionner pour tous les cas. Votre utilisateur retrouve alors tous ses contenus et services disparus, qui ne se trouvent alors jamais bien loin, puisqu’ils sont toujours à peine à un clic de là…
 
 ## En conclusion…

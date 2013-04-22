@@ -37,8 +37,8 @@ L’ensemble de ces contraintes fait que livrer un produit efficace devient auss
 
 Kit d’analyse comportementale et cognitive :
 
-1. *User centered design* (conception centrée sur l'utlisateur) ;
-2. Toolbox UX (boîte à outils des techniques d'évaluation et d'analyse des activitées centrées sur l'utilisateur) ;
+1. *User centered design* (conception centrée sur l'utilisateur) ;
+2. Toolbox UX (boîte à outils des techniques d'évaluation et d'analyse des activités centrées sur l'utilisateur) ;
 3. Approche expérimentale.
 
 

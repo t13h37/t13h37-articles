@@ -11,7 +11,7 @@ C'est pour cette raison que de tels liens sont fortement déconseillés. Par ail
 
 > Identifier clairement la cible de chaque lien. [Priorité 2]
 > 
-> Les liens textes devraient être suffisemment explicites pour être compréhensibles même lorsqu'on les lit en dehors de leur contexte — de manière isolée ou parmi d'autres liens. Les liens textes doivent également être concis.
+> Les liens textes devraient être suffisamment explicites pour être compréhensibles même lorsqu'on les lit en dehors de leur contexte — de manière isolée ou parmi d'autres liens. Les liens textes doivent également être concis.
 > 
 > Par exemple, en HTML, écrivez "Information sur la version 4.3" au lieu de "cliquez ici". En plus du lien en version texte, les développeurs pourraient spécifier la cible d'un lien à l'aide d'un lien informatif sous forme de titre (par ex. en HTML, l'attribut "title").
 

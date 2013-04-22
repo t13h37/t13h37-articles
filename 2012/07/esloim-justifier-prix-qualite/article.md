@@ -90,7 +90,6 @@ Vous verrez, en combinant un juste formalisme et une certaine agilité dans le m
 
 ## Pour aller plus loin
 
-
 - [Le blog de Temesis](http://blog.temesis.com/) (dont il est Président) ;
 - [Les Checklists Opquast](https://checklists.opquast.com/fr/) ;
 - [Article sur la sur-qualité chez OpenWeb](http://openweb.eu.org/articles/conformite_validation_surquali) ;

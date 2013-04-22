@@ -65,7 +65,8 @@ div {
 Maintenant, il va falloir définir la taille que l'image va prendre, soit le **`width`**. Vous allez me dire que l'on a déjà défini cette taille avec l'attribut `border`, mais en fait, c'est la bordure et non l'image qui a été définie. Ici, on va s'attaquer à l'image.  
 Par défaut, cet attribut récupère la taille de la bordure. Mais on peut y appliquer un pourcentage, une valeur ou un nombre multiplicateur. La valeur par défaut pour cet attribut est 1, cela signifie que la valeur du `border-width` sera conservée.
 
-~~~ {lang="css" line="1"}div {
+~~~ {lang="css" line="1"}
+div {
     border: double orange 1px;
     border-image-source: url(small-border.png);
     border-image-slice: 27;

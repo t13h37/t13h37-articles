@@ -3,5 +3,5 @@
 "author": {"name" : "Jean-Pierre Vincent", "email": "jp@braincracking.org"},
 "edition" : {"number": "14", "date": "2012-08-14"},
 "tags" : ["Mobile", "Performance"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

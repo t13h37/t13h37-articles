@@ -1,6 +1,6 @@
 # De l’Art de faire sa veille
 
-Une composante importante de nos métiers est de faire une bonne veille pour rester à jour. Les technologies n'évoluent pas si vite — la spécification et l’implémentation d’HTML5 et CSS3 prennent énormément de temps. Mais les idées autour des technologies et les choses qu’il est possible de faire avec sont en constante évolution, et des centaines de billets de blogs et d’articles sont publiés chaque jour à ce sujet. Bien sûr il est impossible de tous les lire, néanmoins vous devez quand même vous tenir au courant. Voici quelques conseils pour y arriver tout en conservant suffisament de temps pour travailler.
+Une composante importante de nos métiers est de faire une bonne veille pour rester à jour. Les technologies n'évoluent pas si vite — la spécification et l’implémentation d’HTML5 et CSS3 prennent énormément de temps. Mais les idées autour des technologies et les choses qu’il est possible de faire avec sont en constante évolution, et des centaines de billets de blogs et d’articles sont publiés chaque jour à ce sujet. Bien sûr il est impossible de tous les lire, néanmoins vous devez quand même vous tenir au courant. Voici quelques conseils pour y arriver tout en conservant suffisamment de temps pour travailler.
 
 ## Filtrer
 
@@ -21,7 +21,7 @@ Il y a quelques années, j’ai remarqué que mes flux RSS commençaient à s’
 Dans la même veine que ma gestion de Twitter (où j’essaye autant que possible d’éviter les discussions houleuses), voici un autre excellent filtre que j’utilise : le temps. Je ne lis presque jamais les articles au moment de leur publication : j’attends quelques jours, semaines, voire même mois. Car s'ils sont toujours intéressants après un certain temps, cela signifie qu'ils valent le coup d’être lus. Beaucoup de choses sont dépassées quelques jours seulement après leur parution : de nombreux articles sont écrits sous le coup de l’émotion, et la plupart des réponses à ces derniers le sont avec encore plus d’affect. Ces querelles sont divertissantes mais rarement intéressantes une semaine plus tard.   
 J’utilise [Pinboard](https://pinboard.in/) pour créer un tampon d’articles non-lus, mais d’autres outils tout aussi pratiques existent comme [Instapaper](https://www.instapaper.com/) ou [Pocket](http://getpocket.com/) (et vous pouvez également vous servir de la fonction favoris de votre navigateur).
 
-Faire sa veille pour être à jour ne signifie pas connaître les dernières modes ou les derniers potins. Il s’agit plutôt de se tenir au courant des informations utiles en lisant les sources adéquates. Mais attention, lire des articles pertinents ne suffit pas, il faut aussi pouvoir se rapeller de leur contenu.
+Faire sa veille pour être à jour ne signifie pas connaître les dernières modes ou les derniers potins. Il s’agit plutôt de se tenir au courant des informations utiles en lisant les sources adéquates. Mais attention, lire des articles pertinents ne suffit pas, il faut aussi pouvoir se rappeler de leur contenu.
 
 ## Sauvegarder son savoir
 
@@ -64,7 +64,7 @@ Beaucoup d’autres outils existent pour vous aider dans votre veille. Beaucoup 
 
 ## Sources
 
-Professionnellement, je suis spécialisé en HTML et CSS, et j’ai un intérêt pour le Web Design et quelques autres sujets. Comme j’ai une connaissance experte des CSS, cela n’aurai pas beaucoup de sens pour moi de suivre des sites qui proposent des tutoriaux pour débutants. Alors sur ce sujet spécifique je suis les véritables experts et même les gens qui écrivent les spécifications : ma connaissance des CSS doit être plus qu’à jour. Bas Poppink, un de mes collègues, appelle ce principe « suivre les sources de vos sources jusqu’à remonter jusqu’à la source-mère ». J’appelle ça le Principe Poppink. Alors si vous avez passé le stade des tutoriaux, demandez aux auteurs de ces ressources quels sites et personnes ils suivent.
+Professionnellement, je suis spécialisé en HTML et CSS, et j’ai un intérêt pour le Web Design et quelques autres sujets. Comme j’ai une connaissance experte des CSS, cela n’aurai pas beaucoup de sens pour moi de suivre des sites qui proposent des tutoriels pour débutants. Alors sur ce sujet spécifique je suis les véritables experts et même les gens qui écrivent les spécifications : ma connaissance des CSS doit être plus qu’à jour. Bas Poppink, un de mes collègues, appelle ce principe « suivre les sources de vos sources jusqu’à remonter jusqu’à la source-mère ». J’appelle ça le Principe Poppink. Alors si vous avez passé le stade des tutoriels, demandez aux auteurs de ces ressources quels sites et personnes ils suivent.
 
 Identifier quelles sources sont appropriées pour vous dépend de beaucoup de choses, comme votre expérience et vos champs d’intérêt. Ci-dessous vous trouverez quelques-unes de mes sources. Vous y trouverez peut-être des choses intéressantes…
 

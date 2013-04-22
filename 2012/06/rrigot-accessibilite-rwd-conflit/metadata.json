@@ -3,5 +3,5 @@
 "author": {"name" : "Rudy Rigot", "email": "rudy.rigot@gmail.com"},
 "edition" : {"number": "07", "date": "2012-06-26"},
 "tags" : ["accessibilité", "Responsive"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

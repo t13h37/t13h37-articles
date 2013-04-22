@@ -162,7 +162,7 @@ La raison est toute simple : ce dernier n'est d'aucune utilité dans ce cas de f
 
 À vrai dire, il est d'une utilité relativement restreinte... Car à la différence des autres attributs qui permettent de marquer du contenu varié, `itemid` ne sert qu'à marquer un type de contenu bien précis : une donnée (valeur numérique ou chaîne de caractères) qui permette aux programmes d'identifier sans aucun doute possible l'objet en question. Il peut par exemple s'agir d'un visa d'exploitation, puisque la mention de cette seule information suffit à déterminer précisément de quel film il s'agit.  
 
-Sur la page de présentation du [Petit Précis de Créativité](http://envoitu.re/ligne-essai/petit-precis-creativite/) écrit par Virgine Caplet, l'attribut `itemid` serait donc tout à fait indiqué pour spécifier le numéro ISBN.   
+Sur la page de présentation du [Petit Précis de Créativité](http://envoitu.re/ligne-essai/petit-precis-creativite/) écrit par Virginie Caplet, l'attribut `itemid` serait donc tout à fait indiqué pour spécifier le numéro ISBN.   
 Mais avant de procéder à l'ajout, il convient de prendre connaissance de la particularité de cet attribut : `itemid` doit en effet être accompagné de `itemscope` et `itemtype` pour être fonctionnel. Ainsi pour marquer un numéro ISBN en utilisant `itemid`, il convient d'utiliser trois attributs :
 
 ~~~ {lang="html" line="1"}

@@ -3,5 +3,5 @@
 "author": {"name" : "Julia Buchner", "email": "julia@buchner.fr"},
 "edition" : {"number": "11", "date": "2012-07-24"},
 "tags" : ["CSS3", "intégration"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

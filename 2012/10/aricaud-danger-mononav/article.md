@@ -52,8 +52,8 @@ similaires.
 
 Nous sommes en 2004, Internet Explorer domine le marché des navigateurs,
 Netscape n'est plus. Après une compétition acharnée, la fameuse *Browser Wars*,
-le navigateur avec les fonctionnalités les plus intéressantes a gagné. <span class="pullquote">Oui,
-c'était bien Internet Explorer le meilleur navigateur à ce moment-là</span>.
+le navigateur avec les fonctionnalités les plus intéressantes a gagné. Oui,
+c'était bien Internet Explorer le meilleur navigateur à ce moment-là.
 
 Les développeurs web sont vraiment ravis de pouvoir utiliser tous les
 raffinements d'Internet Explorer 6 : font-face, AJAX, innerHTML.
@@ -131,8 +131,8 @@ Mais de quels nouveaux entrants parle-t-on ?
 
 Regardez l'évolution des technologies disponibles dans nos navigateurs. Depuis
 que la concurrence a été rétablie, d'abord par Firefox puis par Chrome, il n'y a
-jamais eu autant d'innovations dans les navigateurs de bureau. Mais <span class="pullquote">du côté des
-appareils mobiles, l'innovation n'est pas encore au rendez-vous</span>. C'est parce
+jamais eu autant d'innovations dans les navigateurs de bureau. Mais du côté des
+appareils mobiles, l'innovation n'est pas encore au rendez-vous. C'est parce
 qu'il y a une énorme barrière pour les nouveaux entrants. Toi qui me lis, tu ne
 testes que les navigateurs par défaut d'iPhone et d'Android lorsque tu
 travailles sur un site mobile ? Et tu ne détectes que les navigateurs similaires
@@ -187,7 +187,7 @@ suffisante pour pouvoir imposer leurs innovations… Dommage, non ?
 Comment corriger le tir ? On en revient aux fondamentaux : dégradation gracieuse
 ou amélioration progressive. Lorsque vous utilisez une fonctionnalité peu
 répandue, prévoyez le cas pour les navigateurs ne l'implémentant pas. Il est
-possible d'offrir une fonctionalité légèrement dégradée ou d'utiliser [des
+possible d'offrir une fonctionnalité légèrement dégradée ou d'utiliser [des
 polyfills](http://remysharp.com/2010/10/08/what-is-a-polyfill/), ces librairies
 qui comblent un manque. Il faut aussi faire attention à n'utiliser que ce qui
 est en voie de standardisation. Comme le dit Léa Vérou, [tout ce qui est

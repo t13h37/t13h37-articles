@@ -18,7 +18,7 @@ Guillaumet baisse les yeux timidement. La machine à café laisse involontaireme
 
 "Mais c'est tellement simple ! C'est tout simplement parce que tout le monde dit qu'il ne faut pas ! Ahah !"
 
-Jean-Bichon se tournant à nouveau vers son écran, la vie de l'open space reprend son cours strictement là où elle en était restée. Frustré, Nicolet se plonge à nouveau dans son code, se jurant que lui aussi, lorsqu'il aura tout vécu, il se permettra d'émettre bruyamment des réponses insatisfaisantes à des jeunots en détresse au sujet des *User Agents*.
+Jean-Bichon se tournant à nouveau vers son écran, la vie de l'*open space* reprend son cours strictement là où elle en était restée. Frustré, Nicolet se plonge à nouveau dans son code, se jurant que lui aussi, lorsqu'il aura tout vécu, il se permettra d'émettre bruyamment des réponses insatisfaisantes à des jeunots en détresse au sujet des *User Agents*.
 
 Mesdames, Mesdemoiselles, Messieurs, je vous souhaite la bienvenue sur cet article qui a pour but que cette scène ne se reproduise plus.
 
@@ -173,7 +173,7 @@ Et parfois, vous pouvez même tomber sur un navigateur qui se sent en veine, qui
 Encore une fois, gardez la tête froide ! Rappelez-vous que les *User Agents* aussi, en prétendant être chacun tous les autres, se moquaient de vous sur la base-même de leur identité…
 
 
-# En conclusion, je fais quoi, moi, avec mon site ?
+## En conclusion, je fais quoi, moi, avec mon site ?
 
 Les cas "*border-line*" que je vous présente dans le paragraphe précédent sont marginaux, et vous pouvez les considérer comme tels. Aussi, pour moi, il existe deux types d'attitude face à ce problème :
 

@@ -1,3 +1,5 @@
+# Un nouveau contrôleur monte à bord
+
 "On lui dit ?"   
 Sourire, hochement de tête, inspiration :  "Alors... avec Jérémie on a le projet de lancer un magazine dédié à la conception web. Dans un premier temps l'objectif c'est de publier des articles de fond. À terme, si le concept marche, on aimerait publier des livres. L'idée c'est de proposer à des professionnels et des passionnés d'écrire sur leur métier et leur domaine de compétences en leur offrant une tribune et en les rétribuant pour leurs articles."
 

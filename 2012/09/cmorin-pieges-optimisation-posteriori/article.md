@@ -1,13 +1,15 @@
-L'importance de la rapidité des sites web dans le ressenti des visiteurs et leurs comportements est une prise de conscience assez récente. Le sujet a émergé il y a déjà quelque temps, mais n'a commencé à se démocratiser que depuis peu.
+# Performance Web : les pièges de l’optimisation a posteriori
+
+L'importance de la rapidité des sites web dans le ressenti des visiteurs et leurs comportements est une prise de conscience assez récente. Le sujet a émergé il y a déjà quelque temps, mais n'a commencé à se démocratiser que depuis peu. #
 
 Aussi, bien souvent, la question se pose d'optimiser un site existant pour qu'il soit ressenti plus rapide (ou moins lent) par ses visiteurs.
 
-# Des bonnes pratiques tu n'abuseras point…
+## Des bonnes pratiques tu n'abuseras point…
 
 Parmi les techniques généralement préconisées pour améliorer la performance d'un site web, certaines peuvent avoir des effets pervers ou indésirables si on les utilise mal ou à l'extrême.  
 Voyons ensemble un certain nombre d'exemples.
 
-## Domain-sharding
+### Domain-sharding
 
 Cette technique consiste à distribuer les fichiers (images, scripts, feuilles de styles) chargés dans la page entre plusieurs domaines (ou sous-domaines) différents. (NDLR : Voir également à ce sujet l'article de Jean-Pierre Vincent sur [Les performances web mobiles](http://letrainde13h37.fr/14/performance-web-mobile-chargement-de-page-1-sur-2/))
 
@@ -22,7 +24,7 @@ Avec un domain-sharding agressif (3 domaines ou plus) les navigateurs modernes d
 
 Il faut donc bien se garder ici de pousser cette technique à l'extrême, même si elle a une efficacité certaine sur les vieux navigateurs, et se contenter en général de 2 domaines pour la répartition des fichiers de la page.
 
-## Sprites
+### Sprites
 
 L'emploi des sprites vise à réduire le nombre de fichiers à télécharger pour afficher la page web. Le principe est de réunir plusieurs images en une seule (en les séparant éventuellement par des zones de marges), puis d'utiliser cette image dans les feuilles de styles, avec la propriété `background-image`, en se servant des propriétés de positionnement du sprite pour n'afficher que la portion désirée.
 
@@ -30,7 +32,7 @@ Cette technique est très efficace puisqu'elle permet au navigateur de télécha
 
 Cependant, utilisée sans discernement, elle peut avoir des inconvénients :
 
-### Dégradation avec le temps
+#### Dégradation avec le temps
 
 Maintenir un sprite est lourd : si le sprite est modifié et que les images se trouvent déplacées dans le sprite, il faut réécrire toutes les règles CSS associées, ce qui peut être assez pénible pour un gros sprite. En conséquence on évite en général ce scénario là, au prix d'une dégradation progressive de l'efficacité du sprite si on n'y prête pas attention.
 
@@ -42,7 +44,7 @@ L'ajout ou la modification d'une image dans le sprite oblige à l'invalider (mod
 
 Pour limiter l'impact de ces cas courants au cours de la vie du site, il est souvent judicieux de n'associer dans un même sprite que des images qui forment un ensemble logique ou qui correspondent à un élément d'interface précis. Il est ainsi plus facile d'évacuer toute l'image quand l'ensemble n'est plus utilisé, ou de recomposer le sprite et les règles associées, en nombre plus limité, si nécessaire.
 
-### Dégradation de l'accessibilité
+#### Dégradation de l'accessibilité
 
 Les sprites sont initialement recommandés pour regrouper des images CSS. Mais dans le souci d'une optimisation plus agressive, il est souvent tentant d'utiliser cette technique pour regrouper des images normalement embarquées dans la page.
 
@@ -52,7 +54,7 @@ Pour cette raison, il ne faudrait pas utiliser les sprites pour remplacer une ba
 
 C'est malheureusement une pratique que l'on rencontre très souvent dans l'intégration des menus de navigation de type onglets. On y utilise des images à la place du texte pour éviter le débordement lors du grossissement de la police par l'utilisateur (ce qui est en soi une pratique discutable). Pour éviter le chargement d'un grand nombre d'images pour ce menu, on en vient alors à utiliser un sprite au prix d'une dégradation de l'accessibilité.
 
-## Concaténation des fichiers JS et CSS
+### Concaténation des fichiers JS et CSS
 
 La concaténation des fichiers javascript et des feuilles de styles est une autre technique recommandée pour réduire le nombre de fichiers à télécharger pour une page.
 
@@ -75,7 +77,7 @@ Dans ce cas, il convient d'arbitrer en fonction des volumétries : la proportion
 
 On se rend compte que ce type d'arbitrage pose aussi des problèmes potentiels de maintenabilité.
 
-## Javascript en pied/bas de page
+### Javascript en pied/bas de page
 
 Une autre pratique recommandée est l'insertion des appels javascript à la fin du HTML, juste avant la balise de fermeture `</body>`. Cette pratique permet :
 
@@ -89,7 +91,7 @@ Dans le cadre d'un site complet, dont les pages sont souvent fabriquées à part
 Tous les fichiers javascripts devant être regroupés en bas de page, cela oblige à les séparer des composants de coeur de page pour lesquels ils servent, et la maintenance s'en trouve fortement compliquée. En particulier lors du retrait d'un composant qui utilisait un fichier javascript spécifique, il devient assez facile d'oublier de retirer ce script associé, et on peut se retrouver assez facilement à avoir des scripts en pied de page qui ne servent plus.
 
 
-## La course au scoring
+### La course au scoring
 
 Enfin, le dernier piège que nous aborderons ici concerne l'utilisations des scores comme [PageSpeed](https://developers.google.com/speed/pagespeed/) ou [YSlow](http://developer.yahoo.com/yslow/). Ces outils d'évaluation ont été mis en place pour aider les développeurs à avoir une vision d'ensemble de l'optimisation de leurs pages et synthétisent l'ensemble des tests sous forme d'un score global.
 
@@ -107,11 +109,11 @@ Ce à quoi est confronté le visiteur du site, ce n'est pas au manque d'optimisa
 Ainsi, la première et plus importante optimisation consiste à se poser la question de ce qui pèse dans la page, ce qui provoque plein de chargements de fichiers, ou le chargement de fichiers lourds, et de la nécessité de ces éléments, ou encore de la façon dont il serait possible de les aménager pour réduire à la source le temps de chargement de la page.
 
 
-# La performance Web : une démarche continue, sur toute la durée de vie du site
+## La performance Web : une démarche continue, sur toute la durée de vie du site
 
 La tendance générale est à [l’inflation de la taille des page web](http://gigaom.com/2012/05/23/the-growing-epidemic-of-page-bloat/), et il en sera sûrement ainsi tant que la rapidité d'un site sera considéré comme une prestation secondaire, loin derrière l'aspect visuel ou la disponibilité de moult gadgets fonctionnels à la mode.
 
-## À la conception
+### À la conception
 
 L'accessibilité des sites a longtemps été considérée comme une annexe, un plus que l'on faisait si on avait le temps, à la fin de la réalisation. L'expérience a montré que cela ne marchait pas et ne donnait que de piètres résultats. Peu à peu, l'accessibilité est prise en compte dès le début du projet, ce qui permet d'orienter les choix techniques, visuels… et de prédisposer le site pour une bonne accessibilité.
 
@@ -119,7 +121,7 @@ Il devra en aller de même pour la performance web et la rapidité d'affichage d
 
 Le parallèle avec l'accessibilité est d'autant plus pertinent que la rapidité de service d'un site contribue également à son accessibilité en rendant sa consultation possible y compris dans des conditions de connexion dégradée (que l'on éprouve de plus en plus souvent en situation de mobilité avec les accès Wifi publics et/ou partagés).
 
-## Lors du développement
+### Lors du développement
 
 Si les choix de conception prédisposent la rapidité d'un site en évitant d'embarquer de nombreux gadgets techniques et/ou une charte visuelle qui nécessite de nombreux éléments graphiques, c'est ensuite lors du développement technique que les bonnes pratiques devront être appliquées.
 
@@ -129,7 +131,7 @@ Dans le cadre du développement il est très utile de recourir à une [liste de 
 
 En procédant ainsi, il sera possible d'aboutir à un site rapide et bien né.  Ensuite, en fonction des compétences internes (ou externes) disponibles il est toujours possible d'aller plus loin avec des stratégies plus agressives, selon les objectifs du projet.
 
-## Lors de la vie du site
+### Lors de la vie du site
 
 La gestion de la performance web ne s'arrête pas à la livraison du site :
 
@@ -143,7 +145,7 @@ Il sera alors possible de détecter la dégradation de la performance causée pa
 
 Mieux encore, en étant mesurée en continu, et énoncée comme un livrable, la non-dégradation de la performance peut-être prise comme une contrainte lors des interventions techniques et évolutions du site.
 
-# Automatiser pour démocratiser et aller encore plus loin
+## Automatiser pour démocratiser et aller encore plus loin
 
 Il faudra sans doute encore un peu (soyons optimistes !) de temps avant que la performance web soit prise en compte dès le début du projet et tout au long de sa vie.
 

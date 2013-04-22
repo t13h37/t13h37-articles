@@ -3,5 +3,5 @@
 "author": {"name" : "Marie Alhomme", "email": "contact@pouipouidesign.net"},
 "edition" : {"number": "04", "date": "2012-06-05"},
 "tags" : ["design", "méthodologie", "outils"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

@@ -10,8 +10,8 @@ Comment ? C’est ce que nous allons analyser ensemble.
 Tout commence toujours par une promesse :
 
 <blockquote class="speaker1">Bonjour, nous sommes la société XXX et nous aimerions vous proposer nos services qui [description enchanteresse à base de poneys volants sur Mars].</blockquote>
-<blockquote class="speaker2">- Écoutez, oui, mais je reste sceptique. J’aimerais inclure votre logiciel dans mon site mais j’imagine que tout cela a un coût technique... ?</blockquote>
-<blockquote class="speaker1">- Pas du tout, car *une simple ligne de Javascript suffit*.</blockquote>
+<blockquote class="speaker2">Écoutez, oui, mais je reste sceptique. J’aimerais inclure votre logiciel dans mon site mais j’imagine que tout cela a un coût technique... ?</blockquote>
+<blockquote class="speaker1">Pas du tout, car *une simple ligne de Javascript suffit*.</blockquote>
 
 Des pays entiers sont tombés pour cette simple ligne de Javascript ([au moins sur cette carte](http://xkcd.com/802/)). Car cette discussion est en général suivie d’accords commerciaux et de cinq minutes de développement montre-en-main et paf ! Vous venez d’inclure un script tiers dans votre site. Fantastique ? Pas forcément.
 Qu’avez-vous réellement fait ? Vous avez conclu un accord avec un intervenant extérieur à votre S.I., lui proposant d’inclure dans votre site un espace d’exécution Javascript que vous ne contrôlez pas. Même si vous avez défini contractuellement les conditions d’utilisation de cet espace, vous n’avez que très peu de moyens à votre disposition pour le surveiller. Vous venez de transformer votre site en porte-avions, sans avoir aucun contrôle sur les engins qui en décollent et y atterrissent. Et votre prestataire en est bien souvent conscient...
@@ -40,7 +40,7 @@ L’exemple de script tiers précédent avait une vocation pédagogique et simpl
 
 - Les redirections, toutes inutiles, qui gâchent un temps précieux ;
 - Les appels sécurisés, qui impliquent le chargement des différents certificats attenants et leurs interprétations souvent coûteuses ;
-- La multiplication des domaines différents qui induit un nombre important de résolutions <abbr title="Domain Name System">DNS</abbr> nécessaires à leur appel.
+- La multiplication des domaines différents qui induit un nombre important de résolutions DNS nécessaires à leur appel.
 
 Peu importe comment vous attaquez le problème : l’inclusion d’un script tiers et les appels qu’il induit dégradent l’expérience de vos visiteurs. La seule question qu’il vous reste  à vous poser est de savoir quel en sera l’impact sur votre efficacité opérationnelle. Sur un site e-commerce, un site plus lent peut signifier un taux de rebond plus important, et une diminution du chiffre d’affaire. Sur d’autres types de sites, cela pourra avoir divers impacts dont le plus simple : nuire à la perception qu’ont vos clients de votre marque. Mais la performance ne doit pas être votre seule crainte...
 

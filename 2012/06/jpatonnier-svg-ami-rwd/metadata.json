@@ -3,5 +3,5 @@
 "author": {"name" : "Jérémie Patonnier", "email": "jeremie.patonnier@gmail.com"},
 "edition" : {"number": "05", "date": "2012-06-12"},
 "tags" : ["Design", "Responsive", "SVG"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

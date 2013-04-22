@@ -57,9 +57,9 @@ En plus des exemples que vous pourrez trouver dans l'article de Samantha, je vou
 
 ### Les deux premières Planches envisagées
 
-![Première Planche de Style pour le train de 13h37](120406-t13h37-tile-1-468x348.jpg "Première Planche de Style pour le train de 13h37 (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/120406-t13h37-tile-1.jpg" title="Cliquez pour voir la première planche en grand" class="imagebox">voir en grand</a>)")
+![Première Planche de Style pour le train de 13h37](120406-t13h37-tile-1.jpg "Première Planche de Style pour le train de 13h37 (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/120406-t13h37-tile-1.jpg" title="Cliquez pour voir la première planche en grand" class="imagebox">voir en grand</a>)")
 
-![Deuxième Planche de Style pour le train de 13h37](120406-t13h37-tile-2-468x348.jpg "Deuxième Planche de Style pour le train de 13h37 (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/120406-t13h37-tile-2.jpg" title="Cliquez pour voir la deuxième planche en grand" class="imagebox">voir en grand</a>)")
+![Deuxième Planche de Style pour le train de 13h37](120406-t13h37-tile-2.jpg "Deuxième Planche de Style pour le train de 13h37 (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/120406-t13h37-tile-2.jpg" title="Cliquez pour voir la deuxième planche en grand" class="imagebox">voir en grand</a>)")
 
 ### Après quelques itérations, la Planche définitive retenue
 
@@ -67,11 +67,7 @@ En plus des exemples que vous pourrez trouver dans l'article de Samantha, je vou
 
 ### Enfin, les maquettes de page d'accueil qui en ont été déduites en fonction des quelques breakpoints que nous avions choisis
 
-![Maquette de la home du train de 13h37, version "mobile"](t13h37-home-320-e1338832736825-150x150.jpg "Maquette de la home du train de 13h37, version "mobile" (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/t13h37-home-320.jpg" class="imagebox">voir en grand</a>)")
-
-![Maquette de la home du train de 13h37, version "tablette"](t13h37-home-768-304x468.jpg "Maquette de la home du train de 13h37, version "tablette" (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/t13h37-home-768.jpg" class="imagebox">voir en grand</a>)")
-
-![Maquette de la home du train de 13h37, version "desktop"](t13h37-home-1280-267x468.jpg "Maquette de la home du train de 13h37, version "desktop" (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/t13h37-home-1280.jpg" class="imagebox">voir en grand</a>)")
+![Maquettes de la home du train de 13h37, version "mobile", "tablette" et "desktop"](t13h37-home-all-breakpoints.jpg "Maquette de la home du train de 13h37, version "mobile" (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/t13h37-home-320.jpg" class="imagebox">voir en grand</a>), , "tablette" (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/t13h37-home-768.jpg" class="imagebox">voir en grand</a>) et "desktop" (<a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/t13h37-home-1280.jpg" class="imagebox">voir en grand</a>)")
 
 ## Conclusion
 

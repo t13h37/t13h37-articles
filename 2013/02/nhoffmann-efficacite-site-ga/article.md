@@ -7,7 +7,7 @@ Vous êtes prêts à vous lancer comme une locomotive, et ce client (ou son serv
 *« Et au fait, il sera possible de chiffrer nos gains ? »
 *« Vous avez des outils pour tester l'efficacité du nouveau site ? »
 
-Aïe ! Vous n'êtes pas très calé en statistiques, votre métier c'est de développer/intégrer et pas de cracher des chiffres pour des marketeux, surtout que le budget n'inclut pas le développement d'un module spécifique complet… Et puis, comment chiffrer simplement et rapidement le Saint-Graal des marketeux, à savoir le Retour Sur Investissement ? (ROI en anglais, <em lang="en">Return On Investment</em>).
+Aïe ! Vous n'êtes pas très calé en statistiques, votre métier c'est de développer/intégrer et pas de cracher des chiffres pour des marketeux, surtout que le budget n'inclut pas le développement d'un module spécifique complet… Et puis, comment chiffrer simplement et rapidement le Saint-Graal des marketeux, à savoir le Retour Sur Investissement ? (ROI en anglais, *Return On Investment*).
 
 Et bien, j'ai une bonne nouvelle ! Ce n'est pas si difficile que cela : avec l'implication de votre client et l'utilisation de Google Analytics, vous allez pouvoir produire des statistiques et évaluer le ROI de vos campagnes, voire même de certains processus.
 
@@ -38,20 +38,20 @@ Ce code est à insérer dans le `head` de votre page, en remplaçant bien sûr l
 
 ### Page tracker virtuel
 
-Le <em lang="en">Virtual Page Tracker</em> est un outil très utile qui consiste à spécifier un paramètre dans le code donné ci-dessus, par exemple :
+Le *Virtual Page Tracker* est un outil très utile qui consiste à spécifier un paramètre dans le code donné ci-dessus, par exemple :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
  _gaq.push(['_trackPageview', '/mapage-virtuelle.php']);
 ~~~
 
-Ce code permettra de tracker une page en en spécifiant le nom. Ainsi, vous pourrez chercher dans les pages *trackées* la page « /mapage-virtuelle.php ». D'apparence simple, cette possibilité très puissante va permettre de construire des URLs à votre convenance, lesquelles pourront alors être *trackées* et classées.
+Ce code permettra de *tracker* une page en en spécifiant le nom. Ainsi, vous pourrez chercher dans les pages *trackées* la page « /mapage-virtuelle.php ». D'apparence simple, cette possibilité très puissante va permettre de construire des URLs à votre convenance, lesquelles pourront alors être *trackées* et classées.
 
 Vous me direz qu'idéalement il faudrait s'en passer car les URLs d'un site doivent être bien construites et aussi intelligibles que possible. Effectivement… dans le cas où l'on *tracke* les pages d'un site. Plaçons-nous dans le cas d'un formulaire d'inscription. La page de remerciement aura peu ou prou toujours la même URL, et cette dernière est peu « informative ». Par contre, selon les choix effectués dans le formulaire, nous pouvons construire une URL virtuelle plus intelligente. J'y reviendrai dans les exemples pratiques plus bas.
 
 
 ### Event Trackers
 
-Il est possible aussi de *tracker* un événement (un clic sur un lien, une action de l'utilisateur, etc.) grâce aux <em lang="en">Event Trackers</em>. Leur structure est la suivante :
+Il est possible aussi de tracker un événement (un clic sur un lien, une action de l'utilisateur, etc.) grâce aux *Event Trackers*. Leur structure est la suivante :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 _gaq.push(['_trackEvent', 'category', 'action', 'label']);"
@@ -69,7 +69,7 @@ Ainsi, dans le rapport des événements, le clic sur ce lien *mailto* sera indiq
 
 ## Passer à la pratique
 
-Maintenant que nous savons *tracker* des pages ou des événements sur le site, il est temps de passer du côté de Google Analytics pour définir des objectifs, et le cas échéant les chiffrer.
+Maintenant que nous savons tracker des pages ou des événements sur le site, il est temps de passer du côté de Google Analytics pour définir des objectifs, et le cas échéant les chiffrer.
 
 
 ### Mettre en place un objectif simple
@@ -149,7 +149,7 @@ Bref, sachez rester à votre place si votre client demande des interprétations�
 
 ### Utilisation des *funnels* pour voir l'efficacité d'un processus « complexe »
 
-Une autre possibilité de Google Analytics est de voir le chemin parcouru pour atteindre un objectif. On appelle cela les « entonnoirs de conversion » ou les « <em lang="en">Goal Funnels</em> » en langue de Shakespeare. Comme précédemment, vous définissez un objectif, et vous ajoutez des étapes (obligatoires ou non) pour atteindre cet objectif.
+Une autre possibilité de Google Analytics est de voir le chemin parcouru pour atteindre un objectif. On appelle cela les « entonnoirs de conversion » ou les « *Goal Funnels* » en langue de Shakespeare. Comme précédemment, vous définissez un objectif, et vous ajoutez des étapes (obligatoires ou non) pour atteindre cet objectif.
 
 L'avantage de ces *funnels* est de pouvoir visualiser l'efficacité d'un processus « complexe », comprenez en « plusieurs étapes ».
 
@@ -169,7 +169,7 @@ C'est très semblable à un objectif classique : vous mettez d'abord l'adresse 
 
 ![Les résultats du funnel](ga_resultats_funnel.jpg "Les résultats du funnel")
 
-On peut voir que sur le schéma de l'entonnoir, un point saute aux yeux : la troisième étape montre un fort taux d'abandon. Encore une fois, le chiffre est livré tel quel, l'interprétation qui peut en être faite est un autre sport à part entière. Cette étape est-elle peu claire ? Trop compliquée ? Induit-elle en erreur au vu des URLs de sortie du funnel ? Les prix sont-ils prohibitifs ? Etc. Les hypothèses peuvent être très différentes. Toutefois, vous constatez qu'il se passe quelque chose sur cette page, et charge à vous de faire remonter l'information, ou d'essayer de l'analyser plus finement.
+On peut voir que sur le schéma de l'entonnoir, un point saute aux yeux : la troisième étape montre un fort taux d'abandon. Encore une fois, le chiffre est livré tel quel, l'interprétation qui peut en être faite est un autre sport à part entière. Cette étape est-elle peu claire ? Trop compliquée ? Induit-elle en erreur au vu des URLs de sortie du *funnel* ? Les prix sont-ils prohibitifs ? Etc. Les hypothèses peuvent être très différentes. Toutefois, vous constatez qu'il se passe quelque chose sur cette page, et charge à vous de faire remonter l'information, ou d'essayer de l'analyser plus finement.
 
 
 

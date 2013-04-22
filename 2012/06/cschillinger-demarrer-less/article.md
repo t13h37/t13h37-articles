@@ -44,14 +44,14 @@ Agrémenté de nombreux exemples illustrants les différentes possibilités de L
 
 ## La boîte à outils
 
-![Extrait du code fourni par lesselements.com](outils-less-elements.png "Extrait du code fourni par <a href="http://leselements.com">lesselements.com</a>")
+![Extrait du code fourni par lesselements.com](outils-less-elements.png "Extrait du code fourni par <a href="http://lesselements.com">lesselements.com</a>")
 
 [LESS Elements](http://lesselements.com/) est une collection de classes LESS prédéfinies et prêtes à l’emploi. Elle constitue un excellent support pour comprendre et approfondir le mécanisme du préprocesseur. Son principal intérêt est d’inclure, pour chaque classe, l’ensemble des propriétés préfixées adéquates, ce qui permet de simplifier grandement leur mise en place.  
 Cependant plutôt que de les utiliser telles quelles, il est préférable de s’en inspirer et de les adapter en fonction des besoins réels. Car, suivant les cas, elles peuvent parfois être bien plus verbeuses que nécessaire.
 
 ## Le service en ligne
 
-![Aperçu de l'outils en ligne CSS2LESS](css2less-online.png "Aperçu de l'outils en ligne CSS2LESS")
+![Aperçu de l'outil en ligne CSS2LESS](css2less-online.png "Aperçu de l'outil en ligne CSS2LESS")
 
 Cette dernière ressource est un outil qui permet de transformer un code CSS en LESS : [CSS2LESS](http://css2less.cc/) permet de ré-agencer le contenu d’une feuille de styles pour qu’elle adopte le format LESS. Malheureusement cet outil n’est pas magique et atteint bien vite ses limites : il ne prend en charge que la réorganisation du code sous forme de déclarations imbriquées.  
 Il s’avère donc particulièrement utile dans un contexte donné, qui est la reprise de code en vue d’un passage à LESS.
@@ -60,4 +60,5 @@ Voilà, j’espère que ces quelques outils vous permettront de sauter le pas pl
 N’hésitez pas à partager vos ressources !
 
 **Notes :**
-- [^1]: Mise à jour du 19/06/2012
+
+[^1]: Mise à jour du 19/06/2012

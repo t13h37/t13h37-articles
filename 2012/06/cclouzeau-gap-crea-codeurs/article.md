@@ -89,7 +89,7 @@ Le principe est simple : présentez à cette personne un carton de meuble à mon
 **Le technicien** va ensuite trier les pièces en les rangeant méthodiquement et en vérifiant sur la notice que tout le matériel est complet. Puis il va procéder au montage fidèlement aux étapes du plan. Il posera le meuble achevé là où il l’avait exactement prévu avant achat.
 **Le graphiste**, lui, n’a pas besoin de lire la notice car les éléments parlent visuellement d’eux-mêmes. Il se lance dans le montage. Il se peut même qu’il termine bien avant le technicien. La pièce qui lui reste en plus dans les mains ? Ce n’est pas grave : il pourra envisager de personnaliser le meuble fini avec de la peinture ou des autocollants. Ce meuble unique au monde pourra alors trôner fièrement dans une pièce, sorte d’objet de discussion entre amis.
 
-!["Tout va très bien" par Franquin](toutvatresbien-frankin.jpg ""Tout va très bien" par Franquin")
+![&rdquo;Tout va très bien&rdquo; par Franquin](toutvatresbien-frankin.jpg "&ldquo;Tout va très bien&rdquo; par Franquin")
 
 ## Quelques conseils pour faire travailler conjointement ces deux profils
 

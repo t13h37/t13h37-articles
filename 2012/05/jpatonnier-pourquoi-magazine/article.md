@@ -35,3 +35,4 @@ Si aujourd'hui, *le **train** de **13h37*** semble s’apparenter à un petit to
 *Assis dans un compartiment étroit, ballotté en tous sens, John regardait défiler le paysage. Les choses s’amélioraient. Au moins, Michel avait cessé de gémir. Avec un peu de chance, il ne serait peut-être pas nécessaire de lui couper la jambe.*
 
 *Il restait tout de même inquiet. Les indigènes hostiles de la tribu Iheussis les avaient talonnés jusqu'après le départ du train. Il faudrait du temps avant que la civilisation polisse ce coin de jungle hostile... mais il était prêt. Au fond d'une caisse, il avait trouvé ce qui lui manquait : des munitions avec gravé sur chacune d'entre elles "Web standard". Tout n'était pas parfait, mais les choses s’arrangeaient. Bientôt, il rencontrerait les tribus nomades du Ouèbkit et l’œuvre civilisatrice reprendrait son cours... peut-être.*
+

@@ -21,10 +21,10 @@ Du coté des lecteurs d'écrans, la plupart des versions disponibles sur le marc
 
 ### Les rôles ARIA
 
-Il s'agit de l'élément de base d'ARIA, le plus simple à comprendre et à mettre en œuvre. Cela consiste simplement à affecter une valeur sémantique à un élément afin de décrire son contenu. On peut par exemple définir qu'un élément sans valeur sémantique comme l'élément `&lt;span&gt;` est en fait un bouton en utilisant le rôle « `button` »
+Il s'agit de l'élément de base d'ARIA, le plus simple à comprendre et à mettre en œuvre. Cela consiste simplement à affecter une valeur sémantique à un élément afin de décrire son contenu. On peut par exemple définir qu'un élément sans valeur sémantique comme l'élément `<span>` est en fait un bouton en utilisant le rôle « `button` »
 
 ~~~ {lang="html" line="1"}
-<span role="button">Ceci est un bouton
+<span role="button">Ceci est un bouton</span>
 ~~~
 
 Il existe de très nombreux rôles et ceux-ci peuvent être de trois types différents.
@@ -51,7 +51,7 @@ Pour désigner une note.
 
 ##### presentation
 
-Contrairement aux autres, permet de supprimer toute valeur sémantique d'un élément. Le contenu d'une liste `&lt;ul&gt;` avec un rôle `presentation` ne sera pas restitué vocalement comme une liste. 
+Contrairement aux autres, permet de supprimer toute valeur sémantique d'un élément. Le contenu d'une liste `<ul>` avec un rôle `presentation` ne sera pas restitué vocalement comme une liste. 
 
 Par exemple, en terme de restitution à l'utilisateur :
 
@@ -66,9 +66,9 @@ Sera équivalent à :
 
 ~~~ {lang="html" line="1"}
 <span>
-    <span>Bonjour
-    <span>Comment vas tu ?
-
+    <span>Bonjour</span>
+    <span>Comment vas tu ?</span>
+</span>
 ~~~
 
 Si l'élément sur lequel vous appliquez le rôle `presentation` n'a pas l'obligation de contenir des éléments enfants, les enfants continueront à être restitués. Dans l'exemple suivant, un élément de liste `<ul>` contient obligatoirement des enfants `<li>`, le rôle `presentation` s'appliquera donc aux `<li>` enfants mais pas aux éventuelles balises contenues dans les `<li>` (ici un élément `<a>`) qui restera donc restitué.
@@ -86,12 +86,12 @@ sera équivalent à :
 
 ~~~ {lang="html" line="1"}
 <span> 
-    <span><a href="xxx">Bonjour</a>
-    <span>Comment vas tu ?
-
+    <span><a href="xxx">Bonjour</a></span>
+    <span>Comment vas tu ?</span>
+</span>
 ~~~
 
-#### Des rôles de « Landmarks » permettant de définir des zones de navigation (<a href="http://www.w3.org/TR/wai-aria/roles#landmark_roles" hreflang="en">cf. spécifications</a>)
+#### Des rôles de « Landmarks » permettant de définir des zones de navigation ([cf. spécifications](http://www.w3.org/TR/wai-aria/roles#landmark_roles))
 
 Par exemple :
 
@@ -233,7 +233,7 @@ Par exemple, on peut établir une relation entre deux éléments en utilisant `a
 La différence entre les états et les propriétés tient au fait que la valeur d'un état va être modifiée dans le temps en fonction des actions de l'utilisateur. Par exemple, une case à cocher pourra avoir un état non coché (`aria-checked="false"`) qui sera modifié ultérieurement via javascript pour être passé à coché (`aria-checked="true"`).
 
 ~~~ {lang="html" line="1"}
-<span id="check" role="checkbox" aria-checked="false">Choix 1
+<span id="check" role="checkbox" aria-checked="false">Choix 1</span>
 ~~~
 
 Les propriétés et les états peuvent êtres utilisés dans quatre contextes différents.
@@ -299,19 +299,19 @@ Pour indiquer le type de mise à jour que le lecteur d'écran doit annoncer (les
 ##### Exemple pour un cours de bourse live
 
 ~~~ {lang="html" line="1"}
-<div role="region" aria-live="polite" aria-atomic="true" aria-busy="false">Cours de la bourse : <span>+3 %</div>
+<div role="region" aria-live="polite" aria-atomic="true" aria-busy="false">Cours de la bourse : <span>+3 %</span></div>
 ~~~
 
 Lors de la mise à jour via javascript :
 
 ~~~ {lang="html" line="1"}
-<div role="region" aria-live="polite" aria-atomic="true" aria-busy="true">Cours de la bourse : <span></div>
+<div role="region" aria-live="polite" aria-atomic="true" aria-busy="true">Cours de la bourse : <span></span></div>
 ~~~
 
 Après la mise à jour :
 
 ~~~ {lang="html" line="1"}
-<div role="region" aria-live="polite" aria-atomic="true" aria-busy="false">Cours de la bourse : <span>+ 3.5 %</div>   
+<div role="region" aria-live="polite" aria-atomic="true" aria-busy="false">Cours de la bourse : <span>+ 3.5 %</span></div>   
 ~~~
 
 #### Sur des éléments pouvant être glissé/déposé ([cf. spécifications](http://www.w3.org/TR/wai-aria/states_and_properties#attrs_dragdrop))
@@ -386,7 +386,7 @@ Il sera par exemple préférable de faire :
 à :
 
 ~~~ {lang="html" line="1"}
-<span role="link">lien
+<span role="link">lien</span>
 ~~~
 
 De plus, il ne faut pas oublier que l'ajout de rôle ARIA ne supprime pas les comportements classiques des navigateurs.
@@ -437,7 +437,7 @@ Il est tout de même utile de citer certains travaux dans le domaine, notamment 
 ### ARIA et HTML5
 
 Comme vous avez pu le voir, ARIA dispose de nombreux points commun avec HTML5. Ils permettent tous deux d'ajouter de la sémantique par rapport au XHTML ou à HTML4.01.  
-HTML5 propose pour cela l'ajout de nouvelle balise comme `&lt;article&gt;`, `&lt;header&gt;`, `&lt;nav&gt;`, `&lt;section&gt;`, etc.
+HTML5 propose pour cela l'ajout de nouvelle balise comme `<article>`, `<header>`, `<nav>`, `<section>`, etc.
 
 Pour l'heure, bien qu'implémentant certaines de ces nouvelles balises, les navigateurs ne restituent pas pour autant leur valeur sémantique aux lecteurs d'écrans. Dès lors, et en attendant que cela soit le cas, il est tout à fait possible d'utiliser ARIA pour pallier à cette déficience.
 
@@ -470,7 +470,6 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
 	width="600px" height="400px">
 	<title>checkbox svg avec ARIA</title>
-
     <g onclick="toggle('cb1')">
         <circle id="cb1" r="20" cy="100" cx="100"  
                  role="checkbox"
@@ -478,7 +477,6 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
                  aria-labelledby="text1" />
         <text id="text1" y="105" x="140">svg circle checkbox 1</text>
     </g>
-    
     <g onclick="toggle('cb2')">
         <circle id="cb2" r="20" cy="200" cx="100" 
                 role="checkbox" 
@@ -486,7 +484,6 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
                 aria-labelledby="text2" />
         <text id="'text2" y="205" x="140">svg circle checkbox 2</text>
     </g>
-    
     <g onclick="toggle('cb3')">
         <circle id="cb3" r="20" cy="300" cx="100" 
                 role="checkbox" 
@@ -494,23 +491,19 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
                 aria-labelledby="text3" />
         <text id="text3" y="305" x="140">svg circle checkbox 3</text>
     </g>
-
     <style type="text/css">
 		circle {
 			fill: white;
 			stroke: black;
 			stroke-width: 5px;
 		}
-		
 		circle[aria-checked=true] {
 			fill: red;
 		}
-		
 		text {
 			font: 20px sans-serif;
 		}
     </style>
-
 	<script type="text/javascript">//<![CDATA[
 		function toggle(id) {
 			var checkbox = document.getElementById(id),
@@ -528,14 +521,12 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
      width="420" height="110">
     <title>Tableau de données en SVG + ARIA</title>
-
     <rect x="10" y="10" width="400" height="30" fill="#FFFFCC" />
     <rect x="10" y="10" width="100" height="90" fill="#FFFFCC" />
     <path d="M10,10 l0,90 l400,0 l0,-90 l-400,0 
              m100,0 l0,90 m100,0 l0,-90 m100,0 l0,90
              m100,-60 l-400,0 m0,30 l400,0
              M10" fill="none" stroke="#999999" />
-
     <g role="grid">        
         <text role="row" x="0" y="32">
             <tspan role="columnheader" x="65">Trimestre</tspan>
@@ -543,14 +534,12 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
             <tspan role="columnheader" x="262">Dépenses</tspan>
             <tspan role="columnheader" x="360">Résultat</tspan>
         </text>
-        
         <text role="row" x="30" y="62">
             <tspan role="rowheader" x="20">T1</tspan>
             <tspan role="gridcell" x="204">223,00 €</tspan>
             <tspan role="gridcell" x="304">195,00 €</tspan>
             <tspan role="gridcell" x="400">28,00 €</tspan>
         </text>
-        
         <text role="row" x="30" y="92">
             <tspan role="rowheader" x="20">T2</tspan>
             <tspan role="gridcell" x="204">183,00 €</tspan>
@@ -558,13 +547,11 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
             <tspan role="gridcell" x="400">113,00 €</tspan>
         </text>
     </g>
-    
     <style type="text/css">
 		text {
 			font: 16px sans-serif;
 			text-anchor: end;
 		}
-		
 		tspan[role=columnheader],
 		tspan[role=rowheader] {
 			font-size: 18px;
@@ -572,7 +559,6 @@ Comme nous l'indiquions au début de l'article, ARIA peut tout à fait être uti
 			fill: #900;
 			text-anchor: middle;
 		}
-		
 		tspan[role=rowheader] {
 			text-anchor: start;
 		}

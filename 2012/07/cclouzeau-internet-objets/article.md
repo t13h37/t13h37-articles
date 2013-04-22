@@ -82,5 +82,5 @@ Enfin, dernière remarque : gageons que ces objets sauront être capables de pro
 
 **Notes**
 
-- [^1]: Viktor Arvidsson, Ericsson : « Deux tiers des connexions M2M seront supportés par des technologies mobiles » [http://www.silicon.fr/viktor-arvidsson-ericsson-Internet-des-objets&#8211;74819.html](http://www.silicon.fr/viktor-arvidsson-ericsson-Internet-des-objets-74819.html)
-- [^2]: Jean-Luc Beylat, Alcatel Lucent : « Cinquante milliards d'objets connectés est une estimation assez conservatrice » [http://www.silicon.fr/jean-luc-beylat-alcatel-lucent-Internet-des-objets&#8211;74811.html](http://www.silicon.fr/jean-luc-beylat-alcatel-lucent-Internet-des-objets-74811.html)
+[^1]: Viktor Arvidsson, Ericsson : « Deux tiers des connexions M2M seront supportés par des technologies mobiles » [http://www.silicon.fr/viktor-arvidsson-ericsson-Internet-des-objets&#8211;74819.html](http://www.silicon.fr/viktor-arvidsson-ericsson-Internet-des-objets-74819.html)
+[^2]: Jean-Luc Beylat, Alcatel Lucent : « Cinquante milliards d'objets connectés est une estimation assez conservatrice » [http://www.silicon.fr/jean-luc-beylat-alcatel-lucent-Internet-des-objets&#8211;74811.html](http://www.silicon.fr/jean-luc-beylat-alcatel-lucent-Internet-des-objets-74811.html)

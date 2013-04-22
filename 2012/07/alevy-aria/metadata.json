@@ -3,5 +3,5 @@
 "author": {"name" : "Aurélien Levy", "email": "aurelien.levy@gmail.com"},
 "edition" : {"number": "08", "date": "2012-07-03"},
 "tags" : ["accessibilité", "ARIA", "intégration"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

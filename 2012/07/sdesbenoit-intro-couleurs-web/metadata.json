@@ -3,5 +3,5 @@
 "author": {"name" : "Sébastien Desbenoit", "email": "seb@desbenoit.net"},
 "edition" : {"number": "10", "date": "2012-07-17"},
 "tags" : ["Couleur", "Design"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

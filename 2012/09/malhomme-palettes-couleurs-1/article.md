@@ -1,4 +1,6 @@
-# Miguel Covarrubias, "Offering of Fruits for the Temple" (huile sur toile, 1932)
+# Inspirez-vous des grands maîtres de la peinture : 5 palettes de couleur pour la rentrée 2012
+
+## Miguel Covarrubias, "Offering of Fruits for the Temple" (huile sur toile, 1932)
 
 Miguel Covarrubias (22 novembre 1904, Mexico - 4 février 1957) est un peintre, caricaturiste mexicain, mais également un ethnologue et historien de l'art autodidacte.
 
@@ -12,7 +14,7 @@ La palette résultante est harmonieuse et majoritairement chaude, avec une point
 Elle pourrait ainsi très bien convenir à un site orienté "vacances", "voyages"…
 
 
-# Paul Gauguin, "Femmes de Tahiti - Sur la plage" (huile sur toile, 1891)
+## Paul Gauguin, "Femmes de Tahiti - Sur la plage" (huile sur toile, 1891)
 
 Paul Gauguin (7 juin 1848, Paris -- 8 mai 1903, Îles Marquises) est un peintre post-impressionniste considéré comme l'un des peintres français majeurs du XIXe siècle.
 
@@ -25,7 +27,7 @@ En 1891, peu après son arrivée à Tahiti suite à l'abandon de sa famille et d
 
 Mélant les couleurs désaturées du sable, de l'herbe et de la robe rose d'une des protagonistes et le rouge vif de la jupe de l'autre, cette palette, à la fois contemporaine et sophistiquée, conviendra par exemple à un site _corporate_ (banque, cabinet d'avocats, etc.).
 
-# Francisco José de Goya, "El Parasol" (huile sur toile, 1777)
+## Francisco José de Goya, "El Parasol" (huile sur toile, 1777)
 
 Francisco José de Goya, (30 mars 1746, Fuendetodos -- 16 avril 1828, Bordeaux) est un peintre et graveur espagnol.
 
@@ -38,7 +40,7 @@ Pour la Manufacture royale de tapisseries, il exécute alors de nombreux cartons
 
 La palette inspirée par cette toile est d'une grande fraîcheur et très délicate, et pourrait ainsi convenir à un site présentant un service innovant ou une application (web ou autre).
 
-# Vassily Kandinsky, "Einige Kreise" (huile sur toile, 1928)
+## Vassily Kandinsky, "Einige Kreise" (huile sur toile, 1928)
 
 Vassily Kandinsky (Décembre 1866, Moscou -- 13 décembre 1944, Neuilly-sur-Seine) est un peintre russe et un théoricien de l’art considéré comme l’un des artistes les plus importants du XXe siècle et comme le fondateur de l'art abstrait.
 
@@ -52,7 +54,7 @@ Seules l'aura colorée autour du cercle principal et les teintes des cercles plu
 Comme la toile dont elle est inspirée, cette palette est donc très puissante et conviendra mieux à un site à vocation artistique ou culturelle (présentation d'un artiste, d'une troupe, etc.).
 
 
-# Jan Vermeer, "Meisje met de Parel" (huile sur toile, 1666)
+## Jan Vermeer, "Meisje met de Parel" (huile sur toile, 1666)
 
 Jan Vermeer (31 octobre 1632, Delft -- 15 décembre 1675, Delft) est un peintre baroque néerlandais parmi les plus célèbres du Siècle d’or bien que sa carrière ait été relativement courte et son œuvre de faible ampleur.
 
@@ -66,7 +68,7 @@ Cette palette est toute en délicatesse et clarté, pour un effet aérien, sobre
 Plus versatile, cette palette pourrait être appliquée à une assez grande variété de typologies de site, comme par exemple un site éditorial/rédactionnel.
 
 
-# Conclusion
+## Conclusion
 
 Les palettes que nous vous proposons ici ne sont que des exemples de ce qu'il est possible de déduire de chacunes de ces toiles, et c'est aussi l'intérêt de la démarche. L'exercice aurait ainsi pu être (et sera ?) réalisé avec des supports très différents ou plus "modernes" : pochettes de CD, peintures digitales, affiches de films, oeuvres architecturales, etc.  
 La conclusion principale à en tirer, c'est que l'inspiration est partout, et particulièrement dans l'œil de celui qui observe.

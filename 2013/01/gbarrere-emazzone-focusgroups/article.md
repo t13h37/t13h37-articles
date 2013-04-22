@@ -47,7 +47,7 @@ Une fois la vision exposée, nous vous conseillons de procéder en deux étapes 
 Plus vous allez faire des sessions en groupe, plus vous allez vous rendre compte que certains participants vont s'imposer et monopoliser le temps de parole. **C'est un biais fréquent**. L'étape précédente du *Ice Breaker* va entre autres vous permettre d'observer les comportements et de déceler les personnalités de vos participants. Un des moyens pour mieux maîtriser l'influence de certaines personnes est d'organiser le *brainstorming* sous la forme d'un *World Café*.
 
 Cela consiste à réunir les participants en **petits groupes** (essayez de faire des groupes homogènes en termes de personnalités), chacun autour d'une table, et à nommer un secrétaire par groupe pour formaliser les réflexions.  
-Après un temps imparti, demandez à chaque groupe, sauf au secrétaire, de rejoindre une autre table et de continuer la réflexion avec le secrétaire de la table qu'il a rejoint. Chaque secrétaire fait un debrief des réflexions menées par sa table, et l'on permet aux gens d'enrichir leurs réflexions.  
+Après un temps imparti, demandez à chaque groupe, sauf au secrétaire, de rejoindre une autre table et de continuer la réflexion avec le secrétaire de la table qu'il a rejoint. Chaque secrétaire fait un *debrief* des réflexions menées par sa table, et l'on permet aux gens d'enrichir leurs réflexions.  
 Une fois que les groupes ont rencontré tous les secrétaires de table, ces derniers établissent un premier bilan des réflexions réalisées. Ces présentations n'ont pas besoin d'être trop formalisées, elles servent à poser les premières briques pour une réflexion plus structurée (*user stories*).
 
 ### Rédaction des *user stories*

@@ -3,5 +3,5 @@
 "author": {"name" : "Maurice Svay", "email": "maurice@svay.com"},
 "edition" : {"number": "03", "date": "2012-05-29"},
 "tags" : ["méthodologie", "tests utilisateurs"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

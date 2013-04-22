@@ -3,5 +3,5 @@
 "author": {"name" : "Corinne Schillinger", "email": "corinne@inseo.fr"},
 "edition" : {"number": "05", "date": "2012-06-12"},
 "tags" : ["CSS", "outils"],
-"type" : "tutorial" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "tutorial"
 }

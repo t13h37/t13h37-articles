@@ -3,5 +3,5 @@
 "author": {"name" : "Loic Mathaud", "email": "loic@mathaud.net"},
 "edition" : {"number": "02", "date": "2012-05-22"},
 "tags" : ["actus"],
-"type" : "essai" // "tutorial" ou "essai" ou "interview" ou "pour-ou-contre"
+"type" : "essai"
 }

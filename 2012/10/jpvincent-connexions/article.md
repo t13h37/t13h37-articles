@@ -9,7 +9,7 @@ Les solutions de _monitoring_ du marché testent les pages généralement sans v
 
 Autant dire que les tests standards ne sont pas représentatifs de ce qu'endurent vos utilisateurs et c'est la raison pour laquelle on limite volontairement débit et latence, par exemple sur l'indispensable [WebPageTest](http://www.webpagetest.org/ ) ou chez certaines solutions payantes. WebPageTest a le mérite d'être transparent car vous avez une liste de connexions pré-paramétrées mais nous allons voir qu'elles ne représentent pas du tout la France.
 
-![Paramètres par défaut de WebPageTest.org](parametre-WPT-org)
+![Paramètres par défaut de WebPageTest.org](parametre-WPT-org.png)
 
 Côté transit réseau, il y a essentiellement quatre données qui influencent l'affichage d'un site :
 

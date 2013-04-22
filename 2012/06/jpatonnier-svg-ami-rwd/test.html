@@ -1,0 +1,237 @@
+<p>Depuis le temps qu’on vous en parle, vous devez commencer à savoir ce qu’est le “<em>Responsive Web Design</em>” (que j’appellerai ici très abusivement design adaptatif). Une des plus grosses difficultés liées à cette approche de la conception Web, ce sont les images. Entre les différents “break points” qui vont nécessiter des images de tailles différentes et les super écrans haute densité qui requièrent des images parfois deux fois plus grandes que celle de leur taille d’affichage réel, ce n’est pas simple.<br />Sans parler qu’on ne sait pas de quoi demain sera fait en la matière.</p>
+<p>Parmi toutes les solutions plus ou moins pertinentes pour gérer cette question, peu de gens pensent à utiliser le format d’image SVG. Voyons un peu cela en détail.</p>
+<h2 id="quest-ce-que-svg">Qu’est-ce que SVG</h2>
+<p>SVG est un format d’image vectoriel reposant sur une syntaxe XML. Cela lui confère deux avantages spécifiques sur le Web :</p>
+<ul>
+<li>En tant que format d’image vectoriel, il permet de redimensioner une image sans aucune perte de qualité ;</li>
+<li>En tant que format XML, il permet de bénéficier de toute la puissance de JavaScript et surtout de CSS.</li>
+</ul>
+<p>Plutôt qu’un long et fastidieux discours, voilà à quoi ressemble une image SVG.</p>
+<object data="http://letrainde13h37.fr/wp-content/uploads/2012/06/cupcake.svg" width="110" height="110" type="image/svg+xml">
+    <!-- Une solution de repli pour les navigateurs qui ne comprennent pas SVG -->
+    
+<span><img src="/wp-content/uploads/2012/06/http://letrainde13h37.fr/wp-content/uploads/2012/06/cupcake.png" width="110" height="110" alt="" /></span> </object>
+<p>Côté code :</p>
+<pre lang="svg" line="1"><svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="110px" 
+     height="110px" 
+     viewBox="-5 -5 110 110">
+<path class="cake" 
+      fill="#583702" 
+      d="…"></path>
+<path class="cream"  
+      fill="#FCFAF2" 
+      stroke="#F7E9AA" 
+      stroke-width="3" 
+      d="…"></path>
+</svg></pre>
+<p>Notez que je vous épargne la valeur de l’attribut <code>d</code> des balises <code><path></code> qui est sans aucun doute la partie la plus difficile de SVG, mais pas d’inquiétude, comme nous allons tout de suite le voir, il y a de nombreuses façons de s’en passer.</p>
+<h2 id="produire-une-image-svg">Produire une image SVG</h2>
+<p>Il y a deux grandes façons de produire une image au format SVG, la méthode des développeurs et celle des designers :</p>
+<h3 id="la-méthode-des-développeurs">La méthode des développeurs</h3>
+<p>SVG reposant sur XML, il est tout à fait possible de produire du SVG à la main. Ce n’est pas très difficile mais nécessite tout de même d’apprendre un nouveau langage en plus de HTML, CSS et JavaScript. C’est une bonne idée, mais cela prend toujours un peu de temps.</p>
+<p>Si vous voulez vous lancer dans cette aventure, je vous invite à <a href="https://developer.mozilla.org/en/SVG">consulter les ressources présentes sur le Developer Mozilla Network</a> pour de plus amples informations.</p>
+<p>Il existe également quantité de bibliothèques permettant de générer du code SVG.<br />À titre d’exemple, vous avez :</p>
+<ul>
+<li><a href="http://raphaeljs.com/">Raphael en JavaScript</a></li>
+<li><a href="http://xmlgraphics.apache.org/batik/">Batik en Java</a></li>
+<li><a href="http://sharpvectors.codeplex.com/">SharpVectors en C#</a></li>
+</ul>
+<p>Il existe également des bibliothèques plus spécialisées comme celles dédiées à la création de graphiques :</p>
+<ul>
+<li><a href="http://www.highcharts.com/">HighCharts en JavaScript</a></li>
+<li><a href="http://www.zingchart.com">Zingchart en JavaScript</a></li>
+<li><a href="http://www.goat1000.com/svggraph.php">SVGGraph en PHP</a></li>
+<li><a href="http://www.germane-software.com/software/SVG/SVG::Graph/">SVG::Graph en Ruby</a></li>
+</ul>
+<h3 id="la-méthode-des-designers">La méthode des designers</h3>
+<p>Pour les gens qui ne veulent pas mettre les mains dans le code (et il y en a beaucoup dès qu’il est question d’images), il existe des logiciels de dessin qui permettent de produire facilement des images SVG.<br />Parmi les plus connus, on trouve :</p>
+<ul>
+<li><a href="http://www.adobe.com/fr/products/illustrator.html">Adobe Illustrator</a></li>
+<li><a href="http://inkscape.org/?lang=fr">Inkscape</a></li>
+<li><a href="http://svg-edit.googlecode.com/svn/branches/2.5.1/editor/svg-editor.html">SVG Edit</a></li>
+<li><a href="http://advanced.aviary.com/tools/vector-editor">Aviary Raven</a></li>
+</ul>
+<p>La qualité du code SVG produit par ces différents logiciels est assez inégale et dépend beaucoup du soin que vous prendrez à utiliser ces outils.</p>
+<p>À titre d’exemple, Illustrator est un cas d’école de cette question. Le code qu’il produit est assez propre si vous faites très attention à faire des choses “simples”. Faire des choses simples ne signifie pas que l’image doit être basique et toute moche, que nenni. Cela signifie que vous devez prendre soin de n’utiliser que des fonctionnalités du logiciel compatibles avec SVG.</p>
+<p>Pour ne pas vous laisser seul face à l’inconnu, voici une petite liste de bonnes pratiques pour produire du SVG utilisable dans les meilleures conditions avec Illustrator :</p>
+<ul>
+<li>Nommez systématiquement vos calques mais aussi vos groupes de formes ;</li>
+<li>N’utilisez que les dégradés linéaires et radiaux (en clair, cela signifie qu’il ne faut jamais utiliser le filet de dégradé d’Illustrator) ;</li>
+<li>N’utilisez jamais les effets de filtre Photoshop disponibles dans Illustrator, et de manière générale, essayez d’éviter les effets Illustrator ;</li>
+<li>Si vous utilisez, la “distorsion d’enveloppe”, transformez toujours le résultat en une forme définitive (avec l’option “Décomposer”) ;</li>
+<li>Si vous utilisez les fonctions de “<em>Pathfinder</em>”, assurez vous toujours que le résultat est une forme définitive.</li>
+</ul>
+<p>Enfin, sachez qu’il existe nombre de ressources en ligne qui proposent des images vectorielles (et donc facilement convertibles en SVG) prêtes à l’emploi et d’excellente qualité, en particulier pour tout ce qui touche à la création d’icônes.</p>
+<p>À titre d’exemple, on peut citer :</p>
+<ul>
+<li><a href="http://thenounproject.com">The Noun Project</a></li>
+<li><a href="http://openclipart.org">Open Clip Art</a></li>
+<li><a href="http://dryicons.com/free-graphics/">DryIcons</a></li>
+<li><a href="http://medialoot.com/browse/all/date/all/vector/free/">MediaLoot</a></li>
+</ul>
+<h2 id="inclure-une-image-svg-dans-une-page-html">Inclure une image SVG dans une page HTML</h2>
+<p>À présent que vous savez produire des images SVG, voyons comment les exploiter concrètement. Au sein d’HTML, il y a quatre grandes méthodes pour intégrer du SVG.</p>
+<h3 id="la-méthode-historique-la-balise-object">La méthode historique : la balise <code>&lt;object&gt;</code></h3>
+<p>La façon la plus sûre et la plus fiable d’intégrer une image SVG dans un document HTML passe par l’utilisation de la balise <code>&lt;object&gt;</code> :</p>
+<pre lang="html" line="1"><object data="cupcake.svg" width="110" height="110" type="image/svg+xml">
+    <!-- Une solution de repli pour les navigateurs qui ne comprennent pas SVG -->
+    <img src="cupcake.png" width="110" height="110" alt="" />
+</object></pre>
+<p>Le très gros avantage de cette méthode c’est qu’elle permet très facilement de gérer les solutions de repli dans le cas où un navigateur ne supporte pas le format SVG (Internet Explorer 8 et le navigateur natif de Android 2.x pour ne pas les nommer). En effet, si un navigateur ne comprend pas l’objet référencé par la balise <code>&lt;object&gt;</code>, il affichera alors le contenu HTML présent à l’intérieur de la balise.</p>
+<h3 id="la-méthode-naturelle-la-balise-img">La méthode naturelle : la balise <code>&lt;img&gt;</code></h3>
+<p>SVG étant un format d’image, tous les navigateurs le supportant permettent d’afficher une image de ce format via la balise <code>&lt;img&gt;</code> :</p>
+<pre lang="html" line="1"><img src="cupcake.svg" width="110" height="110" alt="" /></pre>
+<p>La principale différence entre cette méthode et l’utilisation de la balise <code>&lt;object&gt;</code> tient en deux points :</p>
+<ul>
+<li>Premièrement, la gestion des solutions de repli autres qu’un simple texte alternatif est bien plus compliquée avec la balise <code>&lt;img&gt;</code> (et souvent à base de JavaScript ce qui peut parfois être considéré comme une mauvaise pratique).</li>
+<li>Deuxièmement, certaines fonctionnalités avancées de SVG ne seront pas disponibles via la balise <code>&lt;img&gt;</code> (i.e. l’utilisation des scripts).</li>
+</ul>
+<h3 id="la-première-méthode-moderne-svg-dans-du-html">La première méthode moderne : SVG dans du HTML</h3>
+<p>L’arrivée de HTML5 offre une nouvelle façon d’inclure du SVG dans un document HTML : mettre directement du SVG dans le HTML ! Oui, tout simplement :</p>
+<pre lang="html" line="1"><body>
+    <svg width="110" height="110">
+        <!-- le reste du code SVG ici -->
+        <foreignObject width="0" height="0" overflow="hidden">
+            <!-- Une solution de repli pour les navigateurs qui ne comprennent pas SVG -->
+            <img src="cupcake.png" width="110" height="110" alt="" />
+        </foreignObject>
+    </svg>
+</body></pre>
+<p>Cette technique, pour appétissante qu’elle soit, est encore très jeune et souffre de quelques problèmes :</p>
+<ul>
+<li>Le premier d’entre eux est que les navigateurs n’implémentent pas encore cette fonctionnalité exactement de la même façon.</li>
+<li>Le deuxième tient à la gestion des solutions de repli qui nécessite des contorsions assez contre-intuitives via <a href="https://developer.mozilla.org/en/SVG/Element/foreignObject">la balise SVG <code><foreignObject></code></a>.</li>
+<li>Enfin, cela nécessite forcément de connaître SVG ce qui, comme on l’a vu ci-avant, n’est pas le cas de tout le monde.</li>
+</ul>
+<h3 id="la-deuxième-méthode-moderne-css">La deuxième méthode moderne : CSS</h3>
+<p>Enfin, tout comme pour l’utilisation de la balise <code>&lt;img&gt;</code>, tous les navigateurs qui supportent SVG acceptent d’utiliser les images de ce format partout où l’on peut mettre une image en CSS, en particulier avec la propriété <code>background-image</code>.</p>
+<pre lang="css" line="1">div {
+    background-image: url(cupcake.svg);
+}</pre>
+<p>Cette solution est une des plus utiles mais est elle aussi très jeune et souffre encore de quelques petits bugs. Les différents navigateurs n’en sont qu’au début de l’implémentation de cette solution et il existe encore quelques cas où l’on constate qu’un arrière-plan redimensionné va apparaître pixellisé comme s’il s’agissait <a href="http://fr.wikipedia.org/wiki/Rast%C3%A9risation">d’une image rasterisée</a> alors qu’en fait, non. Et pour corser les choses, les cas où l’image va se comporter de cette étrange manière changent d’un navigateur à l’autre. Bon, certes, ce n’est pas parfait, mais les choses s’améliorent très vite (en particulier avec Firefox et Chrome qui sont tous les deux en cycle de développement rapide avec une nouvelle version toutes les 6 semaines).</p>
+<p>À noter que cette dernière technique est une des plus difficile à gérer en matière de solution de repli. En effet, si pour les vieux Internet Explorer il est toujours possible de proposer une feuille de style alternative grâce aux commentaires conditionnels, rien n’existe pour les navigateurs Android. La seule solution consiste éventuellement à faire appel à JavaScript pour détecter les fonctionnalités du navigateur comme avec <a href="http://modernizr.com/">Modernizr</a>.</p>
+<h2 id="et-le-responsive-design-dans-tout-ça">Et le “responsive design” dans tout ça</h2>
+<p>On y vient. Maintenant que vous avez une image SVG et que vous savez comment l’inclure dans votre document HTML, voyons en quoi cela peut nous servir dans le cadre d’un design adaptatif.</p>
+<h3 id="redimensionnement">Redimensionnement</h3>
+<p>Le principal intérêt du SVG, c’est sa capacité à être redimensionné sans perte de qualité directement au sein du navigateur. Ainsi, que ce soit pour des logos, des icônes ou toutes les images pouvant bénéficier d’un traitement vectoriel (c’est-à-dire à peu près toutes sauf les photos), vous n’aurez qu’une seule image à gérer quelles que soient les capacités de vos terminaux.</p>
+<p>Pour gérer le redimensionnement, vous avez deux méthodes possibles :</p>
+<h4 id="html">HTML</h4>
+<p>Avec les balises HTML <code>&lt;img&gt;</code> et <code>&lt;object&gt;</code>, il vous suffit de leur spécifier une taille en pourcentage (via les attribut HTML ou mieux, via CSS) pour qu’ils s’adaptent automatiquement à la taille de leur conteneur :</p>
+<pre lang="html" line="1"><div id="monContenu">
+    <img src="cupcake.svg" width="100%" alt="" />
+</div>
+
+<style>
+@media all {
+    #monContenu {
+        width: 220px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #monContenu {
+        width: 110px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #monContenu {
+        width: 55px;
+    }
+}
+</style></pre>
+<p>Bien évidemment, vous pouvez également directement cibler votre image avec CSS si vous préférez. Un exemple de cas d’usage parfait pour ce genre d’utilisation : ce sont tous les cas où vous voulez mettre des images en ligne dans un texte, des <em>smileys</em>, des flèches, des icônes, etc.<br />Réalisez vos images avec SVG et mettez-les dans votre code de la manière suivante :</p>
+<pre lang="html" line="1"><p>Un peu de texte <img src="mon-smiley.svg" class="smiley" alt="" /> et encore du texte</p>
+
+<style>
+.smiley {
+    height: 1em;
+    vertical-align: middle;
+}
+</style></pre>
+<p>Notez que si vous voulez utiliser directement du SVG dans du HTML, la qualité des implémentations ne permet pas de spécifier des tailles en pourcentage. Tout simplement parce que les différents navigateurs ne sont pas d’accord sur la façon dont il faut calculer ces valeurs relatives.</p>
+<h4 id="css">CSS</h4>
+<p>Avec CSS, nous disposons également d’outils nous permettant de contrôler finement la taille de nos images SVG. En particulier, la propriété CSS3 <code>background-size</code> nous permet de contrôler la taille des images d’arrière-plan.</p>
+<pre lang="html" line="1"><div id="monConteneur">
+    Un peu de texte pour bien voir l’effet…
+</div></pre>
+<pre lang="css" line="1">#monConteneur {
+    background-image: url(mon-image.svg);
+    background-size: 90px auto;
+    background-position: left top;
+
+    padding: 0 0 0 100px;
+}
+
+@media all and (max-width: 480px) {
+    #monConteneur {
+        background-size: contain;
+        background-position: center bottom;
+
+        padding: 0 0 100px 0;
+    }
+}</pre>
+<p>La propriété <code>background-size</code> prend deux types de valeur : soit une paire de nombres valeurs indiquant explicitement la largeur puis la hauteur de l’image, soit un mot-clé “<code>contain</code>” ou “<code>cover</code>”.</p>
+<ul>
+<li>“<code>contain</code>” signifie que l’image d’arrière-plan va être redimensionnée pour être aussi grande que possible tout en s’assurant que ses largeur et hauteur restent toujours plus petites ou égales à celles de son conteneur (bref, l’image fera toute la taille du conteneur mais sans dépasser).</li>
+<li>“<code>cover</code>” signifie que l’image d’arrière-plan va être redimensionnée pour être aussi petite que possible tout en s’assurant que ses largeur et hauteur sont toujours supérieures ou égales aux dimensions de son conteneur (cela signifie que l’image couvrira toute la surface visible et sera vraisemblablement coupée dans l’une ou l’autre de ses dimensions).</li>
+</ul>
+<p>Ce que nous venons de voir concernant le redimensionnement est également envisageable avec des images <em>bitmap</em> (JPEG, PNG). Malheureusement, cela se paie souvent au prix d’une démultiplication du nombre d’images pour éviter de ne travailler qu’avec des images haute définition extrêmement lourdes. Cela aura donc un impact sur la maintenablité du design tout au long du cycle de vie de votre projet. Grâce à SVG, vous pourrez simplifier les choses de ce point de vue en n’utilisant qu’une seule image pour tous les cas de figure.</p>
+<h3 id="encore-plus-loin-avec-les-média-css">Encore plus loin avec les média CSS</h3>
+<p>Ce que nous allons voir à présent est véritablement spécifique au format SVG. Comme nous l’avons dit, ce format repose sur une syntaxe XML. Grâce à cela, ses concepteurs ont pu lui donner la capacité de comprendre et d’utiliser CSS directement à l’intérieur du format lui-même.</p>
+<p>Cette capacité va nous permettre de réaliser un tour de force unique en matière de design adaptatif : modifier l’apparence même de l’image, bien au-delà d’un simple changement de taille. Un bon exemple valant mieux qu’un long discours, voici ce que cela permet :</p>
+<pre lang="svg" line="1"><svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="110px" 
+     height="110px" 
+     viewBox="-5 -5 110 110">
+
+    <style>
+.cake {
+        fill: #583702;
+    }
+
+.cream {
+        fill: #FCFAF2;
+        stroke: #F7E9AA;
+        stroke-width: 3px; 
+    }
+
+    @media print {
+.cake {
+            fill: #000;
+        }
+
+.cream {
+            fill: #FFF;
+            stroke: #000;
+        }
+    }
+    </style>
+
+    <path class="cake" d="…"></path>
+    <path class="cream" d="…"></path>
+</svg></pre>
+<p>Avec cette feuille de style directement au sein de l’image, celle-ci va s’afficher en couleur dans votre navigateur mais si vous lui demander de l’imprimer, elle sera alors imprimée en N&B avec les contrastes de votre choix.</p>
+<p>Ainsi, selon le contexte dans lequel sera rendue l’image, vous allez pouvoir définir précisément comment elle sera vue.</p>
+<p>De très nombreuses applications sont possibles :</p>
+<ul>
+<li>Changer les couleurs pour l’impression ;</li>
+<li>Masquer des textes trop petits sur les mobiles ;</li>
+<li>Afficher des détails supplémentaires sur les grands écrans ;</li>
+<li>Ajuster les contrastes ;</li>
+<li>Repositionner ou distordre les éléments…</li>
+</ul>
+<p>La seule limite, c’est votre imagination.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Comme on le voit, même avec ses fonctionnalités de dessin les plus basiques, SVG est un format idéal pour résoudre nombre de problèmes liés au design adaptatif tel qu’on le pratique aujourd’hui.</p>
+<p>Pas de fausse promesse non plus, les techniques évoquées ici ne sont pas (encore) la panacée.<br />Cela tient à deux facteurs qu’il est important de garder en tête :</p>
+<ul>
+<li>Premièrement, SVG est un format particulier qui a ses propres mécanismes parfois radicalement différents de HTML (tout ce qui touche au texte par exemple, car SVG ne connait pas la notion de flux de texte). Cela lui donne un côté contre-intuitif et implique un temps d’apprentissage qui n’est pas anodin si vous voulez être efficace rapidement avec cette technologie.</li>
+<li>Deuxièmement, l’usage “grand public” de cette technologie est beaucoup plus récent que celui de HTML. Concrètement, ça veut dire que les constructeurs de navigateurs l’ont mise en œuvre beaucoup plus récemment et que vous serez donc plus facilement confrontés à des bugs ou à des incohérences d’interprétation, surtout si vous sortez de la zone bien maîtrisée du dessin (les animations, les filtres, les masques, les fontes, etc.)</li>
+</ul>
+<p>Mais pas d’affolement non plus, commencez par des choses simples : un cercle par-ci, un graphique autogénéré par-là. Ensuite, vous pourrez passez à des icônes de-ci de-là et puis un jour vous ne vous rendrez même plus compte que vous l’utilisez partout. Tous les collègues à qui j’ai fait découvrir ces techniques ont compris que c’est tout un horizon graphique et technique qui s’ouvre devant eux. Certains m’ont même dit qu’ils retrouvaient le plaisir qu’ils avaient eu à découvrir CSS.</p>
+<p>À vous désormais de partir explorer ce nouveau monde pour en tirer le meilleur et rajouter ainsi une corde à votre arc.</p>
+<p><strong>Vous pouvez <a href="http://letrainde13h37.fr/wp-content/uploads/2012/06/120612-exemples-article-SVG-patonnier">télécharger les fichiers de démo</a> reprenant les exemples de cet article.</strong></p>

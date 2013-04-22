@@ -85,7 +85,7 @@ Voici donc en un coup d'oeil les questions qu'il va falloir vous poser sur le su
 * Le produit est-il documenté ? Fonctionnellement ? Techniquement ?
 * La documentation est-elle à jours ?
 * Quel sont les coûts de formation nécessaires pour prendre l'outil en main ?
-* L'éditeur du <em>CMS* dispose-t-il d'une offre de support utilisateur ?
+* L'éditeur du *CMS* dispose-t-il d'une offre de support utilisateur ?
 * L'accès au support utilisateur est-il payant ? Selon quelles modalités ?
 * Existe-t-il des offres d'hébergement spécialisées ?
 
