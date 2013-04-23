@@ -1,9 +1,0 @@
-Le train de 13h37 est un magazine en ligne francophone dédié à la conception Web.
-
-Départ régulièrement à 13h37 pour une nouvelle édition.
-
-- Magazine : http://letrainde13h37.fr/
-- Actualités sur le blog de la société : http://wagon42.fr/
-- Éditions de livres numériques et papier : http://envoitu.re/simone
-
-tchoutchou !
