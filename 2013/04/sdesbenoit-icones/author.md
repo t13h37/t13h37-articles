@@ -5,4 +5,3 @@ Il contribue également au site [WebPlatform.org](http://webplatform.org/) (icô
 - [@desbenoit](https://twitter.com/desbenoit)
 - <http://desbenoit.net/>
 
-
