@@ -15,19 +15,19 @@ Passons à présent en revue les grands champs d'action de cette bibliothèque.
 ## Gestion des évènements
 
 ### Au commencement
-Il n'y a pas si longtemps, pour avoir des gestionnaires d'évènements, nous utilisions un attribut&nbsp;:
+Il n'y a pas si longtemps, pour avoir des gestionnaires d'évènements, nous utilisions un attribut :
 
 ~~~ {lang="html" line="1" highlight="1"}
 <a href='#' onclick='return appelleFonction();'>mon lien</a>
 ~~~
 
-Puis le concept d'amélioration progressive a pris son essor, et nous avons commencé à ajouter des gestionnaires d'événements en JavaScript&nbsp;:
+Puis le concept d'amélioration progressive a pris son essor, et nous avons commencé à ajouter des gestionnaires d'événements en JavaScript :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 document.getElementById('un-lien').onclick = onClickFunction;
 ~~~
 
-Mais cette manière ne permet pas d'attacher plusieurs gestionnaires pour un même évènement sur un seul élément. C'est pourquoi, bien rapidement, nous avons vu apparaître des bibliothèques qui permettent de le faire facilement, à commencer par jQuery&nbsp;:
+Mais cette manière ne permet pas d'attacher plusieurs gestionnaires pour un même évènement sur un seul élément. C'est pourquoi, bien rapidement, nous avons vu apparaître des bibliothèques qui permettent de le faire facilement, à commencer par jQuery :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 $('#un-lien').click(onClickFunction);
@@ -41,7 +41,7 @@ document.getElementById('un-lien').addEventListener('click', onClickFunction, fa
 
 C'est certes plus verbeux, mais aussi plus près du navigateur, et à ce titre plus efficace.
 
-Il est important de noter que `addEventListener` n'est présent que dans les navigateurs modernes. Internet Explorer propose sa propre gestion des évènements, avec beaucoup de choses très différentes. jQuery, ainsi que d'autres bibliothèques, simplifie beaucoup la gestion des évènements en applanissant les différences entre Internet Explorer et les autres navigateurs.
+Il est important de noter que `addEventListener` n'est présent que dans les navigateurs modernes. Internet Explorer propose sa propre gestion des évènements, avec beaucoup de choses très différentes. jQuery, ainsi que d'autres bibliothèques, simplifie beaucoup la gestion des évènements en aplanissant les différences entre Internet Explorer et les autres navigateurs.
 
 ### La délégation d'évènements
 Il s'agit là d'une fonction qui existe depuis toujours dans les navigateurs, mais que jQuery a véritablement aidé à démocratiser en proposant, au fil du temps, plusieurs API de plus en plus simples à utiliser.
@@ -51,7 +51,7 @@ Lorsqu'un évènement doit être envoyé sur un élément-cible (par exemple, l'
 
 On se rappelle que la page est représentée comme un arbre, l'arbre DOM. L'évènement déclenche sa course à partir de l'élément racine de la page et parcourt l'arbre jusqu'à arriver à l'élément-cible. C'est la phase dite de *capture*.
 
-Puis l'évènement remonte jusqu'à l'élément racine de la page&nbsp;: c'est  ce qu'on appelle la phase de *propagation*[^bubbling].
+Puis l'évènement remonte jusqu'à l'élément racine de la page : c'est  ce qu'on appelle la phase de *propagation*[^bubbling].
 
 Ce mécanisme permet de traiter l'évènement à n'importe laquelle de ces étapes, au niveau de n'importe quel élément traversé. Dans le
 gestionnaire de l'évènement, on peut décider de laisser d'autres gestionnaires jouer, ou bien au contraire d'annuler tout traitement supplémentaire.
@@ -67,34 +67,34 @@ On peut lire [l'article de 37signals](http://37signals.com/svn/posts/3137-using-
 #### L'apport de jQuery
 Lorsque l'on cherche à implémenter de la délégation, le plus pénible
 est de vérifier que l'événement concerne bien l'élément que l'on veut traiter.
-Les outils du DOM "historique" sont assez limités&nbsp;: vérification de l'attribut *id*, de la classe[^classList] et du nom de l'élément lui-même. Il faut donc mettre en place une série de `if`, ou un bloc `switch`, pour traiter cet évènement.
+Les outils du DOM "historique" sont assez limités : vérification de l'attribut *id*, de la classe[^classList] et du nom de l'élément lui-même. Il faut donc mettre en place une série de `if`, ou un bloc `switch`, pour traiter cet évènement.
 
-jQuery a amené une API très simple à utiliser pour résoudre ce problème. Très facilement, nous décidons de l'élément auquel attacher le gestionnaire, ainsi que les éléments concernés par l'évènement&nbsp;:
+jQuery a amené une API très simple à utiliser pour résoudre ce problème. Très facilement, nous décidons de l'élément auquel attacher le gestionnaire, ainsi que les éléments concernés par l'évènement :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 $('.liste').delegate('li > a', 'click', eventHandlerFunction);
 ~~~
 
-ou, depuis jQuery 1.7&nbsp;:
+ou, depuis jQuery 1.7 :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 $('.liste').on('click', 'li > a', eventHandlerFunction);
 ~~~
 
-N'oublions pas que l'API de jQuery est plus riche que cela&nbsp;: elle permet notamment d'attacher plusieurs évènements en un seul appel.
+N'oublions pas que l'API de jQuery est plus riche que cela : elle permet notamment d'attacher plusieurs évènements en un seul appel.
 
 #### Dans le DOM présent en natif
-Nous avons vu précédemment la méthode `addEventListener`, mais nous n'avons pas insisté sur le troisième argument[^useCapture]. Il permet de choisir la phase où l'évènement sera traité&nbsp;: `true` dans la phase de *capture*, `false` dans la phase de *bubbling*.
+Nous avons vu précédemment la méthode `addEventListener`, mais nous n'avons pas insisté sur le troisième argument[^useCapture]. Il permet de choisir la phase où l'évènement sera traité : `true` dans la phase de *capture*, `false` dans la phase de *bubbling*.
 
 Par ailleurs, la nouvelle méthode `matches` permet (enfin) d'utiliser un sélecteur CSS pour vérifier si un élément lui correspond. Tous les navigateurs modernes (à part Internet Explorer 8) le supportent sous son ancienne forme `matchesSelector` et un préfixe.
 
 ~~~ {lang="javascript" line="1" highlight="1"}
-// on peut être plus intelligent que ça mais ça fera l'affaire&nbsp;:)
+// on peut être plus intelligent que ça mais ça fera l'affaire :)
 var body = document.body,
     matches = body.matches || body.mozMatchesSelector ||
               body.webkitMatchesSelector || body.oMatchesSelector ||
               body.msMatchesSelector;
-// ces lignes permettent d'appeler facilement matches&nbsp;:
+// ces lignes permettent d'appeler facilement matches :
 // matches(element, selecteur);
 matches = matches.call.bind(matches);
 // bien sûr, vous pouvez tout à fait réutiliser le code précédent dans une de vos bibliothèques maison
@@ -113,14 +113,14 @@ function onClickHandler(e) {
 C'est donc facile de le faire avec les outils natifs. Si, cependant, vous préférez l'API de jQuery, mais ne voulez pas utiliser l'ensemble de la bibliothèque, [la micro-bibliothèque Gator](http://craig.is/riding/gators) propose une API similaire tout en s'appuyant sur ces mécanismes modernes.
 
 ## Récupération d'éléments DOM basée sur les sélecteurs CSS
-C'est sans doute l'une des grandes avancées apportées par jQuery&nbsp;: la possibilité de sélectionner des éléments DOM en utilisant un sélecteur CSS. Avant ça, les deux seules possibilités de l'API DOM étaient&nbsp;:
+C'est sans doute l'une des grandes avancées apportées par jQuery : la possibilité de sélectionner des éléments DOM en utilisant un sélecteur CSS. Avant ça, les deux seules possibilités de l'API DOM étaient :
 
-* `getElementById` pour sélectionner un élément par son ID&nbsp;
+* `getElementById` pour sélectionner un élément par son ID 
 * `getElementsByTagName` pour sélectionner des éléments par leurs noms de balise.
 
 Cela signifie que ces deux méthodes représentaient les seules manières rapides d'accéder à un objet. Mais jQuery a apporté une grande facilité dans la sélection des éléments et leur manipulation, comme nous le verrons plus loin.
 
-Aujourd'hui, l'API DOM propose des méthodes bien plus puissantes&nbsp;:
+Aujourd'hui, l'API DOM propose des méthodes bien plus puissantes :
 
 ### `getElementsByClassName`
 Cette méthode retourne les éléments qui ont cette ou ces classes (la méthode accepte plusieurs classes). Elle est supportée par tous les navigateurs modernes.
@@ -135,7 +135,7 @@ Beaucoup plus intéressantes, ces méthodes acceptent, au même titre que jQuery
 
 Ces méthodes n'acceptent que les sélecteurs CSS supportés par le moteur CSS. Cela signifie que Internet Explorer 8 ne reconnait que les sélecteurs CSS 2.1, et que les sélecteurs "magiques" de jQuery (tels que `:has()`, `:visible`...) ne sont pas supportés.
 
-Par ailleurs, on l'oublie assez souvent&nbsp;: toutes ces méthodes peuvent s'appeler directement sur un élément DOM. Dans ce cas, elles vont rechercher des éléments dans le sous-arbre DOM issu de cet élément, à la manière d'un `find()`.
+Par ailleurs, on l'oublie assez souvent : toutes ces méthodes peuvent s'appeler directement sur un élément DOM. Dans ce cas, elles vont rechercher des éléments dans le sous-arbre DOM issu de cet élément, à la manière d'un `find()`.
 
 #### `querySelector`
 Cette méthode retourne le premier[^premier] élément qui correspond au sélecteur passé en argument.
@@ -147,7 +147,7 @@ document.querySelector('.nav p').textContent = 'Introduction';
 #### `querySelectorAll`
 Elle retourne tous les éléments qui correspondent au sélecteur.
 
-La plupart des méthodes du DOM retournant une liste d'éléments (une `NodeList`) retournent une liste que l'on qualifie de *vivante* (*live*). Il s'agit d'une vue à jour du document&nbsp;: si le document est changé, la liste le sera également. `querySelectorAll`, au contraire, retourne une liste *non-live*, c'est-à-dire qu'elle ne sera pas modifiée si l'arbre DOM évolue.
+La plupart des méthodes du DOM retournant une liste d'éléments (une `NodeList`) retournent une liste que l'on qualifie de *vivante* (*live*). Il s'agit d'une vue à jour du document : si le document est changé, la liste le sera également. `querySelectorAll`, au contraire, retourne une liste *non-live*, c'est-à-dire qu'elle ne sera pas modifiée si l'arbre DOM évolue.
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 // container est un élément qui contient des cases à cocher
@@ -158,11 +158,11 @@ for (var i = 0, l = inputs.length; i < l; i++) {
 }
 ~~~
 
-## Manipulation DOM&nbsp;: création, modification, suppression
+## Manipulation DOM : création, modification, suppression
 Au-delà de la sélection de noeuds DOM, jQuery permet également de créer facilement du contenu. Nous verrons cependant que l'API DOM a, là encore, de nouvelles possibilités en la matière.
 
 ### Rappel sur `innerHTML`
-Depuis toujours, on peut créer des éléments DOM et les ajouter à l'arbre DOM chargé. Cela se fait de la manière suivante&nbsp;:
+Depuis toujours, on peut créer des éléments DOM et les ajouter à l'arbre DOM chargé. Cela se fait de la manière suivante :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 var lien = document.createElement('a');
@@ -181,7 +181,7 @@ para.innerHTML += '<a href="http://google.fr">go to Google</a>';
 ~~~
 
 Cette écriture est beaucoup plus concise, et c'est par ailleurs une
-manière très performante d'ajouter du contenu. Mais elle présente tout de même un inconvénient&nbsp;: puisqu'on doit ajouter des éléments à l'arbre existant, il faut d'abord récupérer l'existant, et ensuite seulement concaténer ce qu'on veut y ajouter. Or, récupérer l'existant nécessite de sérialiser l'arbre DOM en HTML, ce qui est potentiellement lent[^serialisation].  
+manière très performante d'ajouter du contenu. Mais elle présente tout de même un inconvénient : puisqu'on doit ajouter des éléments à l'arbre existant, il faut d'abord récupérer l'existant, et ensuite seulement concaténer ce qu'on veut y ajouter. Or, récupérer l'existant nécessite de sérialiser l'arbre DOM en HTML, ce qui est potentiellement lent[^serialisation].  
 Par ailleurs, ces opérations sont faites de manière synchrone, c'est-à-dire qu'elles doivent toutes s'effectuer avant que l'instruction JavaScript suivante puisse s'exécuter. Pendant ce temps, l'utilisateur ne peut pas interagir avec la page Web !
 
 Évidemment, cet inconvénient n'existe plus (ou moins) dès lors que l'on  remplace la totalité du contenu. Dans ce cas, on va traiter en une seule fois l'ensemble de l'entrée HTML, comme le navigateur le fait au chargement d'une page[^parsing].  
@@ -191,8 +191,8 @@ pour apprendre comment vérifier correctement ses entrées utilisateurs en JavaS
 
 ### Des méthodes méconnues
 
-#### *DocumentFragment`, pour préparer un morceau de document en mémoire
-Je vous propose de voir dand un premier temps `DocumentFragment`.
+#### `DocumentFragment`, pour préparer un morceau de document en mémoire
+Je vous propose de voir dans un premier temps `DocumentFragment`.
 Globalement, cette méthode permet de disposer d'un document en mémoire et de le manipuler facilement, et surtout, efficacement.
 
 En effet, lorsque l'on manipule directement le document affiché, chaque modification doit être restituée à l'utilisateur, ce qui est coûteux en performance. Le `DocumentFragment` permet de contourner facilement ce problème. Et, cerise sur le gâteau, cette méthode est supportée par tous les navigateurs, même Internet Explorer 6 !
@@ -257,17 +257,17 @@ Ce qui donne:
 ## Ajax et autres fonctions utilitaires
 Le DOM est une partie importante des fonctions de jQuery, mais la bibliothèque a également amené d'autres fonctions utilitaires, pour aider à la programmation d'une application. Par chance, les navigateurs d'aujourd'hui proposent là aussi des APIs plus modernes.
 
-### Ajax&nbsp;: requêtes HTTP asynchrones
-C'est une partie très importante du développement Web moderne&nbsp;: pouvoir requêter un serveur sans avoir à recharger l'ensemble de la page.
+### Ajax : requêtes HTTP asynchrones
+C'est une partie très importante du développement Web moderne : pouvoir requêter un serveur sans avoir à recharger l'ensemble de la page.
 
 #### L'API de jQuery
 jQuery est arrivé à une époque où l'on commençait tout juste à découvrir les intérêts de `XMLHttpRequest`. À ce moment-là, la manière d'obtenir cet objet différait beaucoup selon les navigateurs. Internet Explorer utilisait un contrôle ActiveX (différent suivant les versions). Au contraire, dans les navigateurs qui avaient adopté cet objet, on l'instanciait comme un objet classique, avec le mot-clé `new`, comme aujourd'hui en somme.
 
-Son API initiale n'est pas des plus pratiques&nbsp;: on doit écouter un évènement `readystatechange` pour suivre la propriété `readyState`, qui prend une valeur particulière lorsque la requête est achevée avec succès.
+Son API initiale n'est pas des plus pratiques : on doit écouter un évènement `readystatechange` pour suivre la propriété `readyState`, qui prend une valeur particulière lorsque la requête est achevée avec succès.
 
 Il était donc logique, vu l'importance que commençait à prendre cette
 fonctionnalité, que jQuery propose une API simplifiée pour utiliser cet objet.  
-Cette API était dessinée autour des usages de l'époque&nbsp;: des requêtes GET pour récupérer des informations XML ou textuelles, et des requêtes POST pour soumettre des formulaires sans avoir besoin de recharger la page. Aujourd'hui encore, si on ne donne pas d'option supplémentaire, envoyer un POST avec un objet JSON en argument sérialise cet objet à la manière d'un formulaire. Il est
+Cette API était dessinée autour des usages de l'époque : des requêtes GET pour récupérer des informations XML ou textuelles, et des requêtes POST pour soumettre des formulaires sans avoir besoin de recharger la page. Aujourd'hui encore, si on ne donne pas d'option supplémentaire, envoyer un POST avec un objet JSON en argument sérialise cet objet à la manière d'un formulaire. Il est
 bien sûr possible de débrayer ce comportement, mais ça reste le comportement par défaut, par souci de garder la compatibilité ascendante.
 
 #### L'API native des navigateurs
@@ -284,7 +284,7 @@ Seul Internet Explorer 6 peut encore poser problème. Si vous devez supporter ce
 L'API a vu par ailleurs un certain nombre d'ajouts.
 
 Tout d'abord, pour mimer l'utilisation initiale de jQuery, à savoir l'envoi asynchrone de formulaires, l'objet `FormData` est proposé.  
-On peut l'initialiser avec les données d'un formulaire existant, on peut ajouter des données (y compris des fichiers auxquels on aurait eu accès via du glisser-déposer par exemple) et on peut enfin l'envoyer avec un objet `XMLHttpRequest`&nbsp;:
+On peut l'initialiser avec les données d'un formulaire existant, on peut ajouter des données (y compris des fichiers auxquels on aurait eu accès via du glisser-déposer par exemple) et on peut enfin l'envoyer avec un objet `XMLHttpRequest` :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 var data = new FormData(document.getElementById('myForm'));
@@ -295,7 +295,7 @@ request.send(data);
 On a donc là une API orientée objet bien intéressante !  
 Fait appréciable, elle est aujourd'hui supportée par tous les navigateurs, hormis Internet Explorer 9 et inférieurs.
 
-Par ailleurs, `XMLHttpRequest` de niveau 2 a amené de nouveaux évènements à écouter, plus sympathiques que le traditionnel `readystatechange`&nbsp;: `progress`
+Par ailleurs, `XMLHttpRequest` de niveau 2 a amené de nouveaux évènements à écouter, plus sympathiques que le traditionnel `readystatechange` : `progress`
 
 ### Programmation fonctionnelle
 Pour beaucoup (et c'est mon cas !), jQuery a permis une première approche de la programmation fonctionnelle. Sa méthode utilitaire `$.each` en a séduit plus d'un en permettant d'itérer facilement sur un tableau ou un objet avec une fonction.  
@@ -321,9 +321,9 @@ $.each(document.getElementsByTagName('a'), function(i, elt) {
 });
 ~~~
 
-EcmaScript 5 amène justement un certain nombre de méthodes utilitaires pour réaliser des actions sur les éléments d'un tableau&nbsp;: `forEach`, `map`, `some`, `every`, `reduce`, reduceRight`, `filter`. Je ne vais pas rentrer dans les détails car ce n'est pas le but de cet article, mais un développeur JavaScript gagnerait à savoir précisément comment elles fonctionnent et quand les utiliser.
+EcmaScript 5 amène justement un certain nombre de méthodes utilitaires pour réaliser des actions sur les éléments d'un tableau : `forEach`, `map`, `some`, `every`, `reduce`, `reduceRight`, `filter`. Je ne vais pas rentrer dans les détails car ce n'est pas le but de cet article, mais un développeur JavaScript gagnerait à savoir précisément comment elles fonctionnent et quand les utiliser.
 
-Voici un exemple d'utilisation de `reduce`, sans doute l'une des méthodes les plus intéressantes&nbsp;:
+Voici un exemple d'utilisation de `reduce`, sans doute l'une des méthodes les plus intéressantes :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 var elementNames = ['foo', 'bar', 'baz'];
@@ -331,7 +331,7 @@ var elementNames = ['foo', 'bar', 'baz'];
 var elements = elementNames.reduce(function(result, name) {
   result[name] = document.getElementById(name);
 }, {});
-/* elements est maintenant&nbsp;:
+/* elements est maintenant :
 {
     foo: document.getElementById('foo'),
     bar: document.getElementById('bar'),
@@ -343,14 +343,14 @@ var elements = elementNames.reduce(function(result, name) {
 Pour itérer sur un objet, il faut d'abord passer par la méthode `Object.keys` qui permet de récupérer l'ensemble des clés d'un objet sous forme d'un tableau.  
 Dès lors, il est possible d'utiliser les méthodes vues ci-dessus. Dans le cas d'un objet issu d'héritage, on peut aussi utiliser si besoin `Object.getOwnPropertyNames` qui retournera uniquement les noms des propriétés définies dans la sous-classe.
 
-Par exemple, pour transformer un objet en tableau, on peut utiliser&nbsp;:
+Par exemple, pour transformer un objet en tableau, on peut utiliser :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 var pomme = { type: 'Chantecler', couleur: 'jaune', traitement: false };
 var values = Object.keys(pomme).map(function(key) { return pomme[key]; });
 ~~~
 
-On peut rendre cette fonction générique&nbsp;:
+On peut rendre cette fonction générique :
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 function values(object) {
