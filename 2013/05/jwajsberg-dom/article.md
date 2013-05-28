@@ -273,7 +273,7 @@ bien sûr possible de débrayer ce comportement, mais ça reste le comportement 
 #### L'API native des navigateurs
 Regardons à présent ce que proposent les navigateurs en natif.
 
-Tout d'abord, vous serez heureux d'apprendre (si vous ne le savez pas encore) que tous les navigateurs permettent aujourd'hui d'instancier `XMLHttpRequest tel un objet normal:
+Tout d'abord, vous serez heureux d'apprendre (si vous ne le savez pas encore) que tous les navigateurs permettent aujourd'hui d'instancier `XMLHttpRequest` tel un objet normal:
 
 ~~~ {lang="javascript" line="1" highlight="1"}
 var request = new XMLHttpRequest(url);
@@ -295,7 +295,7 @@ request.send(data);
 On a donc là une API orientée objet bien intéressante !  
 Fait appréciable, elle est aujourd'hui supportée par tous les navigateurs, hormis Internet Explorer 9 et inférieurs.
 
-Par ailleurs, `XMLHttpRequest` de niveau 2 a amené de nouveaux évènements à écouter, plus sympathiques que le traditionnel `readystatechange` : `progress`
+Par ailleurs, `XMLHttpRequest` de niveau 2 a amené de nouveaux évènements à écouter, plus sympathiques que le traditionnel `readystatechange` : `progress`.
 
 ### Programmation fonctionnelle
 Pour beaucoup (et c'est mon cas !), jQuery a permis une première approche de la programmation fonctionnelle. Sa méthode utilitaire `$.each` en a séduit plus d'un en permettant d'itérer facilement sur un tableau ou un objet avec une fonction.  
