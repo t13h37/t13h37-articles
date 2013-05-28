@@ -17,25 +17,25 @@ Passons à présent en revue les grands champs d'action de cette bibliothèque.
 ### Au commencement
 Il n'y a pas si longtemps, pour avoir des gestionnaires d'évènements, nous utilisions un attribut :
 
-~~~ {lang="html" line="1" highlight="1"}
+~~~ {lang="html" line="1"}
 <a href='#' onclick='return appelleFonction();'>mon lien</a>
 ~~~
 
 Puis le concept d'amélioration progressive a pris son essor, et nous avons commencé à ajouter des gestionnaires d'événements en JavaScript :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 document.getElementById('un-lien').onclick = onClickFunction;
 ~~~
 
 Mais cette manière ne permet pas d'attacher plusieurs gestionnaires pour un même évènement sur un seul élément. C'est pourquoi, bien rapidement, nous avons vu apparaître des bibliothèques qui permettent de le faire facilement, à commencer par jQuery :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 $('#un-lien').click(onClickFunction);
 ~~~
 
 Là encore, l'API DOM n'est pas en reste, et propose la méthode `addEventListener`:
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 document.getElementById('un-lien').addEventListener('click', onClickFunction, false);
 ~~~
 
@@ -71,13 +71,13 @@ Les outils du DOM "historique" sont assez limités : vérification de l'attribut
 
 jQuery a amené une API très simple à utiliser pour résoudre ce problème. Très facilement, nous décidons de l'élément auquel attacher le gestionnaire, ainsi que les éléments concernés par l'évènement :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 $('.liste').delegate('li > a', 'click', eventHandlerFunction);
 ~~~
 
 ou, depuis jQuery 1.7 :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 $('.liste').on('click', 'li > a', eventHandlerFunction);
 ~~~
 
@@ -88,7 +88,7 @@ Nous avons vu précédemment la méthode `addEventListener`, mais nous n'avons p
 
 Par ailleurs, la nouvelle méthode `matches` permet (enfin) d'utiliser un sélecteur CSS pour vérifier si un élément lui correspond. Tous les navigateurs modernes (à part Internet Explorer 8) le supportent sous son ancienne forme `matchesSelector` et un préfixe.
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 // on peut être plus intelligent que ça mais ça fera l'affaire :)
 var body = document.body,
     matches = body.matches || body.mozMatchesSelector ||
@@ -125,7 +125,7 @@ Aujourd'hui, l'API DOM propose des méthodes bien plus puissantes :
 ### `getElementsByClassName`
 Cette méthode retourne les éléments qui ont cette ou ces classes (la méthode accepte plusieurs classes). Elle est supportée par tous les navigateurs modernes.
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 // récupère tous les éléments qui ont la classe 'menu'
 var elementsList = document.getElementsByClassName('menu');
 ~~~
@@ -140,7 +140,7 @@ Par ailleurs, on l'oublie assez souvent : toutes ces méthodes peuvent s'appeler
 #### `querySelector`
 Cette méthode retourne le premier[^premier] élément qui correspond au sélecteur passé en argument.
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 document.querySelector('.nav p').textContent = 'Introduction';
 ~~~
 
@@ -149,7 +149,7 @@ Elle retourne tous les éléments qui correspondent au sélecteur.
 
 La plupart des méthodes du DOM retournant une liste d'éléments (une `NodeList`) retournent une liste que l'on qualifie de *vivante* (*live*). Il s'agit d'une vue à jour du document : si le document est changé, la liste le sera également. `querySelectorAll`, au contraire, retourne une liste *non-live*, c'est-à-dire qu'elle ne sera pas modifiée si l'arbre DOM évolue.
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 // container est un élément qui contient des cases à cocher
 var inputs = container.querySelectorAll('input[type="checkbox"]');
 // on les déselectionne tous
@@ -164,7 +164,7 @@ Au-delà de la sélection de noeuds DOM, jQuery permet également de créer faci
 ### Rappel sur `innerHTML`
 Depuis toujours, on peut créer des éléments DOM et les ajouter à l'arbre DOM chargé. Cela se fait de la manière suivante :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 var lien = document.createElement('a');
 lien.href = 'http://google.fr';
 lien.appendChild(document.createTextNode('go to Google');
@@ -175,7 +175,7 @@ On voit que c'est bien verbeux...
 
 Il y a maintenant quelques années, Internet Explorer a introduit la propriété très intéressante `innerHTML`. En effet, le code suivant est équivalent au précédent:
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 var para = document.querySelector('p');
 para.innerHTML += '<a href="http://google.fr">go to Google</a>';
 ~~~
@@ -197,7 +197,7 @@ Globalement, cette méthode permet de disposer d'un document en mémoire et de l
 
 En effet, lorsque l'on manipule directement le document affiché, chaque modification doit être restituée à l'utilisateur, ce qui est coûteux en performance. Le `DocumentFragment` permet de contourner facilement ce problème. Et, cerise sur le gâteau, cette méthode est supportée par tous les navigateurs, même Internet Explorer 6 !
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 // ce tableau doit évidemment être récupéré par diverses méthodes, par exemple en Ajax
 var texts = ['foo', 'bar', 'baz'];
 function createContent() {
@@ -230,7 +230,7 @@ Elle s'appelle sur l'élément à modifier. Ce qui est particulièrement
 intéressant, c'est que l'on peut modifier le contenu de cet élément,
 mais aussi ajouter des éléments avant ou après l'élément-cible.
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 var container = document.getElementById('container');
 // insertion de contenu à la fin du container
 container.insertAdjacentHTML('beforeend', '<span><strong>fin</strong> du container</span>');
@@ -244,7 +244,7 @@ container.insertAdjacentHTML('afterend', '<span><strong>après</strong> le conta
 
 Ce qui donne:
 
-~~~ {lang="html" line="1" highlight="1"}
+~~~ {lang="html" line="1"}
 <span><strong>avant</strong> le container</span>
 <div id="container">
 <span><strong>début</strong> du container</span>
@@ -275,7 +275,7 @@ Regardons à présent ce que proposent les navigateurs en natif.
 
 Tout d'abord, vous serez heureux d'apprendre (si vous ne le savez pas encore) que tous les navigateurs permettent aujourd'hui d'instancier `XMLHttpRequest` tel un objet normal:
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 var request = new XMLHttpRequest(url);
 ~~~
 
@@ -286,7 +286,7 @@ L'API a vu par ailleurs un certain nombre d'ajouts.
 Tout d'abord, pour mimer l'utilisation initiale de jQuery, à savoir l'envoi asynchrone de formulaires, l'objet `FormData` est proposé.  
 On peut l'initialiser avec les données d'un formulaire existant, on peut ajouter des données (y compris des fichiers auxquels on aurait eu accès via du glisser-déposer par exemple) et on peut enfin l'envoyer avec un objet `XMLHttpRequest` :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 var data = new FormData(document.getElementById('myForm'));
 var request = new XMLHttpRequest(url);
 request.send(data);
@@ -301,7 +301,7 @@ Par ailleurs, `XMLHttpRequest` de niveau 2 a amené de nouveaux évènements à 
 Pour beaucoup (et c'est mon cas !), jQuery a permis une première approche de la programmation fonctionnelle. Sa méthode utilitaire `$.each` en a séduit plus d'un en permettant d'itérer facilement sur un tableau ou un objet avec une fonction.  
 Grâce à cela, l'action réalisée sur l'élément du tableau ou de l'objet est bien cerné.
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 // itérer un tableau
 var tableau = ['foo', 'bar', 'baz'];
 $.each(tableau, function(i, value) {
@@ -325,7 +325,7 @@ EcmaScript 5 amène justement un certain nombre de méthodes utilitaires pour r�
 
 Voici un exemple d'utilisation de `reduce`, sans doute l'une des méthodes les plus intéressantes :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 var elementNames = ['foo', 'bar', 'baz'];
 // elements est un tableau d'éléments dont les ids sont dans le tableau elementNames
 var elements = elementNames.reduce(function(result, name) {
@@ -345,14 +345,14 @@ Dès lors, il est possible d'utiliser les méthodes vues ci-dessus. Dans le cas 
 
 Par exemple, pour transformer un objet en tableau, on peut utiliser :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 var pomme = { type: 'Chantecler', couleur: 'jaune', traitement: false };
 var values = Object.keys(pomme).map(function(key) { return pomme[key]; });
 ~~~
 
 On peut rendre cette fonction générique :
 
-~~~ {lang="javascript" line="1" highlight="1"}
+~~~ {lang="javascript" line="1"}
 function values(object) {
   return Object.keys(object).map(function(key) { return object[key]; });
 }
