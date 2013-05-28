@@ -3,8 +3,7 @@
 Lors de [mon intervention à Paris Web 2012](http://www.paris-web.fr/2012/conferences/faire-du-web-moderne-a-destination-de-tous.php#video), j'expliquais combien il était facile de faire une application qui marche aussi bien dans les anciens navigateurs que dans les nouveaux.  
 Aujourd'hui, je vais prendre une direction toute différente: vous montrer que les navigateurs modernes[^modernes] fournissent des outils puissants pour créer des applications Web, à tel point qu'on peut aujourd'hui se passer de l'omniprésent jQuery.
 
-jQuery n'est pas magique: il ne peut que tirer partie de ce que lui
-permet l'API DOM. Dès lors, même si l'on choisit cette bibliothèque, bien connaitre l'API DOM permet de bien utiliser jQuery.
+jQuery n'est pas magique: il ne peut que tirer partie de ce que lui permet l'API DOM. Dès lors, même si l'on choisit cette bibliothèque, bien connaitre l'API DOM permet de bien utiliser jQuery.
 
 jQuery est aujourd'hui décrié en raison de son côté monolithique. En effet, il fournit un ensemble de fonctions orthogonales, qui étaient toutes nécessaires àun certain point de l'histoire du Web. Mais comme nous allons le voir, elles ont peu à peu été intégrées dans les nouveaux standard du Web.
 
@@ -33,10 +32,10 @@ Mais cette manière ne permet pas d'attacher plusieurs gestionnaires pour un mê
 $('#un-lien').click(onClickFunction);
 ~~~
 
-Là encore, l'API DOM n'est pas en reste, et propose la méthode `addEventListener`:
+Là encore, l'API DOM n'est pas en reste, et propose la méthode `addEventListener` :
 
 ~~~ {lang="javascript" line="1"}
-document.getElementById('un-lien').addEventListener('click', onClickFunction, false);
+document.getElementById('un-lien').addEventListener('click', onClickFunc, false);
 ~~~
 
 C'est certes plus verbeux, mais aussi plus près du navigateur, et à ce titre plus efficace.
@@ -94,16 +93,22 @@ var body = document.body,
     matches = body.matches || body.mozMatchesSelector ||
               body.webkitMatchesSelector || body.oMatchesSelector ||
               body.msMatchesSelector;
+
 // ces lignes permettent d'appeler facilement matches :
 // matches(element, selecteur);
 matches = matches.call.bind(matches);
-// bien sûr, vous pouvez tout à fait réutiliser le code précédent dans une de vos bibliothèques maison
+
+// bien sûr, vous pouvez tout à fait réutiliser le code précédent 
+// dans une de vos bibliothèques maison
+
 document.getElementById('liste').addEventListener('click', onClickHandler, false);
+
 function onClickHandler(e) {
   // e.target correspond à l'élément clické
   if (matches(e.target, 'a.external')) {
     e.preventDefault();
-    // faisons quelque chose avec l'attribut href. Ici on va l'afficher dans la console
+    // faisons quelque chose avec l'attribut href.
+    //Ici on va l'afficher dans la console
     var href = e.target.href;
     console.log(href);
   }
@@ -198,7 +203,8 @@ Globalement, cette méthode permet de disposer d'un document en mémoire et de l
 En effet, lorsque l'on manipule directement le document affiché, chaque modification doit être restituée à l'utilisateur, ce qui est coûteux en performance. Le `DocumentFragment` permet de contourner facilement ce problème. Et, cerise sur le gâteau, cette méthode est supportée par tous les navigateurs, même Internet Explorer 6 !
 
 ~~~ {lang="javascript" line="1"}
-// ce tableau doit évidemment être récupéré par diverses méthodes, par exemple en Ajax
+// ce tableau doit évidemment être récupéré par diverses méthodes, 
+// par exemple en Ajax
 var texts = ['foo', 'bar', 'baz'];
 function createContent() {
   // crée le document fragment
@@ -232,14 +238,22 @@ mais aussi ajouter des éléments avant ou après l'élément-cible.
 
 ~~~ {lang="javascript" line="1"}
 var container = document.getElementById('container');
+
 // insertion de contenu à la fin du container
-container.insertAdjacentHTML('beforeend', '<span><strong>fin</strong> du container</span>');
+container.insertAdjacentHTML('beforeend',
+                             '<span><strong>fin</strong> du container</span>');
+
 // insertion de contenu au début du container
-container.insertAdjacentHTML('afterbegin', '<span><strong>début</strong> du container</span>');
+container.insertAdjacentHTML('afterbegin',
+                             '<span><strong>début</strong> du container</span>');
+
 // insertion de contenu avant le container
-container.insertAdjacentHTML('beforebegin', '<span><strong>avant</strong> le container</span>');
+container.insertAdjacentHTML('beforebegin',
+                             '<span><strong>avant</strong> le container</span>');
+
 // insertion de contenu après le container
-container.insertAdjacentHTML('afterend', '<span><strong>après</strong> le container</span>');
+container.insertAdjacentHTML('afterend',
+                             '<span><strong>après</strong> le container</span>');
 ~~~
 
 Ce qui donne:
