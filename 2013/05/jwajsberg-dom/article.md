@@ -359,7 +359,7 @@ function values(object) {
 ~~~
 
 ## Conclusion
-J'espère que si vous êtes arrivés jusque là, vous êtes maintenant convaincus que le DOM natif a un potentiel bien réel. Il est peut-être encore un peu tôt pour utiliser certaines méthodes mais, en faisant attention à la compatibilité ascendante, il est tout à fait possible de s'appuyer sur ces nouvelles possibilités pour de nouveaux projets. Pour aller encore plus loin, [Raphaël Gougeron présentera une conférence sur le même sujet à Paris-Web 2013](http://www.paris-web.fr/2013/conferences/jquery-sans-jquery.php).
+J'espère que si vous êtes arrivés jusque là, vous êtes maintenant convaincus que le DOM natif a un potentiel bien réel. Il est peut-être encore un peu tôt pour utiliser certaines méthodes mais, en faisant attention à la compatibilité ascendante, il est tout à fait possible de s'appuyer sur ces nouvelles possibilités pour de nouveaux projets. Pour aller encore plus loin, [Raphaël Rougeron présentera une conférence sur le même sujet à Paris-Web 2013](http://www.paris-web.fr/2013/conferences/jquery-sans-jquery.php).
 
 JQuery s'en va aussi sur la voie de la modernisation, poussé par les nombreuses micro-bibliothèques[^microjs], et les développeurs travaillent sur sa modularisation. La version 2.0 n'est plus compatible avec Internet Explorer inférieur ou égal à 8. Je le déplore d'une part, car l'universalité de jQuery était une force, et en quelque sorte un présupposé. Mais d'autre part je l'apprécie car cela ne peut qu'améliorer ses performances.
 
