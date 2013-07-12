@@ -86,7 +86,7 @@ Tim Berners-Lee a probablement été le premier à signaler les liens par la cou
 
 ![Les 16 couleurs ](colorNames-16.png)
 
-Mosaic, un des premiers navigateurs web (1993-1997), affichait des pages Web avec du texte noir sur un fond gris. La couleur la plus foncée disponible, lisible sur un tel fond gris, hors le noir, était le bleu. Le rouge et le vert ne pouvaient être choisis, en raison de leurs connotations sémantiques respectives.  Le jaune est trop peu contrasté.  
+Mosaic, un des premiers navigateurs web (1993-1997), affichait des pages Web avec du texte noir sur un fond gris. La couleur la plus foncée disponible, lisible sur un tel fond gris, hors le noir, était le bleu. Le rouge et le vert ne pouvaient être choisis, en raison de leurs connotations sémantiques respectives.  Le jaune est trop peu contrasté.  <!-- Remarque : à quelles connotations fais-tu référence exactement ? -->
 Par conséquent, pour démarquer les liens du texte brut, de façon à ce qu'ils restent toujours lisibles, c'est la couleur bleue qui a été choisie, plus précisément `#0000FF`[^4]. 
 
 ![Préférences des couleurs des liens dans Mosaic](colors-mosaic.png "Préférences des couleurs des liens dans Mosaic")
@@ -142,7 +142,7 @@ Pouvez-vous identifier à coup sûr les liens de l’extrait ci-dessus ? Non. Ca
 Utiliser la couleur seule ne suffit pas, car ça laisse trop de place aux erreurs d’interprétation. Seul le corps de texte ou la graisse distingue titre et exergue des liens : c’est trop peu pour distinguer les liens des autres éléments mis en valeur.
 
 Autre souci, la couleur utilisée dans cet exemple, `#759937`, est très jolie mais n’a pas un contraste suffisant pour rester correctement lisible en toutes circonstances : les mots écrits dans ce vert sont difficiles à déchiffrer hors des conditions optimales de luminosité ambiante, par exemple quand vous surfez par temps ensoleillé, dans le train ou dans la rue, ce qui est de plus en plus fréquent.   
-Enfin, nos chers internautes n’ont pas tous une excellente acuité visuelle. S’appuyer uniquement sur la couleur pour différencier visuellement les liens du texte qui les entoure ne suffit pas : certains utilisateurs passeront totalement à côté. N’oubliez pas les daltoniens !
+Enfin, nos chers internautes n’ont pas tous une excellente acuité visuelle. S’appuyer uniquement sur la couleur pour différencier <!--visuellement (redondant avec le visuelle précédent) --> les liens du texte qui les entoure ne suffit pas : certains utilisateurs passeront totalement à côté. N’oubliez pas les daltoniens !
 
 Bref, la signalétique des liens ne doit pas passer uniquement par la couleur.
 
@@ -182,6 +182,7 @@ Navigation au clavier => besoin de signaler le *focus*. Qu'est-ce donc que le «
 Le survol (`:hover`), c'est passer au-dessus du lien (avec la souris).  
 Par défaut signalé par un changement du pointeur (*hand*).  
 Personnalisable : souligné au survol, etc.
+<!-- Je ne comprens pas trop le "souligné au survol" : tu insistes pour qu'ils soient soulignés par défaut, et là ça laisse à penser qu'il ne le sont pas. C'est confusant. Ca vaudrait le coup de prendre un autre exemple. -->
 
 #### Signaler le focus améliore le confort de navigation
 
@@ -191,9 +192,10 @@ Essayez donc de tabuler sur un site, en pressant plusieurs fois la touche « `TA
 
 ##### Qu'est-ce que ce contour pointillé ?
 
-Normalement, aussitôt qu'il est atteint, le lien se voit doté d'un contour en pointillés.
+Normalement, aussitôt qu'il est atteint, le lien se voit doté d'un contour <!-- en --> pointillés.
 
 ![Illustration : ceci est un lien ayant le focus](??.png "illustration : ceci est un lien ayant le focus")
+<!-- Illustration manquante -->
 
 Ce rendu n'est pas systématique, mais c'est celui recommandé dans la [feuille de style par défaut pour HTML](http://www.w3.org/TR/CSS21/sample.html), soit très précisément :
 
@@ -226,6 +228,7 @@ La méthode la plus simple consiste à styler la prise de *focus* comme le survo
 par
 
 `a:focus, a:hover { text-decoration: underline; }`
+<!-- Même remarque que précédemment : l'exemple n'est pas pertinent je pense. -->
 
 Focus et survol se démarquent alors exactement de la même façon. C'est ce que recommande Roger Johansson : [Whenever you use :hover, also use :focus](http://www.456bereastreet.com/archive/201004/whenever_you_use_hover_also_use_focus/). Cela évite les défauts majeurs d'accessibilité, par exemple sur les menus *dropdown*.
 
@@ -238,6 +241,7 @@ Parcourir la page à coup de tabulations fait sauter le *focus* d’un coin à l
 Le contour pointillé recommandé reste insuffisant, trop discret. Parvenez-vous vraiment, avec ça, à suivre le *focus* des yeux, lorsque vous tabulez dans la page ? Non. Le pointillé par défaut est souvent difficile à repérer, voire impossible (sur une image, par exemple, ou quand il se trouve hors champ). Sans doute est-ce la raison pour laquelle les navigateurs webkit (et donc Safari, Chrome, etc.) ont renforcé ce rendu par un halo autour des liens et des champs de formulaire qui reçoivent le *focus*.
 
 ![Prise de focus dans différents navigateurs, de gauche à droite et de haut en bas : Firefox, Chrome, Safari, IE et Opera](focus-navigateurs.png "Prise de focus dans différents navigateurs, de gauche à droite et de haut en bas : Firefox, Chrome, Safari, IE et Opera")
+<!-- Illustration manquante -->
 
 Pour faciliter la navigation au clavier, mieux vaut accentuer la prise de *focus*. Plusieurs moyens stylistiques sont utilisables :
 
@@ -260,6 +264,8 @@ Il est personnalisable via la pseudo-class CSS `:active`.
 > [BP N°124](https://checklists.opquast.com/fr/oqsv2/criteria/623/) : Le site n'applique pas le même style aux liens visités et non visités.
  
 Ne pas changer l’apparence des liens visités empêche de savoir quels liens ont déjà été suivis.
+
+<!-- Remarque : Il me semble qu'une faille de sécurité empêche la personnalisation de :visited sur FF -->
 
 
 ### Le lien dans tous ses états
@@ -289,7 +295,7 @@ Ce n'est pas simple, car un lien peut être à la fois déjà visité au moment 
 ### Et sur les terminaux tactiles ?
 
 Le survol n'est pas pris en charge sur les terminaux tactiles, etc.
-// petite nuance : iphone/ipad interprètent et affichent le focus (en remplacement du :active je crois) mais c'est à vérifier //
+<!-- Remarque : Petite nuance : iphone/ipad interprètent et affichent le focus (en remplacement du :active je crois) mais c'est à vérifier -->
 <!-- A COMPLETER !!! -->
 
 ## Comment styler vos hyperliens ?
@@ -319,13 +325,14 @@ Par exemple, pour modifier la couleur des liens selon leur état :
         a:hover { color: green; } /* lien survolé */
         a:active { color: red; } /* lien activé */
 
+<!-- Petite précisions : a:link permet de styles les liens actifs (dotés d'un attribut href). Si tu utilises des ancres utilisant juste l'attribut name, elles ne seront pas impactées. -->
 En pratique, on commence par styler de manière générique a { ... } et on s’en contente souvent. Quand on veut bien faire, on précise chaque état, distinctement : les liens visités avec a:visited { ... } puis les liens ciblés, avec ces trois pseudo-classes d’un coup : a:focus, a:hover, a:active { ... }.
 
 La règle a:hover doit être placée après a:link et a:visited, sinon la cascade fera que la propriété color spécifiée sera cachée. Il est excessivement rare d’avoir à définir a:link.
 
 Pour retenir cet ordre, l’astuce mnémotechnique habituelle est l’expression « *LoVe HAte* », — deux mots fameux que le terrifiant pasteur du film *La Nuit du chasseur* avait tatoués sur les phalanges de ses doigts —, où les lettres en majuscule signalent ici la première lettre de chaque pseudo-classe, dans le bon ordre... *but what of :focus?* Pour s’en rappeler, n’oublions pas ce qui trouve naturellement sa place entre l’amour et la haine : « *LoVe Fuck HAte* ».
 
-//  je rajouterai une partie sur les propriétés qu'il est possible de styler. De mémoire, elles sont relativement restreintes du fait d'une faille de sécurité découverte sur [`:visited`](https://developer.mozilla.org/en-US/docs/CSS/:visited) //
+<!-- Remarque : Je rajouterai une partie sur les propriétés qu'il est possible de styler. De mémoire, elles sont relativement restreintes du fait d'une faille de sécurité découverte sur [`:visited`](https://developer.mozilla.org/en-US/docs/CSS/:visited) -->
 
 
 ## Conclusion
@@ -336,6 +343,8 @@ CS : qu'il est possible de faire plein de choses (sympas) avec les liens, mais q
 
 ## Références
 Ce livre s'appuie sur les documentations techniques de référence sur le sujet, c'est-à-dire les spécifications W3C des langages concernés, mais aussi sur les bonnes pratiques et critères d'accessibilité qui garantissent un confort d'utilisation optimal de l'interface Web.
+
+<!-- <del>livre</del> <ins>article</ins> -->
 
 ### Spécifications W3C
 
