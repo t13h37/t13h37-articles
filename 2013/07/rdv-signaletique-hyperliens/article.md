@@ -49,7 +49,7 @@ Pour accéder à cet emplacement, il faut ajouter, ailleurs dans la page, un **l
 
 `<a href="#toto">Ceci est un lien vers mon ancre</a>`
 
-Il s'agit de la même balise `<a>`, mais l'attribut utilisé cette fois est « `href` ». La destination est indiquée dans cet attribut. Il s'agit de l'**adresse hypertexte de référence** à laquellevous souhaitez vous rendre. L'attribut `href` est ce qui caractérise l'hyperlien.
+Il s'agit de la même balise `<a>`, mais l'attribut utilisé cette fois est « `href` ». La destination est indiquée dans cet attribut. Il s'agit de l'**adresse hypertexte de référence** à laquelle vous souhaitez vous rendre. L'attribut `href` est ce qui caractérise l'hyperlien.
 
 Ancres et liens d'une page servent typiquement à constituer des liens d'évitement (« *skip links* ») ou un sommaire de la page. Mais les liens permettent également de pointer vers d'autres pages et tout autre ressource, interne ou externe au site. 
 
@@ -67,7 +67,7 @@ Il est même possible de pointer l'ancre d'une page externe :
 
 Ancre ou lien, retenons que dans tous les cas, il s'agit du couple de balises `<a>` et `</a>`. Ce sont les attributs utilisés qui caractérisent leur usage.
 
-## Mais pourquoi diable sont-ils bleus ? ##
+## Mais pourquoi diable sont-ils bleus ?
 
 Il fallait trouver un moyen de distinguer les liens du reste du texte, pour rendre visibles ces mots cliquables qui sont comme autant de portes ouvertes dans le texte.
 
