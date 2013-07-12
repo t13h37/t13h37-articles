@@ -378,7 +378,7 @@ Relire les spécifications du W3C, ici traduites en français :
 
 [^2]: Cf. spécification HTML 4.01, W3C, 1999 : [12 Les liens](http://www.la-grange.net/w3c/html4.01/struct/links.html)
 
-[^3]: on peut également utiliser l'attribut « `id` » pour créer une ancre, dans la balise ouvrante de n'importe quel élément, y compris l'élément `a`. `<H2 id="section2">Section deux</H2>`
+[^3]: on peut également utiliser l'attribut « `id` » pour créer une ancre, dans la balise ouvrante de n'importe quel élément, y compris l'élément `a`. `<h2 id="section2">Section deux</h2>`
 L'usage de l'attribut « `id` », plus large et compatible XHTML, s'est généralisé ces dernières années. Certains vieux navigateurs ne le supportant pas, les deux attributs étaient parfois employés conjointement, comme suit :
 `<a name="toto" id="toto"></a>`
 
