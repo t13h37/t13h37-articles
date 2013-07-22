@@ -20,19 +20,23 @@ Sur une page Web, des **liens** ajoutés à des mots, des phrases ou des images,
 
 L'élément HTML utilisé pour ce faire est `a`, de l'anglais *anchor*, qui signifie ancre.
 
-![Ancre](figure/anchor.gif) 
+![Ancre](anchor.gif) 
 
 Pour accéder à un emplacement bien précis de la page, il faut placer une ancre juste au-dessus de l'endroit où vous souhaitez atterrir. Une ancre se code ainsi :
 
-`<a name="toto"></a>`
+~~~ {lang="html" line="1"}
+<a name="toto"></a>
+~~~
 
 Il s'agit donc de deux balises, `<a>` et `</a>`, avec le nom de l'ancre indiqué dans l'attribut « `name` » placé sur la balise ouvrante (et rien entre les deux balises).[^1]
 
-#### Puis les liens : `href`
+#### Puis les liens : href
 
 Pour accéder à cet emplacement, il faut ajouter, ailleurs dans la page, un **lien** vers cette ancre. Un lien se code comme suit :
 
-`<a href="#toto">Ceci est un lien vers mon ancre</a>`
+~~~ {lang="html" line="1"}
+<a href="#toto">Ceci est un lien vers mon ancre</a>
+~~~
 
 Il s'agit de la même balise `<a>`, mais l'attribut utilisé cette fois est « `href` ». La destination est indiquée dans cet attribut. Il s'agit de l'**adresse hypertexte de référence** à laquelle vous souhaitez vous rendre. L'attribut `href` est ce qui caractérise l'hyperlien.
 
@@ -40,11 +44,15 @@ Ancres et liens d'une page servent typiquement à constituer des liens d'évitem
 
 Exemple de lien interne :
 
-`<a href="index.html">Voici le lien de retour à l'accueil</a>`
+~~~ {lang="html" line="1"}
+<a href="index.html">Voici le lien de retour à l'accueil</a>
+~~~
 
 Exemple de lien externe :
 
-`<a href="http://www.toto.net">Ceci est un lien vers le site toto.net</a>`
+~~~ {lang="html" line="1"}
+<a href="http://www.toto.net">Ceci est un lien vers le site toto.net</a>
+~~~
 
 Ancre ou lien, retenons que dans tous les cas, il s'agit du couple de balises `<a>` et `</a>`. Ce sont les attributs utilisés, `name` ou `href`, qui précisent leur rôle.
 
@@ -60,7 +68,7 @@ Saviez-vous que c'est à Sir Tim Berners-Lee, l'inventeur du Web, que nous devon
 
 À l'époque, on ne disposait pas d'un grand choix de couleurs : seulement 16 (cf.[Colors](http://www.w3.org/TR/REC-html40/types.html#h-6.5) dans la spécification HTML 4.01), car les cartes graphiques les plus courantes n'en affichaient pas davantage.
 
-Mosaic, un des premiers navigateurs web, affichait des pages Web avec du texte noir sur un fond gris. La couleur la plus foncée disponible, lisible sur une telle teinte, hors le noir, était le bleu. Le rouge et le vert ne pouvaient être choisis, en raison de leurs fortes connotations sémantiques respectives (danger, erreur, etc.). Le jaune est trop peu contrasté. Par conséquent, pour démarquer les liens du texte brut, de façon à ce qu'ils restent toujours lisibles, c'est la couleur bleue qui a été retenue.
+Mosaic, un des premiers navigateurs web, affichait des pages Web avec du texte noir sur un fond gris. La couleur la plus foncée disponible, lisible sur une telle teinte, hors le noir, était le bleu. Le rouge et le vert ne pouvaient être choisis, en raison de leurs fortes connotations sémantiques respectives (erreur, correct, danger…). Le jaune est trop peu contrasté. Par conséquent, pour démarquer les liens du texte brut, de façon à ce qu'ils restent toujours lisibles, c'est la couleur bleue qui a été retenue.
 
 ### Pourquoi soulignés ?
 
@@ -88,7 +96,7 @@ D'après les critères d'accessibilité, le contraste suffit à distinguer un li
 
 Nos dinosaures de l’Internet que sont Yahoo!, Google, eBay et Amazon, pour ne citer qu’eux, utilisent toujours cette bonne vieille recette du lien bleu, et ce n’est certainement pas le fruit du hasard. Leur besoin d'optimiser la performance et le taux de conversion président ce choix. Le bleu reste préférable, puisqu'il s'agit d'un standard. Une majorité d'internautes ont acquis le concept « lien = bleu ». Utiliser cette couleur pour les liens textes, c'est donc leur faciliter la navigation.
 
-Bien que l'accessibilité n'ait peut-être pas été la priorité de Tim Berners-Lee à l'époque, ce choix de couleur est heureux, comme le pointe Joe Clarck, cité dans cette note « [Why are Links Blue?](http://alistapart.com/blog/post/why-are-links-blue) » (A list apart, Zeldman, 2013) : 
+Bien que l'accessibilité n'ait peut-être pas été la priorité de Tim Berners-Lee à l'époque, ce choix de couleur est heureux, comme le pointe Joe Clarck, cité dans cette note « [Why are Links Blue?](http://alistapart.com/blog/post/why-are-links-blue) » (A List Apart, Zeldman, 2013) : 
 
 > « Alors que le rouge et le vert sont des couleurs souvent mal distinguées par les daltoniens, presque personne n'a de déficience de perception de la couleur bleue. Par conséquent, presque tout le monde peut voir le bleu, ou, plus exactement, presque tout le monde peut distinguer le bleu comme couleur différente des autres. C'est une vraie chance que les liens soient bleus soulignés par défaut ! »
 
@@ -184,12 +192,14 @@ Il est important de déclarer ces pseudo-classes dans cet ordre :
 
 Par exemple, pour modifier la couleur des liens selon leur état :
 
-        a { color: blue; }
-        a:link {} /* lien non visité */
-        a:visited { color: purple; } /* lien visité */
-        a:focus { color: green; } /* lien tabulé */
-        a:hover { color: green; } /* lien survolé */
-        a:active { color: red; } /* lien activé */
+~~~ {lang="css" line="1"}
+a { color: blue; }
+a:link {} /* lien non visité */
+a:visited { color: purple; } /* lien visité */
+a:focus { color: green; } /* lien tabulé */
+a:hover { color: green; } /* lien survolé */
+a:active { color: red; } /* lien activé */
+~~~
 
 La règle `a:hover` doit être placée après `a:link` et `a:visited`, sinon la cascade fera que la propriété color spécifiée sera cachée.
 
