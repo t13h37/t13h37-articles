@@ -27,10 +27,10 @@ L'élément HTML utilisé pour ce faire est `a`, de l'anglais *anchor*, qui sign
 Pour accéder à un emplacement bien précis de la page, il faut placer une ancre juste au-dessus de l'endroit où vous souhaitez atterrir. Une ancre se code ainsi :
 
 ~~~ {lang="html" line="1"}
-<a name="toto"></a>
+<a id="toto"></a>
 ~~~
 
-Il s'agit donc de deux balises, `<a>` et `</a>`, avec le nom de l'ancre indiqué dans l'attribut « `name` » placé sur la balise ouvrante (et rien entre les deux balises).[^1]
+Il s'agit donc de deux balises, `<a>` et `</a>`, avec le nom de l'ancre indiqué dans l'attribut « `id` » placé sur la balise ouvrante (et rien entre les deux balises) [^1].
 
 #### Puis les liens : href
 
@@ -56,7 +56,7 @@ Exemple de lien externe :
 <a href="http://www.toto.net">Ceci est un lien vers le site toto.net</a>
 ~~~
 
-Ancre ou lien, retenons que dans tous les cas, il s'agit du couple de balises `<a>` et `</a>`. Ce sont les attributs utilisés, `name` ou `href`, qui précisent leur rôle.
+Ancre ou lien, retenons que dans tous les cas, il s'agit du couple de balises `<a>` et `</a>`. Ce sont les attributs utilisés, `id` ou `href`, qui précisent leur rôle.
 
 ## Pourquoi diable sont-ils bleus soulignés ?
 
@@ -70,7 +70,7 @@ Saviez-vous que c'est à Sir Tim Berners-Lee, l'inventeur du Web, que nous devon
 
 À l'époque, on ne disposait pas d'un grand choix de couleurs : seulement 16 (cf.[Colors](http://www.w3.org/TR/REC-html40/types.html#h-6.5) dans la spécification HTML 4.01), car les cartes graphiques les plus courantes n'en affichaient pas davantage.
 
-Mosaic, un des premiers navigateurs web, affichait des pages Web avec du texte noir sur un fond gris. La couleur la plus foncée disponible, lisible sur une telle teinte, hors le noir, était le bleu. Le rouge et le vert ne pouvaient être choisis, en raison de leurs fortes connotations sémantiques respectives (erreur, correct, danger…). Le jaune est trop peu contrasté. Par conséquent, pour démarquer les liens du texte brut, de façon à ce qu'ils restent toujours lisibles, c'est la couleur bleue qui a été retenue.
+Mosaic, un des premiers navigateurs web, affichait des pages Web avec du texte noir sur un fond gris. La couleur la plus foncée disponible, lisible sur une telle teinte, hors le noir, était le bleu. Le rouge et le vert ne pouvaient être choisis, en raison de leurs fortes connotations sémantiques respectives (danger/interdit, sécurité/autorisé, etc.). Le jaune est trop peu contrasté. Par conséquent, pour démarquer les liens du texte brut, de façon à ce qu'ils restent toujours lisibles, c'est la couleur bleue qui a été retenue.
 
 ### Pourquoi soulignés ?
 
@@ -90,7 +90,7 @@ Voici ce qu'il faut savoir, si vous décidez d'en changer l'apparence.
 
 Si elle est plus jolie que le bleu d'origine, la couleur utilisée pour vos liens n'a peut être pas un contraste suffisant pour rester correctement lisible en toutes circonstances : les mots écrits dans cette teinte sont difficiles à déchiffrer en dehors des conditions optimales de luminosité ambiante, par exemple quand vous surfez par temps ensoleillé, dans le train ou dans la rue, ce qui est de plus en plus fréquent. Sans oublier que nos chers internautes n’ont pas tous une excellente acuité visuelle.
 
-Voici comment garantir la lisibilité des liens dans le texte : après s'être assuré que le contraste est suffisant entre la couleur du texte et la couleur de son arrière-plan (critère 3.3 Accessiweb 2.1), on choisira une couleur de lien ayant un rapport de contraste supérieur ou égal à 3:1 par rapport au texte environnant (critère 10.6 Accessiweb 2.1). De nombreux outils permettent de mesurer ces contrastes, qui sont présentés dans cet article : [Contrastes de texte](http://openweb.eu.org/articles/accessibilite_contrastes_textes_sites) (OpenWeb, 2012).
+Voici comment garantir la lisibilité des liens dans le texte : après s'être assuré que le contraste est suffisant entre la couleur du texte et la couleur de son arrière-plan ([critère 3.3 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.2_liste_deployee.html#crit-3-3)), on choisira une couleur de lien ayant un rapport de contraste supérieur ou égal à 3:1 par rapport au texte environnant ([critère 10.6 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.2_liste_deployee.html#crit-10-6)). De nombreux outils permettent de mesurer ces contrastes, qui sont présentés dans cet article : [Contrastes de texte](http://openweb.eu.org/articles/accessibilite_contrastes_textes_sites) (OpenWeb, 2012).
 
 D'après les critères d'accessibilité, le contraste suffit à distinguer un lien à condition « qu’un élément de distinction autre que la couleur est visible lors du *focus* des liens (graisse, soulignement, icône,etc) » précise le [critère RGAA No 7.10](http://www.rgaa.net/Maintien-de-la-distinction.html). Et c'est ce que l'on voit souvent : des liens de couleur assortie à la charte du site, soulignés au survol… mais pas toujours au *focus*.
 
@@ -117,7 +117,7 @@ Quand certains mots d’un texte sont en couleur, comment l’internaute peut en
 
 Pouvez-vous identifier à coup sûr les liens de l’extrait ci-dessus ? Non. Car si les liens semblent ici signalés par la couleur verte, tous les mots de cette couleur ne sont pas des liens, la bonne blague ! Ici, comme souvent, liens, exergues et titres ont la même couleur : c’est un moyen facile de personnaliser une charte graphique. Mais qui n'est pas assez explicite.
 
-La différence de couleur n’est pas un élément distinctif suffisant. Cela laisse trop de place aux erreurs d’interprétation, avec le risque que certains utilisateurs passent totalement à côté. C'est ce qu'énonce le [critère 3.1 Accessiweb 2.1](http://www.braillenet.org/accessibilite/referentiel-aw21/#couleurs) : « l’information ne doit pas être donnée uniquement par la couleur ».
+La différence de couleur n’est pas un élément distinctif suffisant. Cela laisse trop de place aux erreurs d’interprétation, avec le risque que certains utilisateurs passent totalement à côté. C'est ce qu'énonce le [critère 3.1 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.2_liste_deployee.html#couleurs) : « l’information ne doit pas être donnée uniquement par la couleur ».
 
 ### Soulignez !
 
@@ -152,11 +152,11 @@ Le survol (`:hover`), c'est passer au-dessus du lien, avec la souris. Il est par
 
 Le survol n'est pas pris en charge sur les terminaux tactiles, qui compensent de diverses façon. S'il est important de le signaler, il ne faut pas s'appuyer uniquement sur les déplacements de la souris ou la pseudo-classe CSS `:hover`, qui peuvent ne pas se comporter comme souhaité sur un appareil à écran tactile. Voir le site dédié (en anglais) : [Non hover](http://trentwalton.com/2010/07/05/non-hover/).
 
-##### Signaler le focus améliore le confort de navigation
+##### Signaler le focus améliore la navigation
 
 Le lien (ou l’élément) qui a le **_focus_** est celui que l’internaute a atteint. Rappelons qu'il peut être atteint de plusieurs façons : en positionnant le doigt sur l’écran tactile ou le curseur de la souris sur l'élément, ou encore en tabulant au clavier (avec la touche `TAB`).
 
-Le *focus* est par défaut signalé par un contour pointillé, ou par un halo bleuté, selon les navigateurs. Cela répond à une exigence d'accessibilité clairement indiquée dans les [WCAG](http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible) et ainsi exprimée dans la méthode d'application française, au [Critère 10.7 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.1_liste_generale.html#presentation) : « Dans chaque page Web, pour chaque élément recevant le *focus*, la prise de *focus* est-elle visible ? »
+Le *focus* est par défaut signalé par un contour pointillé, ou par un halo bleuté, selon les navigateurs. Cela répond à une exigence d'accessibilité clairement indiquée dans les [WCAG](http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible) et ainsi exprimée dans la méthode d'application française, au [Critère 10.7 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.1_liste_generale.html#crit-10-7) : « Dans chaque page Web, pour chaque élément recevant le *focus*, la prise de *focus* est-elle visible ? »
 
 
 Méfiez-vous donc des *reset* CSS qui annulent le style natif du *focus* — d’un coup de `:focus { outline: 0; }`. Cela prive les internautes naviguant au clavier de tout repère et gêne considérablement leur navigation. À ce propos, vous pouver consulter ce site dédié : [outlinenone.fr](http://www.outlinenone.fr).
@@ -169,13 +169,17 @@ La méthode la plus simple consiste à styler la prise de *focus* comme le survo
 
 Quand on le clique, le lien est dit « actif » (`:active`). Cet état est par défaut signalé en rouge. Il est nécessaire de le distinguer pour rendre perceptible que l'action est enclenchée, notamment pour les personnes ayant des difficultés à manipuler la souris. Je vous invite d'ailleurs à lire l'article [`:hover` vs `:active`](http://www.lesintegristes.net/2009/09/13/hover-vs-active/) écrit par Eric Le Bihan, et publié sur Les Intégristes en 2009.
 
+##### N'oublions pas les liens visités (`:visited`)
+
+N'oublions pas l'état visité (`visited`) qui, comme son nom l'indique, est l'état d'un lien qui a déjà été suivi. Il est par défaut signalé par la couleur violette. C'était une convention autrefois bien respectée, mais qui est de moins en moins courante. À tord. Changer l’apparence des liens visités facilite l'identification des contenus restant à découvrir, comme le pointe la [Bonne pratique Opquast N°124](https://checklists.opquast.com/fr/oqsv2/criteria/623/). C'est une aide pour l'internaute, une incitation à la découverte de nouvelles pages.
+
 #### Un exemple ?
 
 On ne se soucie pas assez de signaler les différents états d’un lien. C'est moins simple qu'il y paraît de prime abord, mais il est possible d'allier originalité et utilisabilité. Voici un exemple, pas parfait, mais complet :
 
-![Tous les états d'un lien](combinaisons-2.png)
+![Personnalisation de tous les états d'un lien](combinaisons-2.png)
 
-Difficile de se rendre compte sur une image statique… Pour se donner un bon aperçu de leur nature changeante, il est indispensable de travailler les liens dans leur environnement naturel, c'est-à-dire directement dans le navigateur.
+Difficile de se rendre compte sur une image statique… Pour se donner un bon aperçu de leur nature changeante, il est indispensable de travailler les liens dans leur environnement naturel, c'est-à-dire directement dans le navigateur, pour pouvoir les cliquer, les tabuler et les chatouiller.
 
 
 ## Comment styler les liens en CSS ?
@@ -208,13 +212,8 @@ La règle `a:hover` doit être placée après `a:link` et `a:visited`, sinon la 
 Pour retenir cet ordre, l’astuce mnémotechnique est l’expression « *LoVe Fuck HAte* », où les lettres en majuscule signalent ici la première lettre de chaque pseudo-classe, dans le bon ordre. Voir : [Ordre des pseudo-classes des liens](http://romy.tetue.net/love-fuck-hate).
 
 
-## Conclusion
-<!--
-RDV : (là, que dire ?)
-CS : qu'il est possible de faire plein de choses (sympas) avec les liens, mais que l'essentiel c'est de faire en sorte que tout un chacun puisse les utiliser pleinement. Et que cela passe par une mise en exergue judicieuse et appropriée ?
--->
+## Des liens stylés !
 
+Véritable fondement de la navigation sur le Web, l'hyperlien mérite qu'on s'attarde sur son rendu graphique : c'est le point d'interaction primaire avec l'internaute, il est absolument incontournable. Les conventions sont fortes et établies, certes, mais elles peuvent être revisitées pour personnaliser une charte graphique. Respecter les quelques règles de base que cet article rappelle permet de préserver l'utilisatibilité. Amusez-vous bien !
 
-## NOTES :
-
-[^1]: On peut également utiliser l'attribut « `id` » pour créer une ancre, dans la balise ouvrante de n'importe quel élément, y compris l'élément `a`. Exemple : `<h2 id="section2">Section deux</h2>`. L'usage de l'attribut « `id` », plus large et compatible XHTML, s'est généralisé ces dernières années. Certains vieux navigateurs ne le supportant pas, les deux attributs étaient parfois employés conjointement, comme suit : `<a name="toto" id="toto"></a>`.
+[^1] : L'attribut `name`, initialement employé pour les ancres, en HTML 4 (cf. [12.2.1 Syntax of anchor names](http://www.w3.org/TR/REC-html40/struct/links.html#h-12.2.1)), est déprécié en XHTML et obsolète en (HTML5. L'usage de l'attribut « `id` » est plus large, puisqu'on peut également l'utiliser pour créer une ancre, dans la balise ouvrante de n'importe quel élément, outre l'élément `a`. Certains vieux navigateurs ne le supportant pas, les deux attributs étaient parfois employés conjointement, comme suit : `<a name="toto" id="toto"></a>`.
