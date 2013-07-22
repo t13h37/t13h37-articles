@@ -42,7 +42,7 @@ Pour accéder à cet emplacement, il faut ajouter, ailleurs dans la page, un **l
 
 Il s'agit de la même balise `<a>`, mais l'attribut utilisé cette fois est « `href` ». La destination est indiquée dans cet attribut. Il s'agit de l'**adresse hypertexte de référence** à laquelle vous souhaitez vous rendre. L'attribut `href` est ce qui caractérise l'hyperlien.
 
-Ancres et liens d'une page servent typiquement à constituer des liens d'évitement (« *skip links* ») ou un sommaire de la page. Mais les liens permettent également de pointer vers d'autres pages et tout autre ressource, interne ou externe au site. 
+Ancres et liens d'une page servent typiquement à constituer des liens d'évitement (« *skip links* ») ou un sommaire de la page. Mais les liens permettent également de pointer vers d'autres pages et toute autre ressource, interne ou externe au site. 
 
 Exemple de lien interne :
 
@@ -56,7 +56,7 @@ Exemple de lien externe :
 <a href="http://www.toto.net">Ceci est un lien vers le site toto.net</a>
 ~~~
 
-Ancre ou lien, retenons que dans tous les cas, il s'agit du couple de balises `<a>` et `</a>`. Ce sont les attributs utilisés, `id` ou `href`, qui précisent leur rôle.
+Ancre ou lien, retenons que dans tous les cas il s'agit du couple de balises `<a>` et `</a>`. Ce sont les attributs utilisés, `id` ou `href`, qui précisent leur rôle.
 
 ## Pourquoi diable sont-ils bleus soulignés ?
 
@@ -80,9 +80,9 @@ En typographie, le souligné n’a aucune raison d’être utilisé. Il ne s’e
 
 ## Pourquoi et que changer ?
 
-Faut-il garder les liens ainsi, bleus soulignés ? Beaucoup répondent « Évidemment non ! c’est la préhistoire du Web ! » et force est de constater qu'énormément de sites aujourd’hui appliquent un style différent à leurs liens hypertextes. Mais ce n'est pas toujours bien fait, avec pour conséquence de faire jouer l'internaute à cache-cache avec les liens de la page…
+Faut-il garder les liens ainsi, bleus soulignés ? Beaucoup répondent « Évidemment non ! C’est la préhistoire du Web ! » et force est de constater qu'énormément de sites aujourd’hui appliquent un style différent à leurs liens hypertextes. Mais ce n'est pas toujours bien fait, avec pour conséquence de faire jouer l'internaute à cache-cache avec les liens de la page…
 
-Avec CSS, vous pouvez choisir assez librement la présentation de vos liens hypertextes. L’essentiel est qu’ils soient repérables dans la page. Il faut qu'ils ressortent visuellement, au premier coup d'œil. Pour ce faire, plusieurs solutions existent : couleur, soulignement mais aussi aplat, pictogrammes, etc.
+Avec les CSS, vous pouvez choisir assez librement la présentation de vos liens hypertextes. L’essentiel est qu’ils soient repérables dans la page. Il faut qu'ils ressortent visuellement, au premier coup d'œil. Pour ce faire, plusieurs solutions existent : couleur, soulignement mais aussi cartouche, pictogrammes, etc.
 
 Voici ce qu'il faut savoir, si vous décidez d'en changer l'apparence.
 
@@ -104,7 +104,7 @@ Bien que l'accessibilité n'ait peut-être pas été la priorité de Tim Berners
 
 De même, savez-vous pourquoi le site Facebook a toujours été bleu et blanc ? La raison n'est pas arbitraire, ni esthétique : son créateur, Mark Zuckerberg, souffre de daltonisme et le bleu est la couleur qu'il voit le mieux.
 
-Des liens bleus, oui, mais pas n'importe lequel. Ces dinosaures, comme d'autres sites plus modernes révisent le standard. La teinte est mise au goût du jour, pour un bleu avoisinant, souvent moins vibrant et plus foncé, et notons que le souligné n'est pas systématiquement conservé par défaut :
+Des liens bleus, oui, mais pas n'importe lequel. Ces dinosaures, comme d'autres sites plus modernes, révisent le standard. La teinte est mise au goût du jour, pour un bleu avoisinant, souvent moins vibrant et plus foncé, et notons que le souligné n'est pas systématiquement conservé par défaut :
 
 ![Des liens bleus, oui, mais pas n'importe lequel!](bleus.png)
 
@@ -127,7 +127,7 @@ Si ce ne peut pas être par la couleur seule, comment distinguer un lien du text
 
 Comme on le voit dans l'exemple ci-dessus, souligner les liens ne laisse plus aucune place au doute et facilite d’autant la navigation. Pourquoi ? Sur le Web, le souligné est une convention forte. C’est le rendu par défaut des navigateurs pour les liens et les utilisateurs s’attendent à ce qu'un texte souligné soit cliquable.
 
-C’est si caractéristique que, pour éviter les clics inutiles sur des contenus soulignés qui seraient perçus comme des hyperliens – comme le montre ce [contre-exemple](http://romy.tetue.net/978) –, on réserve le souligné aux seuls hyperliens, comme le recommande la [Bonne pratique Opquast N°42](https://checklists.opquast.com/11/criteria/541/).
+C’est si caractéristique que, pour éviter les clics inutiles sur des contenus soulignés qui seraient perçus comme des hyperliens – comme le montre ce [contre-exemple](http://romy.tetue.net/978), on réserve le souligné aux seuls hyperliens, comme le recommande la [Bonne pratique Opquast N°42](https://checklists.opquast.com/11/criteria/541/).
 
 
 ### Le lien dans tous ses états
@@ -142,7 +142,7 @@ Ce n'est pas simple, car un lien peut être à la fois déjà visité au moment 
 
 #### Cliquez, tabulez, surfez !
 
-Les liens se cliquent. Mais pas seulement… En activant les liens -- par un clic de souris, une entrée au clavier ou une commande vocale -- l'utilisateur peut visiter ces ressources.
+Les liens se cliquent. Mais pas seulement… En activant les liens — par un clic de souris, une entrée au clavier ou une commande vocale — l'utilisateur peut visiter ces ressources.
 
 ##### Signaler le survol (:hover)
 
@@ -150,7 +150,7 @@ Le survol (`:hover`), c'est passer au-dessus du lien, avec la souris. Il est par
 
 ![Apparence du curseur "main"](mano_cursor.svg.png "clic !")
 
-Le survol n'est pas pris en charge sur les terminaux tactiles, qui compensent de diverses façon. S'il est important de le signaler, il ne faut pas s'appuyer uniquement sur les déplacements de la souris ou la pseudo-classe CSS `:hover`, qui peuvent ne pas se comporter comme souhaité sur un appareil à écran tactile. Voir le site dédié (en anglais) : [Non hover](http://trentwalton.com/2010/07/05/non-hover/).
+Le survol n'est pas pris en charge sur les terminaux tactiles, qui compensent de diverses façons. S'il est important de le signaler, il ne faut pas s'appuyer uniquement sur les déplacements de la souris ou la pseudo-classe CSS `:hover`, qui peuvent ne pas se comporter comme souhaité sur un appareil à écran tactile. Voir le site dédié (en anglais) : [Non hover](http://trentwalton.com/2010/07/05/non-hover/).
 
 ##### Signaler le focus améliore la navigation
 
@@ -158,8 +158,7 @@ Le lien (ou l’élément) qui a le **_focus_** est celui que l’internaute a a
 
 Le *focus* est par défaut signalé par un contour pointillé, ou par un halo bleuté, selon les navigateurs. Cela répond à une exigence d'accessibilité clairement indiquée dans les [WCAG](http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible) et ainsi exprimée dans la méthode d'application française, au [Critère 10.7 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.1_liste_generale.html#crit-10-7) : « Dans chaque page Web, pour chaque élément recevant le *focus*, la prise de *focus* est-elle visible ? »
 
-
-Méfiez-vous donc des *reset* CSS qui annulent le style natif du *focus* — d’un coup de `:focus { outline: 0; }`. Cela prive les internautes naviguant au clavier de tout repère et gêne considérablement leur navigation. À ce propos, vous pouver consulter ce site dédié : [outlinenone.fr](http://www.outlinenone.fr).
+Méfiez-vous donc des *reset* CSS qui annulent le style natif du *focus* — d’un coup de `:focus { outline: 0; }`. Cela prive les internautes naviguant au clavier de tout repère et gêne considérablement leur navigation. À ce propos, vous pouvez consulter ce site dédié : [outlinenone.fr](http://www.outlinenone.fr).
 
 Au contraire, il est recommandé d'accentuer le *focus*, car le rendu par défaut est trop discret. Parcourir la page à coup de tabulations fait sauter le *focus* d’un coin à l’autre de l’écran de façon parfois imprévisible. Pour éviter de le perdre et de trop le chercher du regard, le *focus* doit attirer l’attention ([Signaler le *focus* améliore la navigation](http://romy.tetue.net/678)). Vous pouvez accentuer le contraste, le contour, ou lui donner une couleur de fond.
 
@@ -172,15 +171,15 @@ Quand on le clique, le lien est dit « actif » (`:active`). Cet état est par d
 ##### N'oublions pas les liens visités (`:visited`)
 
 N'oublions pas l'état visité (`visited`) qui, comme son nom l'indique, est l'état d'un lien qui a déjà été suivi. Il est par défaut signalé par la couleur violette. C'était une convention autrefois bien respectée, mais qui est de moins en moins courante. À tord. Changer l’apparence des liens visités facilite l'identification des contenus restant à découvrir, comme le pointe la [Bonne pratique Opquast N°124](https://checklists.opquast.com/fr/oqsv2/criteria/623/). C'est une aide pour l'internaute, une incitation à la découverte de nouvelles pages.
+<!-- Il me semble que pour des raisons de sécurité, il n'est maintenant plus possible de styler toutes les propriétés visuelles de l'état :visited, ça mériterai d'être mentionné -->
 
 #### Un exemple ?
 
-On ne se soucie pas assez de signaler les différents états d’un lien. C'est moins simple qu'il y paraît de prime abord, mais il est possible d'allier originalité et utilisabilité. Voici un exemple, pas parfait, mais complet :
+On ne se soucie pas assez de signaler les différents états d’un lien. C'est moins simple qu'il y paraît de prime abord, mais il est possible d'allier originalité et ergonomie. Voici un exemple, pas parfait, mais complet :
 
 ![Personnalisation de tous les états d'un lien](combinaisons-2.png)
 
 Difficile de se rendre compte sur une image statique… Pour se donner un bon aperçu de leur nature changeante, il est indispensable de travailler les liens dans leur environnement naturel, c'est-à-dire directement dans le navigateur, pour pouvoir les cliquer, les tabuler et les chatouiller.
-
 
 ## Comment styler les liens en CSS ?
 
@@ -214,6 +213,7 @@ Pour retenir cet ordre, l’astuce mnémotechnique est l’expression « *LoVe F
 
 ## Des liens stylés !
 
-Véritable fondement de la navigation sur le Web, l'hyperlien mérite qu'on s'attarde sur son rendu graphique : c'est le point d'interaction primaire avec l'internaute, il est absolument incontournable. Les conventions sont fortes et établies, certes, mais elles peuvent être revisitées pour personnaliser une charte graphique. Respecter les quelques règles de base que cet article rappelle permet de préserver l'utilisatibilité. Amusez-vous bien !
+Véritable fondement de la navigation sur le Web, l'hyperlien mérite qu'on s'attarde sur son rendu graphique : c'est le point d'interaction primaire avec l'internaute, il est absolument incontournable. Les conventions sont fortes et établies, certes, mais elles peuvent être re-visitées pour personnaliser une charte graphique. Respecter les quelques règles de base que cet article rappelle permet de préserver l'ergonomie.  
+Amusez-vous bien !
 
-[^1] : L'attribut `name`, initialement employé pour les ancres, en HTML 4 (cf. [12.2.1 Syntax of anchor names](http://www.w3.org/TR/REC-html40/struct/links.html#h-12.2.1)), est déprécié en XHTML et obsolète en (HTML5. L'usage de l'attribut « `id` » est plus large, puisqu'on peut également l'utiliser pour créer une ancre, dans la balise ouvrante de n'importe quel élément, outre l'élément `a`. Certains vieux navigateurs ne le supportant pas, les deux attributs étaient parfois employés conjointement, comme suit : `<a name="toto" id="toto"></a>`.
+[^1]: L'attribut `name`, initialement employé pour les ancres, en HTML 4 (cf. [12.2.1 Syntax of anchor names](http://www.w3.org/TR/REC-html40/struct/links.html#h-12.2.1)), est déprécié en XHTML et obsolète en (HTML5. L'usage de l'attribut « `id` » est plus large, puisqu'on peut également l'utiliser pour créer une ancre, dans la balise ouvrante de n'importe quel élément, outre l'élément `a`. Certains vieux navigateurs ne le supportant pas, les deux attributs étaient parfois employés conjointement, comme suit : `<a name="toto" id="toto"></a>`.
