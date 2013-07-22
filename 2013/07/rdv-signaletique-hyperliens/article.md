@@ -1,6 +1,8 @@
 # Signalétique des Hyperliens
 
-On ne se soucie pas assez de la signalétique des liens et de leurs différents états. C’est un défaut d’ergonomie d’autant plus regrettable que l’hyperlien est le fondement de la navigation sur le Web. Comment améliorer cela ?
+On ne se soucie pas assez de la signalétique des liens et de leurs différents états. C’est un défaut d’ergonomie d’autant plus regrettable que l’hyperlien est le fondement de la navigation sur le Web. 
+
+Voyons ensemble comment améliorer cela :
 
 ## Hyperlien, kezako ?
 
@@ -74,7 +76,7 @@ Mosaic, un des premiers navigateurs web, affichait des pages Web avec du texte n
 
 Les moniteurs en noir et blanc, ou en bichromie (souvent noir et vert), étaient encore fréquents. Pour preuve, le NeXT Cube, l'ordinateur sur lequel a été développé le premier navigateur Web par Tim Berners-Lee, en 1990, ne disposait que d'un [affichage en niveaux de gris](http://www.w3.org/MarkUp/tims_editor). Avant la couleur, c'est le souligné qui permettait de distinguer les hyperliens.
 
-En typographie, le souligné n’a aucune raison d’être utilisé. Il ne s’emploie que pour pallier l’absence d’italique, lorsque celle-ci n'est techniquement pas disponible, comme c'est le cas dans l’écriture manuscrite ou dactylographique. Il sert alors à accentuer certains passages d'un texte, voire signaler les erreurs, mais aussi parfois à marquer le titre des références bibliographiques. Sur le Web, où l’usage d’italique est possible, le souligné un enrichissement typographique inutile… disponible pour signaler autre chose, qui n’existe pas sur le papier : les hyperliens.
+En typographie, le souligné n’a aucune raison d’être utilisé. Il ne s’emploie que pour pallier l’absence d’italique, lorsque celle-ci n'est techniquement pas disponible, comme c'est le cas dans l’écriture manuscrite ou dactylographique. Il sert alors à accentuer certains passages d'un texte, voire signaler les erreurs, mais aussi parfois à marquer le titre des références bibliographiques. Sur le Web, où l’usage d’italique est possible, le souligné est un enrichissement typographique inutile… disponible pour signaler autre chose, qui n’existe pas sur le papier : les hyperliens.
 
 ## Pourquoi et que changer ?
 
@@ -109,7 +111,7 @@ Des liens bleus, oui, mais pas n'importe lequel. Ces dinosaures, comme d'autres 
 
 ### La couleur ne suffit pas
 
-Quand certains mots d’un texte sont en couleur, comment l’internaute peut en deviner la signification sans se tromper ? S’agit-il de de la mise en exergue d'une expression importante ? d'un intertitre ? ou d'un hyperlien ? Prenons un exemple :
+Quand certains mots d’un texte sont en couleur, comment l’internaute peut en deviner la signification sans se tromper ? S’agit-il de la mise en exergue d'une expression importante ? d'un intertitre ? ou d'un hyperlien ? Prenons un exemple :
 
 ![Où sont les liens ?](hyperlinks-bouygues-1.png "Où sont les liens ?")
 
@@ -157,15 +159,15 @@ Le lien (ou l’élément) qui a le **_focus_** est celui que l’internaute a a
 Le *focus* est par défaut signalé par un contour pointillé, ou par un halo bleuté, selon les navigateurs. Cela répond à une exigence d'accessibilité clairement indiquée dans les [WCAG](http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-focus-visible) et ainsi exprimée dans la méthode d'application française, au [Critère 10.7 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.1_liste_generale.html#presentation) : « Dans chaque page Web, pour chaque élément recevant le *focus*, la prise de *focus* est-elle visible ? »
 
 
-Méfiez-vous donc des *reset* CSS qui annulent le style natif du *focus* — d’un coup de `:focus { outline: 0; }`. Cela prive les internautes naviguant au clavier de tout repère et gêne considérablement leur navigation. Voir ce site dédié : [outlinenone.fr](http://www.outlinenone.fr).
+Méfiez-vous donc des *reset* CSS qui annulent le style natif du *focus* — d’un coup de `:focus { outline: 0; }`. Cela prive les internautes naviguant au clavier de tout repère et gêne considérablement leur navigation. À ce propos, vous pouver consulter ce site dédié : [outlinenone.fr](http://www.outlinenone.fr).
 
-Au contraire, il est recommandé d'accentuer le *focus*, car le rendu par défaut est trop discret. Parcourir la page à coup de tabulations fait sauter le *focus* d’un coin à l’autre de l’écran de façon parfois imprévisible. Pour éviter de le perdre et de trop le chercher du regard, le *focus* doit attirer l’attention. Lire : [Signaler le *focus* améliore la navigation](http://romy.tetue.net/678). Vous pouvez accentuer le contraste, le contour, ou lui donner une couleur de fond.
+Au contraire, il est recommandé d'accentuer le *focus*, car le rendu par défaut est trop discret. Parcourir la page à coup de tabulations fait sauter le *focus* d’un coin à l’autre de l’écran de façon parfois imprévisible. Pour éviter de le perdre et de trop le chercher du regard, le *focus* doit attirer l’attention ([Signaler le *focus* améliore la navigation](http://romy.tetue.net/678)). Vous pouvez accentuer le contraste, le contour, ou lui donner une couleur de fond.
 
 La méthode la plus simple consiste à styler la prise de *focus* comme le survol. D'une pierre deux coups. Cela évite les défauts majeurs d'accessibilité, par exemple sur les menus *dropdown*. C'est aussi une façon de s'assurer d'un rendu homogène à la souris et au tactile.
 
 ##### Et le lien actif (`:active`) ?
 
-Quand on le clique, le lien est dit « actif » (`:active`). Cet état est par défaut signalé en rouge. Il est nécessaire de le distinguer pour rendre perceptible que l'action est enclenchée, notamment pour les personnes ayant des difficultés à manipuler la souris. Lire : [`:hover` vs `:active`](http://www.lesintegristes.net/2009/09/13/hover-vs-active/) (Eric Le Bihan, Les Intégristes, 2009).
+Quand on le clique, le lien est dit « actif » (`:active`). Cet état est par défaut signalé en rouge. Il est nécessaire de le distinguer pour rendre perceptible que l'action est enclenchée, notamment pour les personnes ayant des difficultés à manipuler la souris. Je vous invite d'ailleurs à lire l'article [`:hover` vs `:active`](http://www.lesintegristes.net/2009/09/13/hover-vs-active/) écrit par Eric Le Bihan, et publié sur Les Intégristes en 2009.
 
 #### Un exemple ?
 
