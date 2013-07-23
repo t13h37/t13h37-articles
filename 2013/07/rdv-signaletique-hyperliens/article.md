@@ -171,7 +171,10 @@ Quand on le clique, le lien est dit « actif » (`:active`). Cet état est par d
 
 ##### N'oublions pas les liens visités (`:visited`)
 
-N'oublions pas l'état visité (`:visited`) qui, comme son nom l'indique, est l'état d'un lien qui a déjà été suivi. Il est par défaut signalé par la couleur violette. C'était une convention autrefois bien respectée, mais qui est de moins en moins courante. À tord. Changer l’apparence des liens visités facilite l'identification des contenus restant à découvrir, comme le pointe la [Bonne pratique Opquast N°124](https://checklists.opquast.com/fr/oqsv2/criteria/623/). C'est une aide pour l'internaute, une incitation à la découverte de nouvelles pages.
+N'oublions pas l'état visité (`:visited`) qui, comme son nom l'indique, est l'état d'un lien qui a déjà été suivi. Il est par défaut signalé par la couleur violette. C'était une convention autrefois bien respectée, mais qui est de moins en moins courante. À tord. Changer l’apparence des liens visités facilite l'identification des contenus restant à découvrir, comme le pointe la [Bonne pratique Opquast N°124](https://checklists.opquast.com/fr/oqsv2/criteria/623/) : c'est une aide pour l'internaute, une incitation à la découverte de nouvelles pages.
+
+Mais, pour des questions de sécurité, la personnalisation de l'état visité des liens est limitée à la couleur de certaines propriétés (`color`, `background-color`, `border-color`, `outline-color`, `fill` et `stroke`).
+Pour en savoir plus à ce propos, je vous invite à consulter l'article [Privacy and the :visited selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector) sur MDN.
 
 #### Un exemple ?
 
