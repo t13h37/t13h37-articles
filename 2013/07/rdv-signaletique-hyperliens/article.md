@@ -88,7 +88,7 @@ Voici ce qu'il faut savoir, si vous décidez d'en changer l'apparence.
 
 ### Attention au contraste
 
-Si elle est plus jolie que le bleu d'origine, la couleur utilisée pour vos liens n'a peut être pas un contraste suffisant pour rester correctement lisible en toutes circonstances : les mots écrits dans cette teinte peuvent être difficiles à déchiffrer en dehors des conditions optimales de luminosité ambiante, par exemple quand vous surfez par temps ensoleillé, dans le train ou dans la rue, ce qui est de plus en plus fréquent. N'oubliez pas non plus que nos chers internautes n’ont pas tous une excellente acuité visuelle.
+Si elle est plus jolie que le bleu d'origine, la couleur utilisée pour vos liens n'a peut-être pas un contraste suffisant pour rester correctement lisible en toutes circonstances : les mots écrits dans cette teinte peuvent être difficiles à déchiffrer en dehors des conditions optimales de luminosité ambiante, par exemple quand vous surfez par temps ensoleillé, dans le train ou dans la rue, ce qui est de plus en plus fréquent. N'oubliez pas non plus que nos chers internautes n’ont pas tous une excellente acuité visuelle.
 
 Voici comment garantir la lisibilité des liens dans le texte : après s'être assuré que le contraste est suffisant entre la couleur du texte et la couleur de son arrière-plan ([critère 3.3 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.2_liste_deployee.html#crit-3-3)), on choisira une couleur de lien ayant un rapport de contraste supérieur ou égal à 3:1 par rapport au texte environnant ([critère 10.6 Accessiweb 2.2](http://www.accessiweb.org/index.php/accessiweb_2.2_liste_deployee.html#crit-10-6)). De nombreux outils permettent de mesurer ces contrastes, qui sont présentés dans cet article : [Contrastes de texte](http://openweb.eu.org/articles/accessibilite_contrastes_textes_sites) (OpenWeb, 2012).
 
@@ -128,7 +128,7 @@ Si ce ne peut pas être par la couleur seule, comment distinguer un lien du text
 
 Comme on le voit dans l'exemple ci-dessus, souligner les liens ne laisse plus aucune place au doute et facilite d’autant la navigation. Pourquoi ? Sur le Web, le souligné est une convention forte. C’est le rendu par défaut des navigateurs pour les liens et les utilisateurs s’attendent à ce qu'un texte souligné soit cliquable.
 
-C’est si caractéristique que, pour éviter les clics inutiles sur des contenus soulignés qui seraient perçus comme des hyperliens – comme le montre ce [contre-exemple](http://romy.tetue.net/978), on réserve le souligné aux seuls hyperliens, comme le recommande la [Bonne pratique Opquast N°42](https://checklists.opquast.com/11/criteria/541/).
+C’est si caractéristique que, pour éviter les clics inutiles sur des contenus soulignés qui seraient perçus comme des hyperliens – comme le montre ce [contre-exemple](http://romy.tetue.net/978), on réserve le souligné aux seuls hyperliens, comme le recommande la [Bonne pratique Opquast n°42](https://checklists.opquast.com/11/criteria/541/).
 
 
 ### Le lien dans tous ses états
@@ -171,7 +171,7 @@ Quand on le clique, le lien est dit « actif » (`:active`). Cet état est par d
 
 ##### N'oublions pas les liens visités (`:visited`)
 
-N'oublions pas l'état visité (`:visited`) qui, comme son nom l'indique, est l'état d'un lien qui a déjà été suivi. Il est par défaut signalé par la couleur violette. C'était une convention autrefois bien respectée, mais qui est de moins en moins courante. À tord. Changer l’apparence des liens visités facilite l'identification des contenus restant à découvrir, comme le pointe la [Bonne pratique Opquast N°124](https://checklists.opquast.com/fr/oqsv2/criteria/623/) : c'est une aide pour l'internaute, une incitation à la découverte de nouvelles pages.
+N'oublions pas l'état visité (`:visited`) qui, comme son nom l'indique, est l'état d'un lien qui a déjà été suivi. Il est par défaut signalé par la couleur violette. C'était une convention autrefois bien respectée, mais qui est de moins en moins courante. À tort. Changer l’apparence des liens visités facilite l'identification des contenus restant à découvrir, comme le pointe la [Bonne pratique Opquast n°124](https://checklists.opquast.com/fr/oqsv2/criteria/623/) : c'est une aide pour l'internaute, une incitation à la découverte de nouvelles pages.
 
 Mais, pour des questions de sécurité, la personnalisation de l'état visité des liens est limitée à la couleur de certaines propriétés (`color`, `background-color`, `border-color`, `outline-color`, `fill` et `stroke`).
 Pour en savoir plus à ce propos, je vous invite à consulter l'article [Privacy and the :visited selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector) sur MDN.
@@ -217,7 +217,7 @@ Pour retenir cet ordre, l’astuce mnémotechnique est l’expression « *LoVe F
 
 ## Des liens stylés !
 
-Véritable fondement de la navigation sur le Web, l'hyperlien mérite qu'on s'attarde sur son rendu graphique : c'est le point d'interaction primaire avec l'internaute, il est absolument incontournable. Les conventions sont fortes et établies, certes, mais elles peuvent être re-visitées pour personnaliser une charte graphique. Respecter les quelques règles de base que cet article rappelle permet de préserver l'ergonomie.
+Véritable fondement de la navigation sur le Web, l'hyperlien mérite qu'on s'attarde sur son rendu graphique : c'est le point d'interaction primaire avec l'internaute, il est absolument incontournable. Les conventions sont fortes et établies, certes, mais elles peuvent être revisitées pour personnaliser une charte graphique. Respecter les quelques règles de base que cet article rappelle permet de préserver l'ergonomie.
 
 Amusez-vous bien !
 
