@@ -22,8 +22,6 @@ Sur une page Web, des **liens** ajoutés à des mots, des phrases ou des images,
 
 L'élément HTML utilisé pour ce faire est `a`, de l'anglais *anchor*, qui signifie ancre.
 
-![Ancre](anchor.gif) 
-
 Pour accéder à un emplacement bien précis de la page, il faut placer une ancre juste au-dessus de l'endroit où vous souhaitez atterrir. Une ancre se code ainsi :
 
 ~~~ {lang="html" line="1"}
