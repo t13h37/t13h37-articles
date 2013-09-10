@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Menu déroulant CSS Accessible (4)</title>
+	<meta name="viewport" content="width=device-width" />
+<style>
+/* Supprime les styles appliqués par défaut aux listes. S'applique également à la sous-liste */
+.nav {
+	list-style: none none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+.nav a {
+	display: block;
+	padding: .5em;
+	color: blue;
+	background: white;
+	text-decoration: none;
+}
+.nav a:focus,
+.nav a:hover {
+	color: black;
+	background: #ffc;
+	text-decoration: underline;
+}
+.nav-item {
+	float: left; /* Pour que les liens s'affichent horizontalement */
+	position: relative; /* Crée un contexte de positionnement pour les sous-listes */
+}
+.sub-nav {
+	position: absolute; /* Evite que la dimension du conteneur ne change quand la sous-liste est affichée */
+	white-space: nowrap; /* Pour que le texte ne revienne pas à la ligne */
+	left: 0; /* FIX IE7 : pour que le sous-menu s'aligne avec son conteneur */
+	top: 2em; /* FIX IE7 : pour que le sous-menu s'aligne avec son conteneur */
+	white-space: nowrap; /* Pour que le texte ne revienne pas à la ligne */
+	background: white; /* FIX IE7 : évite que la sous-liste ne disparaisse au moment où le curseur arrive au-dessus */
+	margin-top: -2px; /* Pour que le sous-menu recouvre son parent, facilitant le passage de la souris de l'un à l'autre */
+}
+/* Réduit cette boîte à un carré d'1px de côté, dont le texte est déporté loin à gauche */
+.sub-nav-item a {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	float: left; /* Fix WebKit : force la largeur des sous-navigations à s'adapter automatiquement, pour pouvoir l'atteindre à la souris */
+}
+.sub-nav-item a:focus,
+.nav-item a:focus + .sub-nav a,
+.nav-item:hover .sub-nav-item a {
+	position: static;
+	left: auto;
+	width: auto;
+	height: auto;
+	overflow: visible;
+}
+@media screen and (max-width: 480px) {
+	.nav-item {
+		float: none; /* Remet les éléments les uns au-dessus des autres */
+	}
+	.sub-nav {
+		position: static; /* Replace la sous-liste dans le flux du document */
+		white-space: normal /* Permet au texte de revenir à la ligne normalement */
+	}
+	.sub-nav-item a {
+		display: block; /* Pour que la ligne entière soit cliquable */
+		width: auto; /* Annule width: 1px */
+		height: auto; /* Annule height: 1px */
+		position: static; /* Annule position: absolute */
+		padding-left: 1em; /* Annule le padding vertical et en rajoute à gauche pour indiquer le sous-niveau */
+		overflow: visible; /* Annule overflow: hidden */
+		float: none;
+	}
+}
+</style>
+</head>
+<body>
+
+<p>Revenir à l'article <a href="http://letrainde13h37.fr/44/menu-deroulant-accessible-css/">Créer un menu déroulant accessible en CSS</a> sur <em>Le train de 13h37</em></p>
+
+<ul class="nav">
+    <li class="nav-item"><a href="#">Accueil</a></li>
+    <li class="nav-item">
+        <a href="#">Catalogue</a>
+        <ul class="nav sub-nav">
+            <li class="sub-nav-item"><a href="#">Petits machins</a></li>
+            <li class="sub-nav-item"><a href="#">Gros machins</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a href="#">A propos</a></li>
+</ul>
+
+</body>
+</html>
