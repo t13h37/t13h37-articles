@@ -1,0 +1,7 @@
+{
+"title" : "Un Web orienté composants",
+"author": {"name" : "David Larlet", "email": "david@larlet.fr"},
+"edition" : {"number": "45", "date": "2013-10-08"},
+"tags" : ["HTML5", "développement", "technologies Web"],
+"type" : "tutoriel"
+}
