@@ -5,5 +5,5 @@ Formé en grande partie grâce aux sites [OpenWeb](http://openweb.eu.org) et [Po
 Il propose désormais ses services en tant que consultant web.
 
 - [@goulvench](https://twitter.com/goulvench)
-- <[Goulven Champenois](http://userland.fr/)>
+- [http://userland.fr/](http://userland.fr/)
 
