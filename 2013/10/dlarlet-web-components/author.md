@@ -1,5 +1,4 @@
-...
+David Larlet est un artisan, un geek et un citoyen. Artisan, mon métier est une passion qui me permet de m'épanouir tout en véhiculant des valeurs qui me sont chères. J'ai co-créé scopyleft — une coopérative accompagnatrice de projets web — pour mettre à profit mes compétences et mon expérience au service d'une aventure humaine, éthique et sociale. Geek, j'aime explorer des sujets et partager ces découvertes avec mes pairs. Je suis intéressé par les outils et leurs usages, je participe à leur évolution et leur diffusion. Ma culture biologique me permet de mettre en perspective certaines évolutions techniques et sociétales. Citoyen, je prends soin de ma cité en lui accordant de l'attention. À une échelle plus large, j'ai conscience de mon environnement et de son instabilité. Je suis persuadé que la politique aurait un rôle à jouer dans l'individuation des personnes si elle était employée au service d'une vision partagée et consentie.
 
-- [Son site]()
 - [@davidbgk](https://twitter.com/davidbgk)
-
+- [https://larlet.fr/david](https://larlet.fr/david)
