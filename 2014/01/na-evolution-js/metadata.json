@@ -1,0 +1,7 @@
+{
+"title" : "Dix ans de pratique Javascript à Paris",
+"author": {"name" : "Noëlie Andrieu", "email": "noelieandrieu@gmail.com"},
+"edition" : {"number": "47", "date": "2014-01-07"},
+"tags" : ["métier", "JavaScript"],
+"type" : "essai"
+}
