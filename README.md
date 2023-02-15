@@ -1,5 +1,16 @@
 # Articles pour le magazine le train de 13h37
 
+## ⚠️ Avertissement et explications
+
+Ce dépôt contient les sources des articles du feu magazine Le Train de 13h37.
+
+Il est publié tel qu'il est resté depuis toutes ces années et n'est là que pour rendre de nouveau accessible les articles de nos chouettes contributeurs et contributrices.
+
+Certains contenus ne sont possiblement plus d'actualités d'un point de vue technique, quand d'autres articles de fond sonnent encore juste aujourd'hui.
+
+Encore merci pour cette belle aventure à nos côtés.
+
+
 ## Répertoires
 
 - {annee}/{mois}/{auteur}-{slug-article}/
